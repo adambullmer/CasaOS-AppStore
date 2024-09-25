@@ -1,0 +1,47 @@
+name: barcode-buddy
+services:
+  barcode-buddy:
+    command: []
+    container_name: barcode-buddy
+    environment:
+      ATTACH_BARCODESCANNER: "false"
+      PGID: $PGID
+      PUID: $PUID
+      TZ: $TZ
+    x-casaos:
+      envs:
+        - container: ATTACH_BARCODESCANNER
+          description:
+            en_us: "Boolean to utilize a hardware barcode scanner"
+    hostname: barcode-buddy
+    image: f0rc3/barcodebuddy:latest
+    ports:
+      - target: 80
+        published: ${WEBUI_PORT:-8080}
+        protocol: tcp
+      - target: 443
+        published: "9443"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /config
+x-casaos:
+  author: self
+  developer: Forceu
+  category: Home Automation
+  hostname: ""
+  icon: https://f-droid.org/repo/de.bulling.barcodebuddyscanner/en-US/icon_d-5wBjXTL7QHBSxVkiddVKoBI-_8fx9NVMtHAfbIZSE=.png
+  index: /
+  port_map: ${WEBUI_PORT:-8080}
+  scheme: http
+  store_app_id: barcode-buddy
+  architectures: # a list of architectures that the app supports
+    - amd64
+  title:
+    custom: Barcode Buddy
+  description:
+    en_us: Barcode system for Grocy
+  tagline:
+    en_us: Barcode system for Grocy
