@@ -1,0 +1,56 @@
+name: recipe-buddy
+services:
+  recipe-buddy:
+    command: []
+    container_name: recipe-buddy
+    environment:
+      GROCY_API_KEY: <Generated API Token>
+      GROCY_BASE_URL: http://casaos.local:9283
+      NEXTAUTH_SECRET: <change-me>
+      NEXTAUTH_URL: http://casaos.local:3005
+      PGID: $PGID
+      PUID: $PUID
+      TZ: $TZ
+    x-casaos:
+      envs:
+        - container: GROCY_API_KEY
+          description:
+            en_us: "API Key to access Grocy instance, generated from the /manageapikeys path of the grocy website"
+        - container: GROCY_BASE_URL
+          description:
+            en_us: "URL to the Grocy instance"
+        - container: NEXTAUTH_SECRET
+          description:
+            en_us: "Random secret used in the recipe buddy app"
+        - container: NEXTAUTH_URL
+          description:
+            en_us: "Public URL for the app will be exposed at"
+    hostname: recipe-buddy
+    image: ghcr.io/georgegebbett/recipe-buddy:latest
+    ports:
+      - target: 3000
+        published: ${WEBUI_PORT:-3005}
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /home/node/app/data
+x-casaos:
+  author: self
+  developer: georgegebbett
+  category: Home Automation
+  hostname: ""
+  icon: https://github.com/adambullmer/CasaOS-AppStore/blob/main/Apps/RecipeBuddy/icon.svg?raw=true
+  index: /
+  port_map: ${WEBUI_PORT:-3005}
+  scheme: http
+  store_app_id: recipe-buddy
+  title:
+    custom: Recipe Buddy
+  tips:
+    before_install:
+      en_us: |
+        ### Note
+
+        Visit http://casaos.local:9283/manageapikeys to generate the key for GROCY_API_KEY.
