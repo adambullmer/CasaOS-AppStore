@@ -1,0 +1,34 @@
+name: filestash
+services:
+  app:
+    command: []
+    container_name: filestash
+    environment:
+      APPLICATION_URL: ""
+    hostname: filestash
+    image: machines/filestash:latest
+    ports:
+      - target: 8334
+        published: ${WEBUI_PORT:-8334}
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /app/data/state
+      - type: bind
+        source: /DATA
+        target: /DATA
+x-casaos:
+  author: self
+  developer: mickael-kerjean
+  category: Utilities
+  hostname: ""
+  icon: https://downloads.filestash.app/brand/logo_primary.svg
+  index: /admin
+  is_uncontrolled: false
+  port_map: ${WEBUI_PORT:-8334}
+  scheme: http
+  store_app_id: filestash
+  title:
+    custom: Filestash
