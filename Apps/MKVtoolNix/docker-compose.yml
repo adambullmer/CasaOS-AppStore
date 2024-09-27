@@ -1,0 +1,39 @@
+name: mkvtoolnix
+services:
+  mkvtoolnix:
+    command: []
+    container_name: mkvtoolnix
+    environment:
+      DARK_MODE: "1"
+      DISPLAY_HEIGHT: "720"
+      DISPLAY_WIDTH: "960"
+      GROUP_ID: $PGID
+      TZ: $TZ
+      USER_ID: $PUID
+    hostname: mkvtoolnix
+    image: jlesage/mkvtoolnix:latest
+    ports:
+      - target: 5800
+        published: ${WEBUI_PORT:-5800}
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /config
+      - type: bind
+        source: /DATA
+        target: /storage
+x-casaos:
+  author: self
+  developer: mbunkus
+  category: Utilities
+  hostname: ""
+  icon: https://gitlab.com/uploads/-/system/project/avatar/4910441/mkvtoolnix-gui.png
+  index: /
+  is_uncontrolled: false
+  port_map: ${WEBUI_PORT:-5800}
+  scheme: http
+  store_app_id: mkvtoolnix
+  title:
+    custom: MKVToolNix
