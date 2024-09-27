@@ -1,0 +1,36 @@
+name: notifiarr
+services:
+  notifiarr:
+    command: []
+    container_name: notifiarr
+    environment:
+      TZ: $TZ
+    hostname: notifiarr
+    image: golift/notifiarr:latest
+    ports:
+      - target: 5454
+        published: ${WEBUI_PORT:-5454}
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /config
+      - type: bind
+        source: /var/run/utmp
+        target: /var/run/utmp
+      - type: bind
+        source: /etc/machine-id
+        target: /etc/machine-id
+x-casaos:
+  author: self
+  developer: Notifarr Team
+  category: Utilities
+  hostname: ""
+  icon: https://notifiarr.com/images/logo/notifiarr.png
+  index: /
+  port_map: ${WEBUI_PORT:-5454}
+  scheme: http
+  store_app_id: notifiarr
+  title:
+    custom: Notifiarr
