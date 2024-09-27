@@ -1,0 +1,49 @@
+name: nordlynx
+services:
+  nordlynx:
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    command: []
+    container_name: nordlynx
+    environment:
+      NET_LOCAL: 192.168.0.0/16,10.7.0.0/24,10.8.0.0/24,172.17.0.0/24
+      PRIVATE_KEY: <Place Private Key Here>
+      TZ: $TZ
+    hostname: nordlynx
+    image: ghcr.io/bubuntux/nordlynx:latest
+    ports:
+      - target: 51820
+        published: "51820"
+      - target: 8113
+        published: "8113"
+        protocol: tcp
+      - target: 58846
+        published: "58846"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /config
+
+x-casaos:
+  author: self
+  category: VPN
+  developer: Deluge Team
+  hostname: ""
+  icon: https://cdn.iconscout.com/icon/free/png-256/free-nordvpn-7662268-6297204.png
+  index: /
+  description:
+    en_us: Wireguard interface for NordVPN offering improved VPN overhead speeds.
+  scheme: http
+  store_app_id: nordlynx
+  title:
+    custom: NordLynx
+  tips:
+    before_install:
+      en_us: |
+        ### Note
+
+        To generate the PRIVATE_KEY, see output from the NordVPN container.
+        Full Instructions [here](https://github.com/bubuntux/nordlynx?tab=readme-ov-file#how-to-get-your-private_key)
