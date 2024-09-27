@@ -1,0 +1,45 @@
+name: dupeguru
+services:
+  dupeguru:
+    command: []
+    container_name: dupeguru
+    environment:
+      DARK_MODE: "1"
+      DISPLAY_HEIGHT: "720"
+      DISPLAY_WIDTH: "1280"
+      GROUP_ID: $PGID
+      TZ: $TZ
+      USER_ID: $PUID
+    hostname: dupeguru
+    image: jlesage/dupeguru:latest
+    ports:
+      - target: 5800
+        published: ${WEBUI_PORT:-5800}
+        protocol: tcp
+      - target: 5900
+        published: "5900"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /config
+      - type: bind
+        source: /DATA
+        target: /storage
+      - type: bind
+        source: /DATA/dupes
+        target: /trash
+x-casaos:
+  author: self
+  developer: arsenetar
+  category: Utilities
+  hostname: ""
+  icon: https://images.sftcdn.net/images/t_app-icon-m/p/6b1950ae-a6ed-11e6-8cc4-00163ec9f5fa/3183400095/dupeguru-logo.png
+  index: /
+  is_uncontrolled: false
+  port_map: ${WEBUI_PORT:-5800}
+  scheme: http
+  store_app_id: dupeguru
+  title:
+    custom: DupeGuru
