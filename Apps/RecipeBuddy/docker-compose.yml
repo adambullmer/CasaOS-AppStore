@@ -46,11 +46,16 @@ x-casaos:
   port_map: ${WEBUI_PORT:-3005}
   scheme: http
   store_app_id: recipe-buddy
+  architectures: # a list of architectures that the app supports
+    - amd64
   title:
     custom: Recipe Buddy
+  description:
+    en_us: Recipe import system for Grocy
+  tagline:
+    en_us: Recipe import system for Grocy
   tips:
     before_install:
       en_us: |
         ### Note
-
         Visit http://casaos.local:9283/manageapikeys to generate the key for GROCY_API_KEY.
