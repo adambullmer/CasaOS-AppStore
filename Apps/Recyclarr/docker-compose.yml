@@ -1,0 +1,31 @@
+name: recyclarr
+services:
+  recyclarr:
+    command: []
+    container_name: recyclarr
+    environment:
+      CRON_SCHEDULE: 0 4 * * *
+      PGID: $PGID
+      PUID: $PUID
+      TZ: $TZ
+    hostname: recyclarr
+    image: ghcr.io/recyclarr/recyclarr:7.2.1
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /config
+x-casaos:
+  author: self
+  developer: Recyclarr Team
+  category: Utilities
+  hostname: ""
+  icon: https://recyclarr.dev/img/recyclarr.png
+  index: /
+  port_map: ""
+  scheme: http
+  store_app_id: recyclarr
+  title:
+    custom: Recyclarr
+  description:
+    en_us: Synchronization of Trash Guides configs with sonarr/radarr
