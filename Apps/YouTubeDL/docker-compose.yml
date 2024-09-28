@@ -1,0 +1,42 @@
+name: ytdl-sub
+services:
+  ytdl-sub:
+    command: []
+    container_name: ytdl-sub
+    environment:
+      PGID: $PGID
+      PUID: $PUID
+      TZ: $TZ
+    hostname: ytdl-sub
+    image: ghcr.io/jmbannon/ytdl-sub-gui:latest
+    ports:
+      - target: 8443
+        published: ${WEBUI_PORT:-8443}
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /config
+      - type: bind
+        source: /DATA/Media/TV Shows
+        target: /tv_shows
+      - type: bind
+        source: /DATA/Media/Movies
+        target: /movies
+      - type: bind
+        source: /DATA/Media/Music
+        target: /music
+x-casaos:
+  author: self
+  developer: jmbannon
+  category: Downloader
+  hostname: ""
+  icon: https://static-00.iconduck.com/assets.00/youtube-dl-icon-2048x2048-twqze5uw.png
+  index: /
+  is_uncontrolled: false
+  port_map: ${WEBUI_PORT:-8443}
+  scheme: http
+  store_app_id: ytdl-sub
+  title:
+    custom: YouTube DL Subscription
