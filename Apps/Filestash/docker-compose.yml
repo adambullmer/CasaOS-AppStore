@@ -19,6 +19,7 @@ services:
       - type: bind
         source: /DATA
         target: /DATA
+    x-casaos: {}
 x-casaos:
   author: self
   developer: mickael-kerjean

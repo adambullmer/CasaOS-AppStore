@@ -30,6 +30,7 @@ services:
       - type: bind
         source: /DATA/dupes
         target: /trash
+    x-casaos: {}
 x-casaos:
   author: self
   developer: arsenetar

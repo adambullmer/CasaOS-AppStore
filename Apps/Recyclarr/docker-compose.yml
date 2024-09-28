@@ -15,6 +15,7 @@ services:
       - type: bind
         source: /DATA/AppData/$AppID/config
         target: /config
+    x-casaos: {}
 x-casaos:
   author: self
   developer: Recyclarr Team

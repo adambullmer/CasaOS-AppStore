@@ -24,6 +24,7 @@ services:
       - type: bind
         source: /DATA
         target: /storage
+    x-casaos: {}
 x-casaos:
   author: self
   developer: mbunkus

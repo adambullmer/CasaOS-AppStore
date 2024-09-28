@@ -23,6 +23,7 @@ services:
         published: "51820"
         protocol: udp
     restart: unless-stopped
+    x-casaos: {}
 x-casaos:
   author: self
   category: VPN
