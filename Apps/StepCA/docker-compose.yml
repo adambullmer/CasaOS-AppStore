@@ -1,0 +1,38 @@
+name: step-ca
+services:
+  step-ca:
+    command: []
+    container_name: step-ca
+    environment:
+      DOCKER_STEPCA_INIT_ACME: traefik
+      DOCKER_STEPCA_INIT_DNS_NAMES: step-ca,casaos.local,*.casaos.local
+      DOCKER_STEPCA_INIT_NAME: ZimaBoard
+      DOCKER_STEPCA_INIT_PROVISIONER_NAME: ZimaBoard
+      DOCKER_STEPCA_INIT_REMOTE_MANAGEMENT: "true"
+    hostname: step-ca
+    image: smallstep/step-ca:latest
+    networks:
+      lsio: null
+    ports:
+      - target: 9000
+        published: ${WEBUI_PORT:-9000}
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /home/step
+    x-casaos: {}
+x-casaos:
+  author: self
+  developer: Smallstep Team
+  category: Utilities
+  hostname: ""
+  icon: https://smallstep.imgix.net/Group_393_15c49e334c.svg?auto=format%2Ccompress&fit=max&w=96&q=50
+  index: /health
+  is_uncontrolled: false
+  port_map: ${WEBUI_PORT:-9000}
+  scheme: https
+  store_app_id: smallstep-step-ca
+  title:
+    custom: Step CA
