@@ -1,0 +1,38 @@
+name: tubesync
+services:
+  tubesync:
+    command: []
+    container_name: tubesync
+    environment:
+      PGID: $PGID
+      PUID: $PUID
+      TUBESYNC_DEBUG: "True"
+      TZ: $TZ
+    hostname: tubesync
+    image: ghcr.io/meeb/tubesync:latest
+    ports:
+      - target: 4848
+        published: ${WEBUI_PORT:-4848}
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /config
+      - type: bind
+        source: /DATA/Downloads/tubesync
+        target: /downloads
+    x-casaos: {}
+x-casaos:
+  author: self
+  developer: meeb
+  category: Downloader
+  hostname: ""
+  icon: https://github.com/meeb/tubesync/blob/e3b5d63501a0a8e2fffac64ee1a48b9a69421d3e/tubesync/common/static/images/tubesync.png?raw=true
+  index: /
+  is_uncontrolled: false
+  port_map: ${WEBUI_PORT:-4848}
+  scheme: http
+  store_app_id: tubesync
+  title:
+    custom: tubesync
