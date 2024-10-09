@@ -27,6 +27,7 @@ services:
       - type: bind
         source: /DATA/Media/Music
         target: /music
+    x-casaos: {}
 x-casaos:
   architectures:
     - amd64
