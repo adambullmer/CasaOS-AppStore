@@ -24,6 +24,8 @@ services:
         target: /home/step
     x-casaos: {}
 x-casaos:
+  architectures:
+    - amd64
   author: self
   developer: Smallstep Team
   category: Utilities

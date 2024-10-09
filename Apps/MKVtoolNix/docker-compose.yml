@@ -26,6 +26,8 @@ services:
         target: /storage
     x-casaos: {}
 x-casaos:
+  architectures:
+    - amd64
   author: self
   developer: mbunkus
   category: Utilities

@@ -25,6 +25,8 @@ services:
     restart: unless-stopped
     x-casaos: {}
 x-casaos:
+  architectures:
+    - amd64
   author: self
   category: VPN
   hostname: ""

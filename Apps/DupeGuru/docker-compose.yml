@@ -32,6 +32,8 @@ services:
         target: /trash
     x-casaos: {}
 x-casaos:
+  architectures:
+    - amd64
   author: self
   developer: arsenetar
   category: Utilities

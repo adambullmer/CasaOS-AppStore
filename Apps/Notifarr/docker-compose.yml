@@ -24,6 +24,8 @@ services:
         target: /etc/machine-id
     x-casaos: {}
 x-casaos:
+  architectures:
+    - amd64
   author: self
   developer: Notifarr Team
   category: Utilities

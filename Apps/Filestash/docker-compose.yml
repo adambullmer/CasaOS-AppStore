@@ -21,6 +21,8 @@ services:
         target: /DATA
     x-casaos: {}
 x-casaos:
+  architectures:
+    - amd64
   author: self
   developer: mickael-kerjean
   category: Utilities

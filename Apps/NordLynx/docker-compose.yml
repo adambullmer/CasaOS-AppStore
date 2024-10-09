@@ -28,6 +28,8 @@ services:
         target: /config
     x-casaos: {}
 x-casaos:
+  architectures:
+    - amd64
   author: self
   category: VPN
   developer: Deluge Team

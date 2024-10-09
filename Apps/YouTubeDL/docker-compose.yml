@@ -28,6 +28,8 @@ services:
         source: /DATA/Media/Music
         target: /music
 x-casaos:
+  architectures:
+    - amd64
   author: self
   developer: jmbannon
   category: Downloader

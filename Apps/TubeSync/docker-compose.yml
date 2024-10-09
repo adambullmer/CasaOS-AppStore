@@ -24,6 +24,8 @@ services:
         target: /downloads
     x-casaos: {}
 x-casaos:
+  architectures:
+    - amd64
   author: self
   developer: meeb
   category: Downloader
