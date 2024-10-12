@@ -11,8 +11,6 @@ services:
       DOCKER_STEPCA_INIT_REMOTE_MANAGEMENT: "true"
     hostname: step-ca
     image: smallstep/step-ca:latest
-    networks:
-      lsio: null
     ports:
       - target: 9000
         published: ${WEBUI_PORT:-9000}
@@ -22,7 +20,11 @@ services:
       - type: bind
         source: /DATA/AppData/$AppID/config
         target: /home/step
-    x-casaos: {}
+    x-casaos:
+      ports:
+        - container: "9000"
+          description:
+            en_us: https port for the ACME Server
 x-casaos:
   architectures:
     - amd64
