@@ -1,0 +1,56 @@
+name: czkawka
+services:
+  dupeguru:
+    command: []
+    container_name: czkawka
+    environment:
+      DARK_MODE: "1"
+      DISPLAY_HEIGHT: "720"
+      DISPLAY_WIDTH: "1280"
+      GROUP_ID: $PGID
+      TZ: $TZ
+      USER_ID: $PUID
+    hostname: czkawka
+    image: jlesage/czkawka:24.09.1
+    ports:
+      - target: 5800
+        published: ${WEBUI_PORT:-5800}
+        protocol: tcp
+      - target: 5900
+        published: "5900"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /config
+      - type: bind
+        source: /DATA
+        target: /storage
+    x-casaos:
+      ports:
+        - container: "5800"
+          description:
+            en_us: Port to access the application's GUI via the web interface.
+        - container: "5900"
+          description:
+            en_us: Port to access the application's GUI via the VNC protocol.
+x-casaos:
+  architectures:
+    - amd64
+  author: self
+  developer: qarmin
+  category: Utilities
+  hostname: ""
+  icon: https://github.com/qarmin/czkawka/blob/master/czkawka_gui/icons/icon_about.png?raw=true
+  index: /
+  is_uncontrolled: false
+  port_map: ${WEBUI_PORT:-5800}
+  scheme: http
+  store_app_id: czkawka
+  title:
+    custom: Czkawka
+  tagline:
+    custom: Simple, fast and free app to remove unnecessary files from your computer
+  description:
+    custom: Multi functional app to find duplicates, empty folders, similar images etc.
