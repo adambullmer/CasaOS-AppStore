@@ -1,6 +1,6 @@
 name: czkawka
 services:
-  dupeguru:
+  czkawka:
     command: []
     container_name: czkawka
     environment:
@@ -11,7 +11,7 @@ services:
       TZ: $TZ
       USER_ID: $PUID
     hostname: czkawka
-    image: jlesage/czkawka:24.09.1
+    image: jlesage/czkawka:v24.09.1
     ports:
       - target: 5800
         published: ${WEBUI_PORT:-5800}
