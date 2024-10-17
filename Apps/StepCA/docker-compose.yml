@@ -5,7 +5,7 @@ services:
     container_name: step-ca
     environment:
       DOCKER_STEPCA_INIT_ACME: traefik
-      DOCKER_STEPCA_INIT_DNS_NAMES: "step-ca,casaos.local,*.casaos.local"
+      DOCKER_STEPCA_INIT_DNS_NAMES: step-ca,casaos.local,*.casaos.local
       DOCKER_STEPCA_INIT_NAME: ZimaBoard
       DOCKER_STEPCA_INIT_PROVISIONER_NAME: ZimaBoard
       DOCKER_STEPCA_INIT_REMOTE_MANAGEMENT: "true"
