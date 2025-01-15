@@ -1,0 +1,39 @@
+name: kapowarr
+services:
+  kapowarr:
+    command: []
+    container_name: kapowarr
+    hostname: kapowarr
+    image: mrcas/kapowarr:latest
+    environment:
+      APPLICATION_URL: ""
+    ports:
+      - target: 5656
+        published: ${WEBUI_PORT:-5656}
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /app/db
+      - type: bind
+        source: /DATA
+        target: /DATA
+    x-casaos: {}
+x-casaos:
+  architectures:
+    - amd64
+  author: self
+  developer: Kasvt
+  category: Media
+  hostname: ""
+  icon: https://casvt.github.io/Kapowarr/assets/img/favicon.svg
+  index: /
+  is_uncontrolled: false
+  port_map: ${WEBUI_PORT:-5656}
+  scheme: http
+  store_app_id: kapowarr
+  title:
+    custom: Kapowarr
+  description:
+    en_us: Kapowarr (Comarr) is a software to build and manage a comic book library, fitting in the *arr suite of software.
