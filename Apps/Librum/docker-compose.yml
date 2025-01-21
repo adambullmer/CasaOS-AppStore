@@ -1,0 +1,85 @@
+name: librum
+services:
+  librum:
+    command: []
+    container_name: librum
+    hostname: librum
+    image: ghcr.io/librum-reader/librum-server:latest
+    environment:
+      - PGID=$PGID
+      - PUID=$PUID
+      - TZ=$TZ
+      - JWTValidIssuer=exampleIssuer
+      - JWTKey=exampleOfALongSecretToken
+      - SMTPEndpoint=smtp.example.com
+      - SMTPUsername=mailuser123
+      - SMTPPassword=smtpUserPassword123
+      - SMTPMailFrom=mailuser123@example.com
+      - DBConnectionString=Server=mariadb;port=3306;Database=librum;Uid=librum;Pwd=mariadb;
+      - AdminEmail=admin@example.com
+      - AdminPassword=strongPassword123
+      # - OpenAIToken=
+    ports:
+      - target: 5000
+        published: ${WEBUI_PORT:-5000}
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /var/lib/librum-server/librum_storage
+    depends_on:
+      librum_db:
+        condition: service_healthy
+    x-casaos: {}
+
+  librum_db:
+    container_name: librum_db
+    hostname: mariadb
+    image: mariadb:latest
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/db
+        target: /var/lib/mysql
+    environment:
+      - MARIADB_USER=librum
+      - MARIADB_PASSWORD=mariadb
+      - MARIADB_DATABASE=librum
+      - MARIADB_ROOT_PASSWORD=mariadb
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "mariadb-admin", "ping", "-u", "librum", "-p'mariadb'", "-h", "localhost"]
+      interval: 20s
+      timeout: 40s
+      retries: 3
+      start_period: 30s
+    x-casaos: {}
+x-casaos:
+  architectures:
+    - amd64
+  author: self
+  developer: Librum-Reader
+  category: Media
+  hostname: ""
+  icon: https://librumreader.com/Logo.svg
+  index: /
+  main: librum
+  is_uncontrolled: false
+  port_map: ${WEBUI_PORT:-5000}
+  scheme: http
+  store_app_id: librum
+  title:
+    custom: Librum
+  tagline:
+    en_us: Librum server is a clean and powerful way to read and manage your e-books on any device.
+  description:
+    en_us: |
+      Create your own personalized online library that you can access from any device, anytime, anywhere. Librum automatically saves everything you need to the cloud.
+
+      Focus on what actually matters, using a simple and straight forward interface. Librum works out of the box, everywhere and at any time.
+
+      Organize your library the way you want it to be using Librum's organization features. Add your books to collections, tag them, and sort them in any way you want.
+
+      Make use of advanced Artificial Intelligence in just two clicks. Use it to explain, summarize or give you more information on any text within your book.
+
+      Customize Librum to make it look and feel the way you want it to. No app is perfect for everyone right away, but we make it possible for you to make it perfect.
