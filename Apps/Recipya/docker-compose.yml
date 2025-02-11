@@ -1,0 +1,60 @@
+name: recipya
+services:
+  web:
+    command: []
+    container_name: recipya
+    hostname: recipya
+    image: reaper99/recipya:v1.2.2
+    restart: unless-stopped
+    environment:
+      # RECIPYA_EMAIL: "my@email.com"
+      # RECIPYA_EMAIL_SENDGRID: "API_KEY"
+      # RECIPYA_DI_KEY: "KEY_1"
+      # RECIPYA_DI_ENDPOINT: "https://resource.cognitiveservices.azure.com/"
+      # RECIPYA_SERVER_AUTOLOGIN: false
+      # RECIPYA_SERVER_IS_DEMO: false
+      # RECIPYA_SERVER_IS_PROD: false
+      # RECIPYA_SERVER_NO_SIGNUPS: false
+      RECIPYA_SERVER_PORT: ${WEBUI_PORT:-8078}
+      RECIPYA_SERVER_URL: "http://0.0.0.0"
+    ports:
+      - target: 8078
+        published: ${WEBUI_PORT:-8078}
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /home/recipya/.config/Recipya
+    x-casaos: {}
+x-casaos:
+  architectures:
+    - amd64
+  author: self
+  developer: reaper47
+  category: Utilities
+  hostname: ""
+  icon: https://recipya.musicavis.ca/images/logo.png
+  index: /
+  port_map: ${WEBUI_PORT:-8078}
+  scheme: http
+  store_app_id: recipya
+  title:
+    custom: Recipya
+  tagline:
+    en_us: A clean, simple and powerful recipe manager your whole family can enjoy.
+  description:
+    en_us: |-
+      Recipya is a clean recipe manager web application for unforgettable family recipes, empowering you to curate and share your favorite recipes. It is focused on simplicity for the whole family to enjoy.
+
+      Features:
+      - Manage your favorite recipes
+      - Import recipes from around the web
+      - Digitize paper recipes
+      - Organize your recipes into cookbooks
+      - Easily migrate your recipes from Mealie, Tandoor and Nextcloud Cookbook
+      - Automatic conversion to your preferred measurement system (imperial/metric)
+      - Calculate nutritional information automatically
+      - Print any recipe in your collection
+      - Prevent your device from going to sleep while viewing a recipe
+      - Follows your system's theme (light/dark) or choose among 32 themes
+      - Cross-compiled for Windows, Linux, and macOS
