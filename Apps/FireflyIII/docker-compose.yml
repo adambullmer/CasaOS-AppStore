@@ -80,7 +80,7 @@ services:
     # To make this work, set STATIC_CRON_TOKEN in your .env file or as an environment variable and replace PLEASE_REPLACE_WITH_32_CHAR_CODE below
     # The STATIC_CRON_TOKEN must be *exactly* 32 characters long
     #
-    image: alpine
+    image: alpine:latest
     restart: always
     container_name: firefly_iii_cron
     environment:
