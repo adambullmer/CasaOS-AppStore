@@ -66,8 +66,7 @@ services:
         published: ${WEBUI_PORT:-8081}
         protocol: tcp
     depends_on:
-      app:
-        condition: service_healthy
+      - app
     # env_file: .importer.env
     environment:
       - TZ=$TZ
