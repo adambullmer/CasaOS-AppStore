@@ -35,6 +35,8 @@ services:
       - STATIC_CRON_TOKEN=10946d4fc5624a4da4f74ad02f786207
       - AUTHENTICATION_GUARD=web
       - ENABLE_EXCHANGE_RATES=false
+      - CACHE_DRIVER=redis
+      - REDIS_HOST=firefly_iii_cache
   db:
     image: mariadb:lts
     hostname: firefly-iii-db
@@ -55,6 +57,12 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
+
+  cache:
+    image: redis:8-alpine
+    hostname: firefly-iii-cache
+    container_name: firefly_iii_cache
+    restart: unless-stopped
 
   importer:
     image: fireflyiii/data-importer:latest
