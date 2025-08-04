@@ -21,7 +21,7 @@ services:
       - TZ=$TZ
       - APP_ENV=production
       - SITE_OWNER=mail@example.com
-      - APP_KEY=afa339a8ecf9439ab35b2d1c7db04d12
+      - APP_KEY=SomeRandomStringOf32CharsExactly
       - APP_URL=http://localhost:8080
       - DEFAULT_LANGUAGE=en_US
       - DEFAULT_LOCALE=equal
@@ -32,7 +32,7 @@ services:
       - DB_DATABASE=firefly
       - DB_USERNAME=firefly
       - DB_PASSWORD=secret_firefly_password
-      - STATIC_CRON_TOKEN=10946d4fc5624a4da4f74ad02f786207
+      - STATIC_CRON_TOKEN=PLEASE_REPLACE_WITH_32_CHAR_CODE
       - AUTHENTICATION_GUARD=web
       - ENABLE_EXCHANGE_RATES=false
       - CACHE_DRIVER=redis
@@ -83,7 +83,7 @@ services:
       - FIREFLY_III_ACCESS_TOKEN=
       - FIREFLY_III_CLIENT_ID=
       - APP_NAME=DataImporter
-      - AUTO_IMPORT_SECRET=ae343849-eed2-4785-a6de-06cf34d3c968
+      - AUTO_IMPORT_SECRET=SomeRandomStringOfAtLeast16Chars
       - CAN_POST_AUTOIMPORT=false
       - CAN_POST_FILES=false
 
@@ -101,7 +101,7 @@ services:
       - TZ=$TZ
       - APP_HOST=firefly-iii-core
       - APP_PORT=${WEBUI_PORT:8080}
-      - APP_KEY=afa339a8ecf9439ab35b2d1c7db04d12
+      - APP_KEY=SomeRandomStringOf32CharsExactly
     command: sh -c "
       apk add tzdata
       && ln -s /usr/share/zoneinfo/${TZ} /etc/localtime
@@ -148,3 +148,11 @@ x-casaos:
       But no more. I want to feel "safe", whatever my balance is.
       And I hope this tool can help you.
       I know it helps me.
+  tips:
+    before_install:
+      en_us: |
+        ### Note
+
+        Be sure to reference the example .env and importer .env files for configuration documentation.
+        - [core .env.example](https://raw.githubusercontent.com/firefly-iii/firefly-iii/main/.env.example)
+        - [data-importer .env.example](https://raw.githubusercontent.com/firefly-iii/data-importer/refs/heads/main/.env.example)
