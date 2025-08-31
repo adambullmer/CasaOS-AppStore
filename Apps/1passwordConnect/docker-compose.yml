@@ -1,0 +1,51 @@
+name: 1password-connect
+
+services:
+  op-connect-api:
+    image: 1password/connect-api:latest
+    hostname: 1password-connect-api
+    container_name: 1password_connect_api
+    restart: unless-stopped
+    ports:
+      - target: 8080
+        published: "${WEBUI_PORT:-8080}"
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config/1password-credentials.json
+        target: /home/opuser/.op/1password-credentials.json
+      - type: bind
+        source: /DATA/AppData/$AppID/data/
+        target: /home/opuser/.op/data
+
+  op-connect-sync:
+    image: 1password/connect-sync:latest
+    hostname: 1password-connect-sync
+    container_name: 1password_connect_sync
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config/1password-credentials.json
+        target: /home/opuser/.op/1password-credentials.json
+      - type: bind
+        source: /DATA/AppData/$AppID/data/
+        target: /home/opuser/.op/data
+
+x-casaos:
+  architectures:
+    - amd64
+  author: self
+  category: Utilities
+  developer: 1Password Team
+  hostname: ""
+  icon: https://avatars.githubusercontent.com/u/38230737
+  index: /
+  scheme: http
+  port_map: ${WEBUI_PORT:-8080}
+  store_app_id: 1password-connect
+  title:
+    custom: 1Password Connect
+  tagline:
+    en_us: Access your 1Password secrets using 1Password Connect
+  description:
+    en_us: |
+      With 1Password Connect, you can securely access your 1Password items and vaults in your company's apps and cloud infrastructure using a private REST API or the 1Password CLI.
