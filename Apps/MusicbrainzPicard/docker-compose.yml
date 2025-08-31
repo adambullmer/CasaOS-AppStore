@@ -1,0 +1,44 @@
+name: musicbrainz-picard
+
+services:
+  filebot:
+    image: jlesage/musicbrainz-picard:latest
+    hostname: musicbrainz-picard
+    container_name: musicbrainz_picard
+    restart: unless-stopped
+    ports:
+      - target: 5800
+        published: "${WEBUI_PORT:-5800}"
+    environment:
+      GROUG_ID: $PGID
+      USER_ID: $PUID
+      TZ: $TZ
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /config
+      - type: bind
+        source: /DATA/Media
+        target: /storage
+
+x-casaos:
+  architectures:
+    - amd64
+  author: self
+  category: Utilities
+  developer: MusicBrainz Team
+  hostname: ""
+  icon: https://picard.musicbrainz.org/static/img/picard-icon-large.svg
+  index: /
+  scheme: http
+  port_map: ${WEBUI_PORT:-5800}
+  store_app_id: musicbrainz-picard
+  title:
+    custom: MusicBrainz Picard
+  tagline:
+    en_us: A cross-platform music tagger powered by the MusicBrainz database.
+  description:
+    en_us: |
+      Picard helps you organize your music collection by renaming your music files and sorting them into a folder structure exactly the way you want it.
+      A variety of plugins are available and you can even write your own.
+      Picard supports a wide range of audio formats and can also lookup an entire CD for you.
