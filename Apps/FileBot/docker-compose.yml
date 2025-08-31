@@ -1,0 +1,40 @@
+name: file-bot
+
+services:
+  filebot:
+    image: jlesage/filebot
+    hostname: filebot
+    container_name: filebot
+    restart: unless-stopped
+    ports:
+      - target: 5800
+        published: "${WEBUI_PORT:-5800}"
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /config
+      - type: bind
+        source: /DATA/Media
+        target: /storage
+
+x-casaos:
+  architectures:
+    - amd64
+  author: self
+  category: Utilities
+  developer: Point Planck Limited
+  hostname: ""
+  icon: https://www.filebot.net/images/filebot.logo.svg
+  index: /
+  scheme: http
+  port_map: ${WEBUI_PORT:-5800}
+  store_app_id: file-bot
+  title:
+    custom: FileBot
+  tagline:
+    en_us: The ultimate TV and Movie Renamer
+  description:
+    en_us: |
+      FileBot is the ultimate tool for renaming and organizing your movies, TV shows and Anime.
+      Match and rename media files against online databases, download artwork and cover images, fetch subtitles, write metadata, and more, all at once in matter of seconds.
+      It's smart and just works.
