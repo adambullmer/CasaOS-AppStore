@@ -2,13 +2,17 @@ name: file-bot
 
 services:
   filebot:
-    image: jlesage/filebot
+    image: jlesage/filebot:latest
     hostname: filebot
     container_name: filebot
     restart: unless-stopped
     ports:
       - target: 5800
         published: "${WEBUI_PORT:-5800}"
+    environment:
+      GROUG_ID: $PGID
+      USER_ID: $PUID
+      TZ: $TZ
     volumes:
       - type: bind
         source: /DATA/AppData/$AppID/config
