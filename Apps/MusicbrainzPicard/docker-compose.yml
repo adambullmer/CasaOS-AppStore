@@ -1,7 +1,7 @@
 name: musicbrainz-picard
 
 services:
-  filebot:
+  app:
     image: jlesage/musicbrainz-picard:latest
     hostname: musicbrainz-picard
     container_name: musicbrainz_picard
