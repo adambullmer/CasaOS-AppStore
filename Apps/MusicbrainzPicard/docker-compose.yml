@@ -10,7 +10,7 @@ services:
       - target: 5800
         published: "${WEBUI_PORT:-5800}"
     environment:
-      GROUG_ID: $PGID
+      GROUP_ID: $PGID
       USER_ID: $PUID
       TZ: $TZ
     volumes:
