@@ -93,7 +93,7 @@ services:
     # The STATIC_CRON_TOKEN must be *exactly* 32 characters long
     #
     image: alpine:latest
-    restart: always
+    restart: unless-stopped
     container_name: firefly_iii_cron
     environment:
       - PGID=$PGID
