@@ -1,0 +1,229 @@
+name: mousehole
+
+services:
+  mousehole:
+    image: tmmrtn/mousehole:0.2.0
+    container_name: mousehole
+    restart: unless-stopped
+    network_mode: bridge
+    environment:
+      TZ: $TZ
+    ports:
+      - target: 5010
+        published: "${WEBUI_PORT:-5010}"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/data
+        target: /srv/mousehole
+    deploy:
+      resources:
+        reservations:
+          memory: "256M"
+
+    x-casaos:
+      envs:
+        - container: TZ
+          description:
+            en_us: Timezone
+            zh_cn: 时区
+            zh_tw: 時區
+            de_de: Zeitzone
+            es_es: Zona horaria
+            es_419: Zona horaria
+            fr_fr: Fuseau horaire
+            ja_jp: タイムゾーン
+            ko_kr: 시간대
+            ru_ru: Часовой пояс
+            sv_se: Tidszon
+            pt_pt: Fuso horário
+      ports:
+        - container: "5010"
+          description:
+            en_us: WebUI HTTP Port
+            zh_cn: WebUI HTTP端口
+            zh_tw: WebUI HTTP埠
+            de_de: WebUI HTTP-Port
+            es_es: Puerto HTTP WebUI
+            es_419: Puerto HTTP WebUI
+            fr_fr: Port HTTP WebUI
+            ja_jp: WebUI HTTPポート
+            ko_kr: WebUI HTTP 포트
+            ru_ru: HTTP-порт WebUI
+            sv_se: WebUI HTTP-port
+            pt_pt: Porta HTTP WebUI
+      volumes:
+        - container: /srv/mousehole
+          description:
+            en_us: Data directory
+            zh_cn: 数据目录
+            zh_tw: 資料目錄
+            de_de: Datenverzeichnis
+            es_es: Directorio de datos
+            es_419: Directorio de datos
+            fr_fr: Répertoire de données
+            ja_jp: データディレクトリ
+            ko_kr: 데이터 디렉토리
+            ru_ru: Каталог данных
+            sv_se: Datakatalog
+            pt_pt: Diretório de dados
+
+x-casaos:
+  architectures:
+    - amd64
+    - arm64
+    - arm
+  main: mousehole
+  author: adambullmer
+  category: Network
+  description:
+    en_US: |
+      # Mousehole — Seedbox IP Updater for MAM
+
+      A background service to update a seedbox IP for MAM and an HTTP server to manage it.
+      This can be helpful if you are using a host/VPN/seedbox to seed and its IP address is not stable.
+
+      ## Features
+      - Background service that regularly updates MAM with the IP address of the host.
+      - Frontend website to manage the service, allowing setting your MAM cookie, displaying status, and manual triggering of checks.
+      - Local API server with management endpoints.
+    zh_CN: |
+      # Mousehole — 用于 MAM 的 Seedbox IP 更新器
+
+      这是一个用于更新 MAM seedbox IP 的后台服务，并提供 HTTP 服务器进行管理。
+      如果您正在使用主机、VPN或seedbox进行做种并且IP地址不稳定，这将非常有帮助。
+
+      ## 功能
+      - 后台服务，定期向 MAM 更新主机的IP地址。
+      - 前端网站，用于管理服务、设置 MAM cookie、显示状态以及手动触发检查。
+      - 提供管理端点的本地API服务器。
+    zh_TW: |
+      # Mousehole — 用於 MAM 的 Seedbox IP 更新器
+
+      這是一個用於更新 MAM seedbox IP 的後台服務，並提供 HTTP 伺服器進行管理。
+      如果您正在使用主機、VPN或seedbox進行做種並且IP地址不穩定，這將非常有幫助。
+
+      ## 功能
+      - 後台服務，定期向 MAM 更新主機的IP地址。
+      - 前端網站，用於管理服務、設置 MAM cookie、顯示狀態以及手動觸發檢查。
+      - 提供管理端點的本地API伺服器。
+    de_DE: |
+      # Mousehole — Seedbox-IP-Updater für MAM
+
+      Ein Hintergrunddienst zur Aktualisierung einer Seedbox-IP für MAM und ein HTTP-Server zur Verwaltung.
+      Dies ist hilfreich, wenn Sie einen Host/VPN/Seedbox zum Seeden verwenden und die IP-Adresse nicht stabil ist.
+
+      ## Funktionen
+      - Hintergrunddienst, der MAM regelmäßig mit der IP-Adresse des Hosts aktualisiert.
+      - Frontend-Website zur Verwaltung des Dienstes, Einstellung des MAM-Cookies, Statusanzeige und manuellen Überprüfung.
+      - Lokaler API-Server mit Verwaltungsendpunkten.
+    es_ES: |
+      # Mousehole — Actualizador de IP de Seedbox para MAM
+
+      Un servicio en segundo plano para actualizar la IP de una seedbox para MAM y un servidor HTTP para administrarlo.
+      Esto puede ser útil si usa un host/VPN/seedbox y su dirección IP no es estable.
+
+      ## Características
+      - Servicio en segundo plano que actualiza regularmente MAM con la dirección IP del host.
+      - Sitio web frontend para administrar el servicio, configurar la cookie de MAM, y más.
+      - Servidor API local con puntos de conexión de gestión.
+    es_419: |
+      # Mousehole — Actualizador de IP de Seedbox para MAM
+
+      Un servicio en segundo plano para actualizar la IP de una seedbox para MAM y un servidor HTTP para administrarlo.
+      Esto puede ser útil si usa un host/VPN/seedbox y su dirección IP no es estable.
+
+      ## Características
+      - Servicio en segundo plano que actualiza regularmente MAM con la dirección IP del host.
+      - Sitio web frontend para administrar el servicio, configurar la cookie de MAM, y más.
+      - Servidor API local con puntos de conexión de gestión.
+    fr_FR: |
+      # Mousehole — Mise à jour IP Seedbox pour MAM
+
+      Un service en arrière-plan pour mettre à jour l'IP d'une seedbox pour MAM et un serveur HTTP de gestion.
+      Ceci est utile si vous utilisez un hôte/VPN/seedbox et que l'adresse IP n'est pas stable.
+      
+      ## Fonctionnalités
+      - Service en arrière-plan qui met régulièrement à jour MAM avec l'adresse IP de l'hôte.
+      - Site web pour la gestion, la configuration du cookie MAM et l'affichage des statuts.
+      - Serveur API local.
+    ja_JP: |
+      # Mousehole — MAM 用 Seedbox IP アップデーター
+
+      MAM用のseedbox IPを更新するバックグラウンドサービスと、それを管理するHTTPサーバー。
+      IPアドレスが不安定なホスト/VPN/シードボックスを使用している場合に役立ちます。
+
+      ## 機能
+      - MAM をホストのIPアドレスで定期的に更新。
+      - MAM cookieの設定、ステータス表示、手動チェックのトリガーが可能なフロントエンドサイト。
+      - ローカルAPIサーバー。
+    ko_KR: |
+      # Mousehole — MAM용 Seedbox IP 업데이터
+
+      MAM용 seedbox IP를 업데이트하는 백그라운드 서비스 및 이를 관리하는 HTTP 서버입니다.
+      IP 주소가 불안정한 호스트/VPN/시드박스를 사용하는 경우 유용할 수 있습니다.
+
+      ## 특징
+      - 호스트의 IP 주소로 MAM을 정기적으로 업데이트하는 서비스.
+      - 서비스 관리, MAM 쿠키 설정, 상태 표시 및 수동 확인을 위한 프론트엔드.
+      - 관리 엔드포인트를 제공하는 로컬 API 서버.
+    ru_RU: |
+      # Mousehole — Обновление IP Seedbox для MAM
+
+      Фоновая служба для обновления IP seedbox для MAM и HTTP-сервер для ее управления.
+      Это полезно, если вы используете хост/VPN/seedbox, и IP-адрес нестабилен.
+
+      ## Функции
+      - Фоновая служба, регулярно обновляющая MAM IP-адресом хоста.
+      - Веб-интерфейс для управления службой, настройки cookie MAM и отображения статуса.
+      - Локальный API-сервер.
+    sv_SE: |
+      # Mousehole — Seedbox IP-uppdaterare för MAM
+
+      En bakgrundstjänst för att uppdatera en Seedbox IP för MAM och en HTTP-server för att hantera det.
+      Användbart om du använder en värd/VPN/seedbox och IP-adressen inte är stabil.
+
+      ## Funktioner
+      - Bakgrundstjänst som regelbundet uppdaterar MAM med värdens IP-adress.
+      - Frontend-webbplats för hantering, konfiguration av MAM-cookie och statusvisning.
+      - Lokal API-server.
+    pt_PT: |
+      # Mousehole — Atualizador de IP de Seedbox para MAM
+
+      Um serviço em segundo plano para atualizar um IP de seedbox para o MAM e um servidor HTTP para o gerir.
+      Pode ser útil se estiver a utilizar um host/VPN/seedbox e a sua morada IP não for estável.
+
+      ## Funcionalidades
+      - Serviço que atualiza regularmente o MAM com a morada IP do host.
+      - Front-end para configuração de cookies MAM e exibição de status.
+      - Servidor API local para gestão.
+  developer: Tim Martin
+  icon: https://cdn.jsdelivr.net/gh/adambullmer/CasaOS-AppStore@main/Apps/Mousehole/icon.png
+  tagline:
+    en_US: A background service to update a seedbox IP for MAM.
+    zh_CN: MAM seedbox IP 后台更新服务
+    zh_TW: MAM seedbox IP 後台更新服務
+    de_DE: Ein Hintergrunddienst zur IP-Aktualisierung für MAM.
+    es_ES: Un servicio para actualizar la IP de MAM en segundo plano.
+    es_419: Un servicio para actualizar la IP de MAM en segundo plano.
+    fr_FR: Interface de mise à jour d'IP seedbox pour MAM.
+    ja_JP: MAM IP自動更新バックグラウンドサービス
+    ko_KR: MAM용 자동 IP 업데이트 서비스
+    ru_RU: Фоновая служба для обновления IP для MAM.
+    sv_SE: IP-uppdateringstjänst för MAM.
+    pt_PT: Um serviço para atualizar o IP de MAM em segundo plano.
+  title:
+    en_US: Mousehole
+    zh_CN: Mousehole
+    zh_TW: Mousehole
+    de_DE: Mousehole
+    es_ES: Mousehole
+    es_419: Mousehole
+    fr_FR: Mousehole
+    ja_JP: Mousehole
+    ko_KR: Mousehole
+    ru_RU: Mousehole
+    sv_SE: Mousehole
+    pt_PT: Mousehole
+  index: /
+  port_map: "${WEBUI_PORT:-5010}"
