@@ -1,0 +1,507 @@
+name: chaptarr
+
+services:
+  chaptarr:
+    container_name: chaptarr
+    image: robertlordhood/chaptarr:0.9.333
+    environment:
+      PGID: $PGID
+      PUID: $PUID
+      TZ: $TZ
+    network_mode: bridge
+    ports:
+      - target: 8787
+        published: "${WEBUI_PORT:-8787}"
+        protocol: tcp
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          memory: "512M"
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /config
+      - type: bind
+        source: /DATA/Media/Books
+        target: /books
+      - type: bind
+        source: /DATA/Downloads
+        target: /downloads
+
+    x-casaos:
+      envs:
+        - container: TZ
+          description:
+            en_us: Timezone
+            zh_cn: 时区
+        - container: PUID
+          description:
+            en_us: Run Chaptarr as the specified user ID.
+            zh_cn: 以指定用户ID运行 Chaptarr
+        - container: PGID
+          description:
+            en_us: Run Chaptarr as the specified group ID.
+            zh_cn: 以指定组ID运行 Chaptarr
+      ports:
+        - container: "8787"
+          description:
+            en_us: WebUI HTTP Port
+            zh_cn: WebUI HTTP端口
+      volumes:
+        - container: /config
+          description:
+            en_us: Chaptarr configuration and database directory.
+            zh_cn: Chaptarr 配置及数据库目录
+        - container: /books
+          description:
+            en_us: Books library root (ebooks and audiobooks).
+            zh_cn: 书籍库根目录（电子书与有声书）
+        - container: /downloads
+          description:
+            en_us: Download client completed downloads directory.
+            zh_cn: 下载客户端完成目录
+
+x-casaos:
+  architectures:
+    - amd64
+    - arm64
+    - arm
+  main: chaptarr
+  author: adambullmer
+  category: Books
+  description:
+    en_US: |
+      # Chaptarr — Unified Audiobook & Ebook Manager
+
+      Chaptarr is an actively developed fork of the now-retired Readarr, purpose-built to
+      manage both your audiobook and ebook collections in a single instance. It brings the
+      familiar, polished *arr-suite workflow to book lovers — automatic monitoring, quality
+      management, and integration with popular download clients and indexers.
+
+      ## Key Features
+
+      - Manage ebooks **and** audiobooks from one unified interface, no more separate apps
+      - *arr-style automation: add authors/books, set quality profiles, let Chaptarr do the rest
+      - Integrates with download clients (qBittorrent, SABnzbd, NZBGet, etc.) and indexers (Prowlarr)
+      - Designed to fix the metadata mapping issues that plagued the original Readarr
+      - Works alongside Audiobookshelf, Calibre-Web, and other library front-ends
+
+      ## Why Run on CasaOS?
+
+      Deploying Chaptarr on your CasaOS device keeps your entire book automation pipeline
+      local — no cloud subscriptions, no data leaving your home network. Pair it with
+      Audiobookshelf or Calibre-Web on the same device for a fully self-contained, private
+      reading and listening experience running 24/7 on low-power hardware.
+    zh_CN: |
+      # Chaptarr — 统一有声书与电子书管理器
+
+      Chaptarr 是已停止维护的 Readarr 的活跃分支，专为同时管理有声书和电子书收藏而设计，
+      无需两个独立应用。它将成熟的 *arr 套件工作流带到书籍爱好者的世界——自动监控、质量管理，
+      以及与主流下载客户端和索引器的深度集成。
+
+      ## 主要特性
+
+      - 通过统一界面同时管理电子书和有声书
+      - *arr 风格自动化：添加作者/书目，设置质量配置文件，剩下的交给 Chaptarr
+      - 支持与 qBittorrent、SABnzbd、NZBGet 等下载客户端及 Prowlarr 等索引器集成
+      - 专门修复了原 Readarr 中存在的元数据映射问题
+      - 可与 Audiobookshelf、Calibre-Web 等书库前端协同使用
+
+      ## 为什么在 CasaOS 上运行？
+
+      在 CasaOS 设备上部署 Chaptarr，让整个书籍自动化流程保持本地化——无需云订阅，
+      数据不离家。与同设备上的 Audiobookshelf 或 Calibre-Web 搭配使用，在低功耗硬件上
+      构建全自托管、私密的阅读与收听体验。
+    zh_TW: |
+      # Chaptarr — 統一有聲書與電子書管理器
+
+      Chaptarr 是已停止維護的 Readarr 的活躍分支，專為同時管理有聲書和電子書收藏而設計，
+      無需兩個獨立應用程式。它將成熟的 *arr 套件工作流程帶到書籍愛好者的世界——自動監控、
+      品質管理，以及與主流下載客戶端和索引器的深度整合。
+
+      ## 主要功能
+
+      - 透過統一介面同時管理電子書和有聲書
+      - *arr 風格自動化：新增作者/書目，設定品質設定檔，其餘交由 Chaptarr 處理
+      - 支援與 qBittorrent、SABnzbd、NZBGet 等下載客戶端及 Prowlarr 等索引器整合
+      - 專門修復了原 Readarr 中存在的元數據對應問題
+      - 可與 Audiobookshelf、Calibre-Web 等書庫前端協同使用
+
+      ## 為何在 CasaOS 上執行？
+
+      在 CasaOS 裝置上部署 Chaptarr，讓整個書籍自動化流程保持本地化——無需雲端訂閱，
+      資料不離家。與同裝置上的 Audiobookshelf 或 Calibre-Web 搭配使用，在低功耗硬體上
+      建構全自託管、私密的閱讀與聆聽體驗。
+    de_DE: |
+      # Chaptarr — Einheitlicher Hörbuch- & E-Book-Manager
+
+      Chaptarr ist ein aktiv weiterentwickelter Fork des eingestellten Readarr, der speziell
+      dafür entwickelt wurde, Hörbuch- und E-Book-Sammlungen in einer einzigen Instanz zu
+      verwalten. Es bringt den bewährten *arr-Suite-Workflow für Bücherliebhaber — automatische
+      Überwachung, Qualitätsmanagement und Integration mit beliebten Download-Clients und Indexern.
+
+      ## Hauptmerkmale
+
+      - E-Books **und** Hörbücher über eine einheitliche Oberfläche verwalten
+      - *arr-Automatisierung: Autoren/Bücher hinzufügen, Qualitätsprofile setzen, den Rest erledigt Chaptarr
+      - Integration mit qBittorrent, SABnzbd, NZBGet u. a. sowie Indexern wie Prowlarr
+      - Behebt die Metadaten-Zuordnungsprobleme des ursprünglichen Readarr
+      - Funktioniert zusammen mit Audiobookshelf, Calibre-Web und anderen Bibliotheks-Frontends
+
+      ## Warum auf CasaOS?
+
+      Durch die Bereitstellung von Chaptarr auf deinem CasaOS-Gerät bleibt die gesamte
+      Buchautomatisierung lokal — keine Cloud-Abonnements, keine Daten verlassen dein
+      Heimnetzwerk. Kombiniere es auf demselben Gerät mit Audiobookshelf oder Calibre-Web
+      für ein vollständig selbst gehostetes, privates Lese- und Hörerlebnis.
+    es_ES: |
+      # Chaptarr — Gestor Unificado de Audiolibros y Libros Electrónicos
+
+      Chaptarr es un fork en desarrollo activo del ya retirado Readarr, diseñado específicamente
+      para gestionar colecciones de audiolibros y libros electrónicos en una única instancia.
+      Trae el flujo de trabajo pulido del conjunto *arr a los amantes de los libros — monitorización
+      automática, gestión de calidad e integración con clientes de descarga e indexadores populares.
+
+      ## Características Principales
+
+      - Gestiona libros electrónicos **y** audiolibros desde una interfaz unificada
+      - Automatización estilo *arr: añade autores/libros, establece perfiles de calidad y deja el resto a Chaptarr
+      - Integración con qBittorrent, SABnzbd, NZBGet y otros, así como indexadores como Prowlarr
+      - Diseñado para solucionar los problemas de mapeo de metadatos del Readarr original
+      - Compatible con Audiobookshelf, Calibre-Web y otros frontends de biblioteca
+
+      ## ¿Por Qué Ejecutarlo en CasaOS?
+
+      Desplegar Chaptarr en tu dispositivo CasaOS mantiene todo el proceso de automatización
+      de libros local — sin suscripciones en la nube, sin datos saliendo de tu red doméstica.
+      Combínalo con Audiobookshelf o Calibre-Web en el mismo dispositivo para una experiencia
+      de lectura y escucha completamente privada y autoalojada.
+    es_419: |
+      # Chaptarr — Gestor Unificado de Audiolibros y Libros Electrónicos
+
+      Chaptarr es un fork en desarrollo activo del ya retirado Readarr, creado especialmente
+      para administrar tus colecciones de audiolibros y libros electrónicos en una sola instancia.
+      Trae el flujo de trabajo del conjunto *arr a los amantes de los libros — monitoreo
+      automático, gestión de calidad e integración con clientes de descarga e indexadores populares.
+
+      ## Características Principales
+
+      - Administra libros electrónicos **y** audiolibros desde una interfaz unificada
+      - Automatización estilo *arr: agregá autores/libros, configurá perfiles de calidad y dejá el resto a Chaptarr
+      - Integración con qBittorrent, SABnzbd, NZBGet y otros, así como indexadores como Prowlarr
+      - Diseñado para resolver los problemas de asignación de metadatos del Readarr original
+      - Compatible con Audiobookshelf, Calibre-Web y otros frontends de biblioteca
+
+      ## ¿Por Qué Ejecutarlo en CasaOS?
+
+      Instalar Chaptarr en tu dispositivo CasaOS mantiene todo el proceso de automatización
+      de libros de forma local — sin suscripciones en la nube, sin que tus datos salgan de tu
+      red hogareña. Combinalo con Audiobookshelf o Calibre-Web en el mismo dispositivo para
+      disfrutar de una experiencia de lectura y escucha completamente privada y autoalojada.
+    fr_FR: |
+      # Chaptarr — Gestionnaire Unifié d'Audiolivres et d'Ebooks
+
+      Chaptarr est un fork activement développé de l'ancien Readarr, conçu spécifiquement
+      pour gérer vos collections d'audiolivres et d'ebooks dans une seule instance. Il apporte
+      le flux de travail éprouvé de la suite *arr aux amateurs de livres — surveillance
+      automatique, gestion de la qualité et intégration avec les clients de téléchargement
+      et indexeurs populaires.
+
+      ## Fonctionnalités Principales
+
+      - Gérez ebooks **et** audiolivres depuis une interface unifiée
+      - Automatisation style *arr : ajoutez auteurs/livres, définissez des profils de qualité, laissez Chaptarr faire le reste
+      - Intégration avec qBittorrent, SABnzbd, NZBGet, etc. et des indexeurs comme Prowlarr
+      - Conçu pour corriger les problèmes de correspondance de métadonnées du Readarr original
+      - Compatible avec Audiobookshelf, Calibre-Web et d'autres interfaces de bibliothèque
+
+      ## Pourquoi l'Utiliser sur CasaOS ?
+
+      Déployer Chaptarr sur votre appareil CasaOS maintient l'intégralité de l'automatisation
+      de vos livres en local — pas d'abonnement cloud, aucune donnée ne quitte votre réseau
+      domestique. Associez-le à Audiobookshelf ou Calibre-Web sur le même appareil pour une
+      expérience de lecture et d'écoute entièrement privée et auto-hébergée.
+    ja_JP: |
+      # Chaptarr — 統合オーディオブック・電子書籍マネージャー
+
+      Chaptarr は開発終了した Readarr の活発に開発が続くフォークで、オーディオブックと
+      電子書籍のコレクションを1つのインスタンスで管理するために特化して作られました。
+      本好きのために *arr スイートの洗練されたワークフローをもたらします——自動監視、
+      品質管理、そして人気のダウンロードクライアントやインデクサーとの連携。
+
+      ## 主な機能
+
+      - 1つの統合インターフェースから電子書籍と**オーディオブック**の両方を管理
+      - *arr スタイルの自動化：著者/本を追加し、品質プロファイルを設定するだけで残りは Chaptarr が担当
+      - qBittorrent、SABnzbd、NZBGet などのダウンロードクライアントや Prowlarr などのインデクサーと連携
+      - 元の Readarr に存在したメタデータマッピングの問題を修正するために設計
+      - Audiobookshelf、Calibre-Web などのライブラリフロントエンドと連携可能
+
+      ## CasaOS で動かす理由
+
+      CasaOS デバイスに Chaptarr を導入することで、書籍の自動化パイプライン全体をローカルに
+      保てます——クラウドサブスクリプション不要、データはホームネットワークから出ません。
+      同じデバイスで Audiobookshelf や Calibre-Web と組み合わせれば、低消費電力ハードウェア上で
+      完全なプライベート読書・リスニング体験を実現できます。
+    ko_KR: |
+      # Chaptarr — 통합 오디오북 & 전자책 매니저
+
+      Chaptarr는 개발이 중단된 Readarr의 활발하게 개발 중인 포크로, 오디오북과 전자책 컬렉션을
+      하나의 인스턴스에서 관리하도록 특별히 제작되었습니다. 책을 사랑하는 분들을 위해
+      검증된 *arr 스위트 워크플로우를 제공합니다 — 자동 모니터링, 품질 관리, 그리고
+      인기 다운로드 클라이언트 및 인덱서와의 연동.
+
+      ## 주요 기능
+
+      - 하나의 통합 인터페이스에서 전자책과 오디오북 **모두** 관리
+      - *arr 스타일 자동화: 저자/책 추가, 품질 프로필 설정 후 나머지는 Chaptarr가 처리
+      - qBittorrent, SABnzbd, NZBGet 등의 다운로드 클라이언트 및 Prowlarr 등 인덱서와 연동
+      - 기존 Readarr의 메타데이터 매핑 문제를 해결하도록 설계
+      - Audiobookshelf, Calibre-Web 등 라이브러리 프론트엔드와 함께 사용 가능
+
+      ## CasaOS에서 실행하는 이유
+
+      CasaOS 기기에 Chaptarr를 배포하면 책 자동화 파이프라인 전체를 로컬로 유지할 수 있습니다
+      — 클라우드 구독 불필요, 데이터가 홈 네트워크를 벗어나지 않습니다. 같은 기기에
+      Audiobookshelf나 Calibre-Web을 함께 설치해 저전력 하드웨어에서 완전한 프라이빗
+      독서 및 청취 환경을 구축하세요.
+    ru_RU: |
+      # Chaptarr — Единый менеджер аудиокниг и электронных книг
+
+      Chaptarr — это активно развиваемый форк уже не поддерживаемого Readarr, созданный
+      специально для управления коллекциями аудиокниг и электронных книг в одном экземпляре.
+      Он привносит привычный, отточенный рабочий процесс *arr-набора для любителей книг —
+      автоматический мониторинг, управление качеством и интеграция с популярными клиентами
+      загрузки и индексаторами.
+
+      ## Ключевые возможности
+
+      - Управляйте электронными книгами **и** аудиокнигами через единый интерфейс
+      - Автоматизация в стиле *arr: добавляйте авторов/книги, задавайте профили качества, остальное сделает Chaptarr
+      - Интеграция с qBittorrent, SABnzbd, NZBGet и другими клиентами, а также индексаторами вроде Prowlarr
+      - Разработан для устранения проблем с сопоставлением метаданных оригинального Readarr
+      - Работает совместно с Audiobookshelf, Calibre-Web и другими фронтендами библиотек
+
+      ## Почему стоит запускать на CasaOS?
+
+      Развёртывание Chaptarr на устройстве CasaOS позволяет держать весь конвейер автоматизации
+      книг локально — без облачных подписок, без передачи данных за пределы домашней сети.
+      Совместите его с Audiobookshelf или Calibre-Web на том же устройстве для полностью
+      самостоятельной и приватной среды чтения и прослушивания.
+    sv_SE: |
+      # Chaptarr — Samlad Hanterare för Ljudböcker och E-böcker
+
+      Chaptarr är en aktivt utvecklad fork av det nedlagda Readarr, speciellt byggt för att
+      hantera både din ljudboks- och e-bokssamling i en enda instans. Det för med sig det
+      välkända, polerade *arr-suite-arbetsflödet till bokälskare — automatisk övervakning,
+      kvalitetshantering och integration med populära nedladdningsklienter och indexerare.
+
+      ## Nyckelfunktioner
+
+      - Hantera e-böcker **och** ljudböcker från ett samlat gränssnitt
+      - *arr-stil automatisering: lägg till författare/böcker, sätt kvalitetsprofiler, låt Chaptarr göra resten
+      - Integreras med qBittorrent, SABnzbd, NZBGet m.fl. och indexerare som Prowlarr
+      - Designad för att åtgärda metadatamappningsproblemen i den ursprungliga Readarr
+      - Fungerar tillsammans med Audiobookshelf, Calibre-Web och andra biblioteksgränssnitt
+
+      ## Varför Köra på CasaOS?
+
+      Att driftsätta Chaptarr på din CasaOS-enhet håller hela bokautomatiseringspipelinen
+      lokal — inga molnprenumerationer, inga data lämnar ditt hemnätverk. Para ihop det med
+      Audiobookshelf eller Calibre-Web på samma enhet för en fullt self-hosted, privat
+      läs- och lyssnarupplevelse som körs 24/7 på energisnål hårdvara.
+    pt_PT: |
+      # Chaptarr — Gestor Unificado de Audiolivros e Ebooks
+
+      O Chaptarr é um fork em desenvolvimento ativo do Readarr, agora descontinuado, criado
+      especificamente para gerir coleções de audiolivros e ebooks numa única instância. Traz
+      o fluxo de trabalho polido da suite *arr para os amantes de livros — monitorização
+      automática, gestão de qualidade e integração com clientes de download e indexadores populares.
+
+      ## Funcionalidades Principais
+
+      - Gira ebooks **e** audiolivros a partir de uma interface unificada
+      - Automatização ao estilo *arr: adicione autores/livros, defina perfis de qualidade e deixe o Chaptarr fazer o resto
+      - Integração com qBittorrent, SABnzbd, NZBGet, etc. e indexadores como o Prowlarr
+      - Concebido para corrigir os problemas de mapeamento de metadados do Readarr original
+      - Funciona em conjunto com Audiobookshelf, Calibre-Web e outros frontends de biblioteca
+
+      ## Porquê Executar no CasaOS?
+
+      Implementar o Chaptarr no seu dispositivo CasaOS mantém todo o pipeline de automação
+      de livros local — sem subscrições na nuvem, sem dados a sair da sua rede doméstica.
+      Combine-o com o Audiobookshelf ou o Calibre-Web no mesmo dispositivo para uma
+      experiência de leitura e escuta completamente privada e auto-hospedada.
+  developer: RobertLordhood
+  icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/chaptarr.svg
+  tagline:
+    en_US: The all-in-one audiobook and ebook manager — a modern Readarr successor.
+    zh_CN: 一体化有声书与电子书管理器——现代 Readarr 继任者。
+    zh_TW: 一站式有聲書與電子書管理器——現代 Readarr 的繼任者。
+    de_DE: Der All-in-One-Manager für Hörbücher und E-Books — ein moderner Readarr-Nachfolger.
+    es_ES: El gestor todo en uno de audiolibros y libros electrónicos — el sucesor moderno de Readarr.
+    es_419: El gestor todo en uno de audiolibros y libros electrónicos — el sucesor moderno de Readarr.
+    fr_FR: Le gestionnaire tout-en-un d'audiolivres et d'ebooks — le successeur moderne de Readarr.
+    ja_JP: オーディオブックと電子書籍のオールインワンマネージャー — Readarr の現代的な後継。
+    ko_KR: 오디오북과 전자책을 위한 올인원 매니저 — Readarr의 현대적인 후계자.
+    ru_RU: Универсальный менеджер аудиокниг и электронных книг — современный преемник Readarr.
+    sv_SE: Den allt-i-ett-hanteraren för ljudböcker och e-böcker — en modern Readarr-efterföljare.
+    pt_PT: O gestor tudo-em-um de audiolivros e ebooks — o sucessor moderno do Readarr.
+  title:
+    en_US: Chaptarr
+    zh_CN: Chaptarr
+    zh_TW: Chaptarr
+    de_DE: Chaptarr
+    es_ES: Chaptarr
+    es_419: Chaptarr
+    fr_FR: Chaptarr
+    ja_JP: Chaptarr
+    ko_KR: Chaptarr
+    ru_RU: Chaptarr
+    sv_SE: Chaptarr
+    pt_PT: Chaptarr
+  tips:
+    before_install:
+      en_US: |
+        **Chaptarr is currently in active pre-release development (Alpha/Beta).**
+        Expect occasional breaking changes between updates. Back up your `/config`
+        volume before upgrading.
+
+        On first launch, visit the web UI to complete initial setup:
+        - Add your root folders (`/books`)
+        - Configure your download client
+        - Add indexers via Prowlarr or manually
+
+        Community support is available on the official **Discord server** — this is the
+        primary channel for help, bug reports, and release announcements.
+      zh_CN: |
+        **Chaptarr 目前处于积极的预发布开发阶段（Alpha/Beta）。**
+        版本更新之间可能存在重大变更，升级前请备份 `/config` 目录。
+
+        首次启动后，访问 WebUI 完成初始配置：
+        - 添加根目录（`/books`）
+        - 配置下载客户端
+        - 通过 Prowlarr 或手动添加索引器
+
+        官方 **Discord 服务器**是获取帮助、报告错误和接收发布公告的主要渠道。
+      zh_TW: |
+        **Chaptarr 目前處於積極的預發布開發階段（Alpha/Beta）。**
+        版本更新之間可能存在重大變更，升級前請備份 `/config` 目錄。
+
+        首次啟動後，訪問 WebUI 完成初始設定：
+        - 新增根目錄（`/books`）
+        - 設定下載客戶端
+        - 透過 Prowlarr 或手動新增索引器
+
+        官方 **Discord 伺服器**是獲取協助、回報錯誤和接收發布公告的主要管道。
+      de_DE: |
+        **Chaptarr befindet sich derzeit in aktiver Vorabentwicklung (Alpha/Beta).**
+        Zwischen Updates können gelegentlich Breaking Changes auftreten. Sichere dein
+        `/config`-Volume vor dem Upgrade.
+
+        Besuche beim ersten Start die Web-Oberfläche, um die Ersteinrichtung abzuschließen:
+        - Füge deine Stammordner hinzu (`/books`)
+        - Konfiguriere deinen Download-Client
+        - Füge Indexer über Prowlarr oder manuell hinzu
+
+        Community-Support ist auf dem offiziellen **Discord-Server** verfügbar — das ist der
+        primäre Kanal für Hilfe, Fehlerberichte und Release-Ankündigungen.
+      es_ES: |
+        **Chaptarr se encuentra actualmente en desarrollo previo al lanzamiento (Alpha/Beta).**
+        Es posible que haya cambios importantes entre actualizaciones. Haz una copia de
+        seguridad de tu volumen `/config` antes de actualizar.
+
+        En el primer inicio, visita la interfaz web para completar la configuración inicial:
+        - Añade tus carpetas raíz (`/books`)
+        - Configura tu cliente de descarga
+        - Añade indexadores mediante Prowlarr o manualmente
+
+        El soporte de la comunidad está disponible en el **servidor oficial de Discord** — es el
+        canal principal para obtener ayuda, reportar errores y recibir anuncios de versiones.
+      es_419: |
+        **Chaptarr está actualmente en desarrollo previo al lanzamiento (Alpha/Beta).**
+        Es posible que haya cambios importantes entre actualizaciones. Hacé una copia de
+        seguridad de tu volumen `/config` antes de actualizar.
+
+        En el primer inicio, visitá la interfaz web para completar la configuración inicial:
+        - Agregá tus carpetas raíz (`/books`)
+        - Configurá tu cliente de descarga
+        - Agregá indexadores mediante Prowlarr o manualmente
+
+        El soporte de la comunidad está disponible en el **servidor oficial de Discord** — es el
+        canal principal para obtener ayuda, reportar errores y recibir anuncios de lanzamientos.
+      fr_FR: |
+        **Chaptarr est actuellement en développement pré-version active (Alpha/Beta).**
+        Des changements cassants peuvent survenir entre les mises à jour. Sauvegardez votre
+        volume `/config` avant de mettre à jour.
+
+        Au premier lancement, visitez l'interface web pour terminer la configuration initiale :
+        - Ajoutez vos dossiers racines (`/books`)
+        - Configurez votre client de téléchargement
+        - Ajoutez des indexeurs via Prowlarr ou manuellement
+
+        Le support communautaire est disponible sur le **serveur Discord officiel** — c'est le
+        canal principal pour l'aide, les rapports de bugs et les annonces de nouvelles versions.
+      ja_JP: |
+        **Chaptarr は現在、活発なプレリリース開発段階にあります（Alpha/Beta）。**
+        アップデート間で破壊的変更が発生することがあります。アップグレード前に
+        `/config` ボリュームをバックアップしてください。
+
+        初回起動時は、WebUI にアクセスして初期設定を完了してください：
+        - ルートフォルダを追加 (`/books`)
+        - ダウンロードクライアントを設定
+        - Prowlarr 経由または手動でインデクサーを追加
+
+        コミュニティサポートは公式 **Discord サーバー** で提供されています — ヘルプ、
+        バグレポート、リリースアナウンスの主要チャンネルです。
+      ko_KR: |
+        **Chaptarr는 현재 활발한 사전 릴리스 개발 단계(Alpha/Beta)에 있습니다.**
+        업데이트 사이에 주요 변경 사항이 발생할 수 있습니다. 업그레이드 전에
+        `/config` 볼륨을 백업해 두세요.
+
+        첫 실행 시 WebUI를 방문하여 초기 설정을 완료하세요:
+        - 루트 폴더 추가 (`/books`)
+        - 다운로드 클라이언트 설정
+        - Prowlarr을 통하거나 수동으로 인덱서 추가
+
+        커뮤니티 지원은 공식 **Discord 서버**에서 받을 수 있습니다 — 도움말, 버그 보고,
+        릴리스 공지의 기본 채널입니다.
+      ru_RU: |
+        **Chaptarr в настоящее время находится в стадии активной предрелизной разработки (Alpha/Beta).**
+        Между обновлениями возможны ломающие изменения. Создайте резервную копию тома
+        `/config` перед обновлением.
+
+        При первом запуске откройте веб-интерфейс для завершения начальной настройки:
+        - Добавьте корневые папки (`/books`)
+        - Настройте клиент загрузки
+        - Добавьте индексаторы через Prowlarr или вручную
+
+        Поддержка сообщества доступна на официальном **сервере Discord** — это основной
+        канал для получения помощи, отчётов об ошибках и объявлений о выпусках.
+      sv_SE: |
+        **Chaptarr befinner sig för närvarande i aktiv förhandsutveckling (Alpha/Beta).**
+        Förvänta dig att brytande ändringar kan inträffa mellan uppdateringar. Säkerhetskopiera
+        din `/config`-volym innan du uppgraderar.
+
+        Vid första start, besök webbgränssnittet för att slutföra den initiala inställningen:
+        - Lägg till dina rotmappar (`/books`)
+        - Konfigurera din nedladdningsklient
+        - Lägg till indexerare via Prowlarr eller manuellt
+
+        Community-stöd finns tillgängligt på den officiella **Discord-servern** — det är den
+        primära kanalen för hjälp, felrapporter och versionsmeddelanden.
+      pt_PT: |
+        **O Chaptarr encontra-se atualmente em desenvolvimento pré-lançamento ativo (Alpha/Beta).**
+        Podem ocorrer alterações de rutura entre atualizações. Faça uma cópia de segurança
+        do seu volume `/config` antes de atualizar.
+
+        No primeiro lançamento, visite a interface web para concluir a configuração inicial:
+        - Adicione as suas pastas raiz (`/books`)
+        - Configure o seu cliente de download
+        - Adicione indexadores através do Prowlarr ou manualmente
+
+        O suporte da comunidade está disponível no **servidor oficial do Discord** — este é o
+        canal principal para obter ajuda, reportar erros e receber anúncios de lançamento.
+  index: /
+  port_map: "${WEBUI_PORT:-8787}"
