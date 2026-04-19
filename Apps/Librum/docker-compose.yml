@@ -69,11 +69,33 @@ x-casaos:
   scheme: http
   store_app_id: librum
   title:
-    custom: Librum
+    en_US: Librum
+    zh_CN: Librum
+    fr_FR: Librum
+    es_ES: Librum
+    de_DE: Librum
+    ru_RU: Librum
+    it_IT: Librum
+    pt_BR: Librum
+    tr_TR: Librum
+    pl_PL: Librum
+    ko_KR: Librum
+    ja_JP: Librum
   tagline:
-    en_us: Librum server is a clean and powerful way to read and manage your e-books on any device.
+    en_US: Librum server is a clean and powerful way to read and manage your e-books on any device.
+    zh_CN: Librum server 是一种在任何设备上阅读和管理电子书的简洁且强大的方式。
+    fr_FR: Le serveur Librum est un moyen épuré et puissant de lire et de gérer vos livres numériques sur n'importe quel appareil.
+    es_ES: Librum server es una forma limpia y potente de leer y gestionar tus libros electrónicos en cualquier dispositivo.
+    de_DE: Librum Server ist eine saubere und leistungsstarke Lösung, um Ihre E-Books auf jedem Gerät zu lesen und zu verwalten.
+    ru_RU: Librum server — это аккуратный и мощный способ читать электронные книги и управлять ими на любом устройстве.
+    it_IT: Librum server è un modo pulito e potente per leggere e gestire i tuoi e-book su qualsiasi dispositivo.
+    pt_BR: O servidor Librum é uma forma limpa e poderosa de ler e gerenciar seus e-books em qualquer dispositivo.
+    tr_TR: Librum sunucusu, e-kitaplarınızı herhangi bir cihazda okumanın ve yönetmenin temiz ve güçlü bir yoludur.
+    pl_PL: Serwer Librum to przejrzysty i potężny sposób na czytanie i zarządzanie e-bookami na dowolnym urządzeniu.
+    ko_KR: Librum 서버는 모든 기기에서 전자책을 읽고 관리할 수 있는 깔끔하고 강력한 방법입니다.
+    ja_JP: Librumサーバーは、あらゆるデバイスで電子書籍を読んだり管理したりするための、クリーンで強力な方法です。
   description:
-    en_us: |
+    en_US: |
       Create your own personalized online library that you can access from any device, anytime, anywhere. Librum automatically saves everything you need to the cloud.
 
       Focus on what actually matters, using a simple and straight forward interface. Librum works out of the box, everywhere and at any time.
@@ -83,3 +105,47 @@ x-casaos:
       Make use of advanced Artificial Intelligence in just two clicks. Use it to explain, summarize or give you more information on any text within your book.
 
       Customize Librum to make it look and feel the way you want it to. No app is perfect for everyone right away, but we make it possible for you to make it perfect.
+    zh_CN: |
+      打造您的专属个性化在线图书馆，随时随地，在任何设备上都能轻松访问。Librum 会自动将您需要的一切保存到云端。界面简洁直观，让您专注于真正重要的事情。Librum 开箱即用，随时随地为您服务。
+
+      利用 Librum 的整理功能，按照您的心意管理图书馆。您可以将书籍加入收藏、添加标签，并以任何您喜欢的方式进行排序。只需点击两次，即可体验先进的人工智能。用它来解释、总结或获取书中任何内容的详细信息。
+
+      自定义 Librum，打造您喜爱的外观和体验。没有一款应用能瞬间满足所有人的需求，但我们赋予您将其变得完美的可能。
+    fr_FR: |
+      Créez votre propre bibliothèque en ligne personnalisée, accessible depuis n'importe quel appareil, à tout moment et en tout lieu. Librum sauvegarde automatiquement tout ce dont vous avez besoin dans le cloud. Concentrez-vous sur l'essentiel grâce à une interface simple et intuitive. Librum est prêt à l'emploi, partout et tout le temps. Organisez votre bibliothèque comme bon vous semble grâce aux outils d'organisation de Librum. Ajoutez vos livres à des collections, taguez-les et triez-les selon vos préférences. Profitez d'une intelligence artificielle avancée en seulement deux clics. Utilisez-la pour expliquer, résumer ou obtenir plus d'informations sur n'importe quel texte de votre livre. Personalisez Librum pour qu'il vous ressemble. Aucune application n'est parfaite pour tout le monde dès le premier jour, mais nous vous permettons de la rendre parfaite pour vous.
+    es_ES: |
+      Crea tu propia biblioteca en línea personalizada a la que podrás acceder desde cualquier dispositivo, en cualquier momento y lugar. Librum guarda automáticamente todo lo que necesitas en la nube. Concéntrate en lo que realmente importa con una interfaz sencilla y directa. Librum funciona a la perfección desde el primer momento, en cualquier lugar y a cualquier hora. Organiza tu biblioteca a tu gusto con las funciones de organización de Librum. Añade tus libros a colecciones, etiquétalos y ordénalos como prefieras. Aprovecha la Inteligencia Artificial avanzada en solo dos clics. Úsala para explicar, resumir o ampliar información sobre cualquier texto de tu libro. Personaliza Librum para que tenga el aspecto y la sensación que deseas. Ninguna aplicación es perfecta para todo el mundo desde el principio, pero nosotros te damos las herramientas para que tú la hagas perfecta.
+    de_DE: |
+      Erstelle deine eigene personalisierte Online-Bibliothek, auf die du von jedem Gerät, jederzeit und überall zugreifen kannst. Librum speichert automatisch alles, was du brauchst, in der Cloud. Konzentriere dich auf das, was wirklich zählt, dank einer einfachen und unkomplizierten Benutzeroberfläche. Librum ist sofort einsatzbereit – überall und jederzeit. Organisiere deine Bibliothek ganz nach deinen Vorstellungen mit den Organisationsfunktionen von Librum. Füge deine Bücher zu Sammlungen hinzu, tagge sie und sortiere sie, wie es dir gefällt. Nutze fortschrittliche künstliche Intelligenz mit nur zwei Klicks. Verwende sie, um Texte in deinem Buch zu erklären, zusammenzufassen oder dir zusätzliche Informationen zu liefern. Passe Librum so an, dass es genau so aussieht und sich so anfühlt, wie du es möchtest. Keine App ist perfekt für jeden von Anfang an perfekt, aber wir geben dir die Möglichkeiten, sie für dich perfekt zu machen.
+    ru_RU: |
+      Создайте свою собственную персонализированную онлайн-библиотеку, доступную с любого устройства, в любое время и в любом месте. Librum автоматически сохраняет всё необходимое в облаке. Сосредоточьтесь на том, что действительно важно, благодаря простому и понятному интерфейсу. Librum работает сразу после установки — везде и всегда.
+
+      Организуйте свою библиотеку так, как вам удобно, используя функции систематизации Librum. Добавляйте книги в коллекции, присваивайте им теги и сортируйте их любым удобным способом.
+
+      Воспользуйтесь преимуществами передового искусственного интеллекта всего в два клика. Используйте его, чтобы объяснить, обобщить или получить дополнительную информацию по любому фрагменту текста в вашей книге.
+
+      Настройте Librum так, чтобы приложение выглядело и ощущалось именно так, как вы хотите. Ни одно приложение не бывает идеальным для всех сразу, но мы даем вам возможность сделать его идеальным для себя.
+    it_IT: |
+      Crea la tua libreria online personalizzata, accessibile da qualsiasi dispositivo, in ogni momento e ovunque ti trovi. Librum salva automaticamente tutto ciò di cui hai bisogno sul cloud. Concentrati su ciò che conta davvero, grazie a un'interfaccia semplice e intuitiva. Librum è pronto all'uso, ovunque e in qualsiasi momento. Organizza la tua libreria come preferisci utilizzando le funzionalità di organizzazione di Librum. Aggiungi i tuoi libri a collezioni, taggali e ordinali come desideri. Sfrutta l'Intelligenza Artificiale avanzata in soli due clic. Usala per spiegare, riassumere o ottenere maggiori informazioni su qualsiasi testo all'interno del tuo libro. Personalizza Librum per renderlo proprio come lo desideri. Nessuna app è perfetta per tutti fin da subito, ma noi ti diamo la possibilità di renderla perfetta per te.
+    pt_BR: |
+      Crie sua própria biblioteca online personalizada, acessível de qualquer dispositivo, a qualquer hora e em qualquer lugar. O Librum salva automaticamente tudo o que você precisa na nuvem. Foque no que realmente importa com uma interface simples e direta. O Librum funciona de imediato, em qualquer lugar e a qualquer momento. Organize sua biblioteca do seu jeito com os recursos de organização do Librum. Adicione seus livros a coleções, use tags e organize-os como preferir. Aproveite o poder da Inteligência Artificial avançada em apenas dois cliques. Use-a para explicar, resumir ou obter mais informações sobre qualquer trecho do seu livro. Personalize o Librum para que ele tenha a aparência e a experiência que você deseja. Nenhum app é perfeito para todos logo de cara, mas nós permitimos que você o torne perfeito para você.
+    tr_TR: |
+      Herhangi bir cihazdan, her zaman ve her yerden erişebileceğiniz, size özel çevrimiçi kütüphanenizi oluşturun. Librum, ihtiyacınız olan her şeyi otomatik olarak buluta kaydeder. Basit ve anlaşılır bir arayüzle asıl önemli olana odaklanın. Librum; her yerde, her zaman ve anında çalışır. Librum'un düzenleme özelliklerini kullanarak kütüphanenizi dilediğiniz gibi organize edin. Kitaplarınızı koleksiyonlara ekleyin, etiketleyin ve istediğiniz şekilde sıralayın. Sadece iki tıklamayla gelişmiş Yapay Zeka'nın gücünden faydalanın. Kitabınızdaki herhangi bir metni açıklatmak, özetletmek veya hakkında daha fazla bilgi almak için onu kullanın. Librum'u tam istediğiniz görünüm ve hisse sahip olacak şekilde özelleştirin. Hiçbir uygulama herkes için anında mükemmel değildir, ancak biz onu mükemmel hale getirmenizi sağlıyoruz.
+    pl_PL: |
+      Stwórz własną, spersonalizowaną bibliotekę online, do której będziesz mieć dostęp z dowolnego urządzenia, zawsze i wszędzie. Librum automatycznie zapisuje wszystko, czego potrzebujesz, w chmurze. Skup się na tym, co naprawdę ważne, korzystając z prostego i przejrzystego interfejsu. Librum działa od razu, wszędzie i o każdej porze.
+
+      Organizuj swoją bibliotekę tak, jak chcesz, korzystając z funkcji organizacyjnych Librum. Dodawaj książki do kolekcji, taguj je i sortuj w dowolny sposób. Skorzystaj z zaawansowanej sztucznej inteligencji za pomocą zaledwie dwóch kliknięć. Używaj jej, aby wyjaśniać, streszczać lub uzyskiwać więcej informacji o dowolnym fragmencie tekstu w Twojej książce.
+
+      Dostosuj Librum, aby wyglądało i działało dokładnie tak, jak lubisz. Żadna aplikacja nie jest od razu idealna dla każdego, ale my dajemy Ci możliwość uczynienia jej idealną dla Ciebie.
+    ko_KR: |
+      언제 어디서나, 어떤 기기로든 접속할 수 있는 나만의 맞춤형 온라인 도서관을 만들어 보세요. 리브룸(Librum)은 필요한 모든 것을 클라우드에 자동으로 저장합니다. 가장 중요한 것에 집중할 수 있도록, 심플하고 직관적인 인터페이스를 제공합니다. 리브룸(Librum)은 언제 어디서나 설치 즉시 바로 사용할 수 있습니다. Librum의 정리 기능을 사용하여 라이브러리를 원하는 방식으로 정리해 보세요. 책을 컬렉션에 추가하고, 태그를 달고, 원하는 방식대로 정렬할 수 있습니다. 단 두 번의 클릭으로 고급 인공지능을 활용해 보세요. 책 속의 어떤 텍스트든 설명, 요약하거나 더 자세한 정보를 얻는 데 사용할 수 있습니다. Librum을 원하는 모습과 느낌으로 맞춤 설정해 보세요. 모든 사람에게 처음부터 완벽한 앱은 없지만, Librum은 여러분이 직접 완벽하게 만들 수 있도록 지원합니다.
+    ja_JP: |
+      いつでも、どこでも、どのデバイスからでもアクセスできる、あなただけのオンラインライブラリを作りましょう。Librumは、必要なデータをすべて自動でクラウドに保存します。
+
+      シンプルで洗練されたインターフェースにより、本当に大切な読書体験に集中できます。Librumは、場所や時間を問わず、設定不要ですぐにお使いいただけます。
+
+      Librumの充実した整理機能で、ライブラリを自由自在に管理しましょう。コレクションへの追加、タグ付け、並べ替えなど、お好みの方法で本を整理できます。
+
+      わずか2クリックで、最先端のAI機能を活用できます。書籍内のテキストの解説、要約、関連情報の検索など、読書をより深く楽しむためのサポートを受けられます。
+
+      Librumをカスタマイズして、あなたにぴったりのデザインと操作感に仕上げましょう。最初からすべての人に完璧なアプリはありません。だからこそ、私たちはあなたが自分にとっての「完璧」を作り上げられるようにしました。
