@@ -30,4 +30,41 @@ x-casaos:
   scheme: http
   store_app_id: khinsider-downloader
   title:
-    custom: KH Insider Downloader
+    en_us: KH Insider Downloader
+    zh_cn: KH Insider 下载器
+    fr_fr: Téléchargeur KH Insider
+    es_es: Descargador de KH Insider
+    de_de: KH Insider Downloader
+    ru_ru: Загрузчик KH Insider
+    it_it: Downloader KH Insider
+    pt_br: Baixador KH Insider
+    tr_tr: KH Insider İndirici
+    pl_pl: KH Insider Downloader
+    ko_kr: KH Insider 다운로더
+    ja_jp: KH Insider ダウンローダー
+  tagline:
+    en_us: A web interface for downloading videogame soundtracks from KHInsider.
+    zh_cn: 一个用于从 KH Insider 下载视频游戏原声带的网页界面。
+    fr_fr: Une interface web pour télécharger des bandes sonores de jeux vidéo depuis KHInsider.
+    es_es: Una interfaz web para descargar bandas sonoras de videojuegos desde KHInsider.
+    de_de: Eine Weboberfläche zum Herunterladen von Videospiel-Soundtracks von KHInsider.
+    ru_ru: Веб-интерфейс для загрузки саундтреков к видеоиграм с KHInsider.
+    it_it: Un'interfaccia web per scaricare colonne sonore di videogiochi da KHInsider.
+    pt_br: Uma interface web para baixar trilhas sonoras de videogames do KHInsider.
+    tr_tr: KHInsider'dan video oyunu müzikleri indirmek için bir web arayüzü.
+    pl_pl: Interfejs webowy do pobierania ścieżek dźwiękowych z gier wideo z KHInsider.
+    ko_kr: KHInsider에서 비디오 게임 사운드트랙을 다운로드하기 위한 웹 인터페이스.
+    ja_jp: KHInsiderからビデオゲームのサウンドトラックをダウンロードするためのウェブインターフェース。
+  description:
+    en_us: This application provides a simple web UI to download full soundtracks from downloads.khinsider.com. Just paste a soundtrack URL and hit download.
+    zh_cn: 此应用程序提供一个简单的网页用户界面，用于从 downloads.khinsider.com 下载完整的原声带。只需粘贴原声带 URL 并点击下载。
+    fr_fr: Cette application fournit une interface utilisateur web simple pour télécharger des bandes sonores complètes depuis downloads.khinsider.com. Collez simplement une URL de bande sonore et cliquez sur télécharger.
+    es_es: Esta aplicación proporciona una interfaz de usuario web sencilla para descargar bandas sonoras completas de downloads.khinsider.com. Simplemente pegue una URL de banda sonora y haga clic en descargar.
+    de_de: Diese Anwendung bietet eine einfache Web-Benutzeroberfläche zum Herunterladen vollständiger Soundtracks von downloads.khinsider.com. Fügen Sie einfach eine Soundtrack-URL ein und klicken Sie auf Herunterladen.
+    ru_ru: Это приложение предоставляет простой веб-интерфейс для загрузки полных саундтреков с downloads.khinsider.com. Просто вставьте URL саундтрека и нажмите «Загрузить».
+    it_it: Questa applicazione fornisce una semplice interfaccia utente web per scaricare colonne sonore complete da downloads.khinsider.com. Basta incollare un URL di colonna sonora e premere scarica.
+    pt_br: Este aplicativo oferece uma interface web simples para baixar trilhas sonoras completas de downloads.khinsider.com. Basta colar um URL de trilha sonora e clicar em download.
+    tr_tr: Bu uygulama, downloads.khinsider.com adresinden tam film müzikleri indirmek için basit bir web kullanıcı arayüzü sağlar. Sadece bir film müziği URL'sini yapıştırın ve indir'e basın.
+    pl_pl: Ta aplikacja zapewnia prosty interfejs użytkownika do pobierania pełnych ścieżek dźwiękowych z downloads.khinsider.com. Wystarczy wkleić adres URL ścieżki dźwiękowej i nacisnąć pobierz.
+    ko_kr: 이 응용 프로그램은 downloads.khinsider.com에서 전체 사운드트랙을 다운로드하는 간단한 웹 UI를 제공합니다. 사운드트랙 URL을 붙여넣고 다운로드를 클릭하기만 하면 됩니다.
+    ja_jp: このアプリケーションは、downloads.khinsider.comから完全なサウンドトラックをダウンロードするためのシンプルなウェブUIを提供します。サウンドトラックのURLを貼り付けてダウンロードをクリックするだけです。
