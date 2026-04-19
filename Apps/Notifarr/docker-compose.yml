@@ -36,4 +36,42 @@ x-casaos:
   scheme: http
   store_app_id: notifiarr
   title:
-    custom: Notifiarr
+    en_us: Notifiarr
+    zh_cn: 诺提法尔
+    fr_fr: Notifiarr
+    es_es: Notifiarr
+    de_de: Notifiarr
+    ru_ru: Нотифиарр
+    it_it: Notifiarr
+    pt_br: Notifiarr
+    tr_tr: Notifiarr
+    pl_pl: Notifiarr
+    ko_kr: 노티피아르
+    ja_jp: ノティフィアー
+  tagline:
+    en_us: Notification aggregation, system monitoring & more
+    zh_cn: 通知聚合、系统监控及更多
+    fr_fr: Agrégation de notifications, surveillance du système et plus encore
+    es_es: Agregación de notificaciones, monitoreo del sistema y más
+    de_de: Benachrichtigungsaggregation, Systemüberwachung und mehr
+    ru_ru: Агрегация уведомлений, мониторинг системы и многое другое
+    it_it: Aggregazione delle notifiche, monitoraggio del sistema e altro ancora
+    pt_br: Agregação de notificações, monitoramento do sistema e muito mais
+    tr_tr: Bildirim toplama, sistem izleme ve daha fazlası
+    pl_pl: Agregacja powiadomień, monitorowanie systemu i więcej
+    ko_kr: 알림 집계, 시스템 모니터링 등
+    ja_jp: 通知の集約、システム監視、その他
+  description:
+    en_us: A purpose built system to bring many applications together to manage and customize notifications via Discord. You can monitor many aspects of your network(s), be notified of downtime, be notified of health issues, etc.
+    zh_cn: 一个专门构建的系统，旨在整合多个应用程序，通过 Discord 管理和自定义通知。您可以监控网络的多个方面，接收停机通知、健康问题通知等。
+    fr_fr: Un système conçu sur mesure pour regrouper de nombreuses applications afin de gérer et de personnaliser les notifications via Discord. Vous pouvez surveiller de nombreux aspects de votre ou vos réseaux, être informé des temps d'arrêt, des problèmes de santé, etc.
+    es_es: Un sistema diseñado específicamente para reunir muchas aplicaciones para gestionar y personalizar las notificaciones a través de Discord. Puede supervisar muchos aspectos de su(s) red(es), recibir notificaciones de tiempo de inactividad, problemas de salud, etc.
+    de_de: Ein speziell entwickeltes System, um viele Anwendungen zusammenzuführen, um Benachrichtigungen über Discord zu verwalten und anzupassen. Sie können viele Aspekte Ihres Netzwerks/Ihrer Netzwerke überwachen, über Ausfallzeiten, Gesundheitsprobleme usw. benachrichtigt werden.
+    ru_ru: Специализированная система для объединения множества приложений для управления и настройки уведомлений через Discord. Вы можете отслеживать многие аспекты вашей сети (сетей), получать уведомления о простоях, проблемах со здоровьем и т. д.
+    it_it: Un sistema appositamente creato per riunire molte applicazioni per gestire e personalizzare le notifiche tramite Discord. È possibile monitorare molti aspetti della propria rete (o reti), ricevere notifiche di tempi di inattività, problemi di salute, ecc.
+    pt_br: Um sistema construído propositadamente para reunir muitas aplicações para gerir e personalizar notificações via Discord. Pode monitorizar muitos aspetos da(s) sua(s) rede(s), ser notificado de tempo de inatividade, problemas de saúde, etc.
+    tr_tr: Discord üzerinden bildirimleri yönetmek ve özelleştirmek için birçok uygulamayı bir araya getiren amaca yönelik bir sistem. Ağınızın/ağlarınızın birçok yönünü izleyebilir, kesinti sürelerinden, sağlık sorunlarından vb. haberdar olabilirsiniz.
+    pl_pl: Specjalnie zbudowany system łączący wiele aplikacji w celu zarządzania i dostosowywania powiadomień za pośrednictwem Discorda. Możesz monitorować wiele aspektów swojej sieci (sieci), otrzymywać powiadomienia o przestojach, problemach z działaniem itp.
+    ko_kr: Discord를 통해 알림을 관리하고 맞춤 설정하기 위해 여러 애플리케이션을 하나로 모으는 전용 시스템입니다. 네트워크의 다양한 측면을 모니터링하고 다운타임, 상태 문제 등에 대한 알림을 받을 수 있습니다.
+    ja_jp: Discordを介して通知を管理およびカスタマイズするために、多くのアプリケーションを統合する専用システムです。ネットワークの多くの側面を監視し、ダウンタイムやヘルスの問題などの通知を受け取ることができます。
+
