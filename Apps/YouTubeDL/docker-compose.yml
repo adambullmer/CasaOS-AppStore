@@ -41,5 +41,40 @@ x-casaos:
   port_map: ${WEBUI_PORT:-8443}
   scheme: http
   store_app_id: ytdl-sub
+  tagline.en_us: Effortlessly download and manage videos from YouTube and other platforms.
+  tagline.zh_cn: 轻松下载和管理来自YouTube和其他平台的视频。
+  tagline.fr_fr: Téléchargez et gérez sans effort des vidéos de YouTube et d'autres plateformes.
+  tagline.es_es: Descargue y administre videos de YouTube y otras plataformas sin esfuerzo.
+  tagline.de_de: Laden Sie Videos von YouTube und anderen Plattformen mühelos herunter und verwalten Sie sie.
+  tagline.ru_ru: Легко загружайте и управляйте видео с YouTube и других платформ.
+  tagline.it_it: Scarica e gestisci facilmente video da YouTube e altre piattaforme.
+  tagline.pt_br: Baixe e gerencie vídeos do YouTube e de outras plataformas sem esforço.
+  tagline.tr_tr: YouTube ve diğer platformlardan videoları zahmetsizce indirin ve yönetin.
+  tagline.pl_pl: Bezproblemowo pobieraj i zarządzaj filmami z YouTube i innych platform.
+  tagline.ko_kr: YouTube 및 기타 플랫폼에서 비디오를 손쉽게 다운로드하고 관리하십시오.
+  tagline.ja_jp: YouTubeやその他のプラットフォームから動画を簡単にダウンロードして管理できます。
+  description.en_us: YouTubeDL is a powerful command-line program for downloading videos and audio from YouTube and many other video hosting websites. This application provides a convenient interface to manage your downloads, subscriptions, and automate the process of keeping your media library up-to-date. Supports various formats, quality options, and post-processing features.
+  description.zh_cn: YouTubeDL是一个功能强大的命令行程序，用于从YouTube和许多其他视频托管网站下载视频和音频。此应用程序提供了一个便捷的界面来管理您的下载、订阅，并自动化保持媒体库最新。支持各种格式、质量选项和后期处理功能。
+  description.fr_fr: YouTubeDL est un puissant programme en ligne de commande pour télécharger des vidéos et de l'audio depuis YouTube et de nombreux autres sites d'hébergement vidéo. Cette application fournit une interface pratique pour gérer vos téléchargements, abonnements et automatiser le processus de mise à jour de votre bibliothèque multimédia. Prend en charge différents formats, options de qualité et fonctionnalités de post-traitement.
+  description.es_es: YouTubeDL es un potente programa de línea de comandos para descargar videos y audio de YouTube y muchos otros sitios web de alojamiento de videos. Esta aplicación proporciona una interfaz conveniente para administrar sus descargas, suscripciones y automatizar el proceso de mantener su biblioteca multimedia actualizada. Admite varios formatos, opciones de calidad y funciones de post-procesamiento.
+  description.de_de: YouTubeDL ist ein leistungsstarkes Befehlszeilenprogramm zum Herunterladen von Videos und Audio von YouTube und vielen anderen Video-Hosting-Websites. Diese Anwendung bietet eine bequeme Oberfläche zur Verwaltung Ihrer Downloads, Abonnements und zur Automatisierung des Aktualisierungsprozesses Ihrer Medienbibliothek. Unterstützt verschiedene Formate, Qualitätsoptionen und Nachbearbeitungsfunktionen.
+  description.ru_ru: YouTubeDL - это мощная программа командной строки для загрузки видео и аудио с YouTube и многих других веб-сайтов хостинга видео. Это приложение предоставляет удобный интерфейс для управления загрузками, подписками и автоматизации процесса обновления вашей медиатеки. Поддерживает различные форматы, параметры качества и функции постобработки.
+  description.it_it: YouTubeDL è un potente programma a riga di comando per scaricare video e audio da YouTube e molti altri siti web di hosting video. Questa applicazione fornisce un'interfaccia conveniente per gestire i download, gli abbonamenti e automatizzare il processo di mantenimento della libreria multimediale aggiornata. Supporta vari formati, opzioni di qualità e funzionalità di post-elaborazione.
+  description.pt_br: YouTubeDL é um poderoso programa de linha de comando para baixar vídeos e áudios do YouTube e de muitos outros sites de hospedagem de vídeo. Este aplicativo fornece uma interface conveniente para gerenciar seus downloads, assinaturas e automatizar o processo de manter sua biblioteca de mídia atualizada. Suporta vários formatos, opções de qualidade e recursos de pós-processamento.
+  description.tr_tr: YouTubeDL, YouTube ve diğer birçok video barındırma web sitesinden video ve ses indirmek için güçlü bir komut satırı programıdır. Bu uygulama, indirmelerinizi, aboneliklerinizi yönetmek ve medya kitaplığınızı güncel tutma sürecini otomatikleştirmek için kullanışlı bir arayüz sağlar. Çeşitli formatları, kalite seçeneklerini ve işlem sonrası özelliklerini destekler.
+  description.pl_pl: YouTubeDL to potężny program wiersza poleceń do pobierania filmów i dźwięku z YouTube i wielu innych witryn hostujących wideo. Ta aplikacja zapewnia wygodny interfejs do zarządzania pobieraniem, subskrypcjami i automatyzacji procesu aktualizowania biblioteki multimediów. Obsługuje różne formaty, opcje jakości i funkcje post-processingu.
+  description.ko_kr: YouTubeDL은 YouTube 및 기타 여러 비디오 호스팅 웹사이트에서 비디오 및 오디오를 다운로드하기 위한 강력한 명령줄 프로그램입니다. 이 애플리케이션은 다운로드, 구독을 관리하고 미디어 라이브러리를 최신 상태로 유지하는 프로세스를 자동화하는 편리한 인터페이스를 제공합니다. 다양한 형식, 품질 옵션 및 후처리 기능을 지원합니다.
+  description.ja_jp: YouTubeDLは、YouTubeやその他多くの動画ホスティングサイトから動画や音声をダウンロードするための強力なコマンドラインプログラムです。このアプリケーションは、ダウンロード、サブスクリプションを管理し、メディアライブラリを最新の状態に保つプロセスを自動化するための便利なインターフェースを提供します。さまざまな形式、品質オプション、および後処理機能をサポートしています。
   title:
     custom: YouTube DL Subscription
+    zh_cn: YouTube DL 订阅
+    fr_fr: Abonnement YouTube DL
+    es_es: Suscripción a YouTube DL
+    de_de: YouTube DL Abonnement
+    ru_ru: Подписка на YouTube DL
+    it_it: Abbonamento YouTube DL
+    pt_br: Assinatura YouTube DL
+    tr_tr: YouTube DL Aboneliği
+    pl_pl: Subskrypcja YouTube DL
+    ko_kr: YouTube DL 구독
+    ja_jp: YouTube DL サブスクリプション
