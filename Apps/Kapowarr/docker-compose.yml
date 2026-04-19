@@ -34,6 +34,41 @@ x-casaos:
   scheme: http
   store_app_id: kapowarr
   title:
-    custom: Kapowarr
+    en_us: Kapowarr
+    zh_cn: Kapowarr
+    fr_fr: Kapowarr
+    es_es: Kapowarr
+    de_de: Kapowarr
+    ru_ru: Kapowarr
+    it_it: Kapowarr
+    pt_br: Kapowarr
+    tr_tr: Kapowarr
+    pl_pl: Kapowarr
+    ko_kr: Kapowarr
+    ja_jp: Kapowarr
+  tagline:
+    en_us: Automate your comic book library management.
+    zh_cn: 自动化您的漫画书库管理。
+    fr_fr: Automatisez la gestion de votre bibliothèque de bandes dessinées.
+    es_es: Automatice la gestión de su biblioteca de cómics.
+    de_de: Automatisieren Sie die Verwaltung Ihrer Comic-Bibliothek.
+    ru_ru: Автоматизируйте управление своей библиотекой комиксов.
+    it_it: Automatizza la gestione della tua libreria di fumetti.
+    pt_br: Automatize o gerenciamento de sua biblioteca de quadrinhos.
+    tr_tr: Çizgi roman kütüphanesi yönetiminizi otomatikleştirin.
+    pl_pl: Zautomatyzuj zarządzanie swoją biblioteką komiksów.
+    ko_kr: 만화책 라이브러리 관리를 자동화하십시오.
+    ja_jp: コミックブックライブラリの管理を自動化します。
   description:
     en_us: Kapowarr (Comarr) is a software to build and manage a comic book library, fitting in the *arr suite of software.
+    zh_cn: Kapowarr (Comarr) 是一款用于构建和管理漫画书库的软件，适用于 *arr 系列软件。
+    fr_fr: Kapowarr (Comarr) est un logiciel pour construire et gérer une bibliothèque de bandes dessinées, s'intégrant dans la suite de logiciels *arr.
+    es_es: Kapowarr (Comarr) es un software para construir y administrar una biblioteca de cómics, que se ajusta a la suite de software *arr.
+    de_de: Kapowarr (Comarr) ist eine Software zum Erstellen und Verwalten einer Comic-Bibliothek, die in die *arr-Software-Suite passt.
+    ru_ru: Kapowarr (Comarr) — это программное обеспечение для создания и управления библиотекой комиксов, входящее в пакет программного обеспечения *arr.
+    it_it: Kapowarr (Comarr) è un software per creare e gestire una libreria di fumetti, che si inserisce nella suite di software *arr.
+    pt_br: O Kapowarr (Comarr) é um software para construir e gerenciar uma biblioteca de quadrinhos, inserindo-se no conjunto de softwares *arr.
+    tr_tr: Kapowarr (Comarr), *arr yazılım paketine uyan bir çizgi roman kütüphanesi oluşturmak ve yönetmek için bir yazılımdır.
+    pl_pl: Kapowarr (Comarr) to oprogramowanie do budowania i zarządzania biblioteką komiksów, pasujące do pakietu oprogramowania *arr.
+    ko_kr: Kapowarr(Comarr)는 *arr 소프트웨어 제품군에 적합한 만화책 라이브러리를 구축하고 관리하는 소프트웨어입니다.
+    ja_jp: Kapowarr（Comarr）は、*arrソフトウェアスイートに適合するコミックブックライブラリを構築および管理するためのソフトウェアです。
