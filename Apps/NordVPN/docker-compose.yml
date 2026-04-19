@@ -38,4 +38,41 @@ x-casaos:
   tips:
     custom: Use this to get the private key from the token
   title:
-    custom: NordVPN
+    en_us: NordVPN
+    zh_cn: NordVPN
+    fr_fr: NordVPN
+    es_es: NordVPN
+    de_de: NordVPN
+    ru_ru: NordVPN
+    it_it: NordVPN
+    pt_br: NordVPN
+    tr_tr: NordVPN
+    pl_pl: NordVPN
+    ko_kr: NordVPN
+    ja_jp: NordVPN
+  tagline:
+    en_us: A secure and private VPN solution.
+    zh_cn: 一个安全且私密的 VPN 解决方案。
+    fr_fr: Une solution VPN sécurisée et privée.
+    es_es: Una solución VPN segura y privada.
+    de_de: Eine sichere und private VPN-Lösung.
+    ru_ru: Безопасное и конфиденциальное VPN-решение.
+    it_it: Una soluzione VPN sicura e privata.
+    pt_br: Uma solução de VPN segura e privada.
+    tr_tr: Güvenli ve özel bir VPN çözümü.
+    pl_pl: Bezpieczne i prywatne rozwiązanie VPN.
+    ko_kr: 안전하고 프라이빗한 VPN 솔루션.
+    ja_jp: 安全でプライベートなVPNソリューション。
+  description:
+    en_us: NordVPN provides a virtual private network service that offers secure and private internet access. It encrypts your internet traffic and routes it through a server in a location of your choice, masking your IP address and protecting your online activities from prying eyes. With features like split tunneling, kill switch, and threat protection, NordVPN ensures a safe and anonymous browsing experience.
+    zh_cn: NordVPN 提供虚拟专用网络服务，为您提供安全且私密的互联网访问。它会加密您的互联网流量，并通过您选择的地点服务器进行路由，从而隐藏您的 IP 地址，保护您的在线活动免受窥探。凭借拆分隧道、终止开关和威胁防护等功能，NordVPN 确保了安全且匿名的浏览体验。
+    fr_fr: NordVPN fournit un service de réseau privé virtuel qui offre un accès Internet sécurisé et privé. Il chiffre votre trafic Internet et l'achemine via un serveur situé à l'emplacement de votre choix, masquant votre adresse IP et protégeant vos activités en ligne des regards indiscrets. Avec des fonctionnalités telles que le split tunneling, le kill switch et la protection contre les menaces, NordVPN garantit une expérience de navigation sûre et anonyme.
+    es_es: NordVPN ofrece un servicio de red privada virtual que proporciona un acceso a Internet seguro y privado. Cifra tu tráfico de Internet y lo dirige a través de un servidor en la ubicación que elijas, ocultando tu dirección IP y protegiendo tus actividades en línea de miradas indiscretas. Con funciones como el túnel dividido, el interruptor de corte (kill switch) y la protección contra amenazas, NordVPN garantiza una experiencia de navegación segura y anónima.
+    de_de: NordVPN bietet einen Virtual Private Network-Dienst an, der einen sicheren und privaten Internetzugang ermöglicht. Er verschlüsselt Ihren Internetverkehr und leitet ihn über einen Server an einem Standort Ihrer Wahl, wodurch Ihre IP-Adresse maskiert und Ihre Online-Aktivitäten vor neugierigen Blicken geschützt werden. Mit Funktionen wie Split-Tunneling, Kill-Switch und Bedrohungsschutz sorgt NordVPN für ein sicheres und anonymes Surferlebnis.
+    ru_ru: NordVPN предоставляет услуги виртуальной частной сети, обеспечивая безопасный и конфиденциальный доступ в Интернет. Он шифрует ваш интернет-трафик и направляет его через сервер в выбранном вами месте, маскируя ваш IP-адрес и защищая ваши действия в сети от посторонних глаз. Благодаря таким функциям, как раздельное туннелирование, функция экстренного отключения (kill switch) и защита от угроз, NordVPN гарантирует безопасный и анонимный просмотр веб-страниц.
+    it_it: NordVPN fornisce un service di rete privata virtuale che offre un accesso a Internet sicuro e privato. Cripta il tuo traffico Internet e lo instrada attraverso un server in una posizione a tua scelta, mascherando il tuo indirizzo IP e proteggendo le tue attività online da sguardi indiscreti. Con funzionalità come lo split tunneling, il kill switch e la protezione dalle minacce, NordVPN garantisce un'esperienza di navigazione sicura e anonima.
+    pt_br: A NordVPN oferece um serviço de rede privada virtual que proporciona acesso seguro e privado à Internet. Ela criptografa seu tráfego de Internet e o roteia por um servidor em um local de sua escolha, ocultando seu endereço IP e protegendo suas atividades online de olhares curiosos. Com recursos como túnel dividido (split tunneling), kill switch e proteção contra ameaças, a NordVPN garante uma experiência de navegação segura e anônima.
+    tr_tr: NordVPN, güvenli ve özel internet erişimi sunan bir sanal özel ağ hizmeti sağlar. İnternet trafiğinizi şifreler ve seçtiğiniz bir konumdaki sunucu üzerinden yönlendirerek IP adresinizi gizler ve çevrimiçi etkinliklerinizi meraklı gözlerden korur. Ayrık tünelleme, durdurma anahtarı (kill switch) ve tehdit koruması gibi özelliklerle NordVPN, güvenli ve anonim bir tarama deneyimi sağlar.
+    pl_pl: NordVPN świadczy usługę wirtualnej sieci prywatnej, która oferuje bezpieczny i prywatny dostęp do Internetu. Szyfruje Twój ruch internetowy i kieruje go przez serwer w wybranej przez Ciebie lokalizacji, maskując Twój adres IP i chroniąc Twoją aktywność online przed wścibskimi oczami. Dzięki funkcjom takim jak dzielone tunelowanie, kill switch i ochrona przed zagrożeniami, NordVPN zapewnia bezpieczne i anonimowe przeglądanie stron internetowych.
+    ko_kr: NordVPN은 안전하고 프라이빗한 인터넷 접속을 제공하는 가상 사설망 서비스를 제공합니다. 사용자의 인터넷 트래픽을 암호화하고 선택한 위치의 서버를 통해 라우팅하여 IP 주소를 숨기고 온라인 활동을 엿보는 눈으로부터 보호합니다. 분할 터널링, 킬 스위치, 위협 보호와 같은 기능을 갖춘 NordVPN은 안전하고 익명성이 보장되는 브라우징 경험을 보장합니다.
+    ja_jp: NordVPNは、安全でプライベートなインターネットアクセスを提供する仮想プライベートネットワークサービスを提供します。インターネットトラフィックを暗号化し、選択した場所のサーバーを経由してルーティングすることで、IPアドレスを隠し、オンライン活動を覗き見から保護します。スプリットトンネリング、キルスイッチ、脅威保護などの機能を備えたNordVPNは、安全で匿名性の高いブラウジング体験を保証します。
