@@ -34,11 +34,77 @@ x-casaos:
   port_map: ${WEBUI_PORT:-5800}
   store_app_id: musicbrainz-picard
   title:
-    custom: MusicBrainz Picard
+    en_US: MusicBrainz Picard
+    zh_CN: MusicBrainz Picard
+    fr_FR: MusicBrainz Picard
+    es_ES: MusicBrainz Picard
+    de_DE: MusicBrainz Picard
+    ru_RU: MusicBrainz Picard
+    it_IT: MusicBrainz Picard
+    pt_BR: MusicBrainz Picard
+    tr_TR: MusicBrainz Picard
+    pl_PL: MusicBrainz Picard
+    ko_KR: MusicBrainz Picard
+    ja_JP: MusicBrainz Picard
   tagline:
-    en_us: A cross-platform music tagger powered by the MusicBrainz database.
+    en_US: A cross-platform music tagger powered by the MusicBrainz database.
+    zh_CN: 由 MusicBrainz 数据库支持的跨平台音乐标签编辑器。
+    fr_FR: Un tagueur de musique multiplateforme alimenté par la base de données MusicBrainz.
+    es_ES: Un etiquetador de música multiplataforma impulsado por la base de datos MusicBrainz.
+    de_DE: Ein plattformübergreifender Musik-Tagger, der auf der MusicBrainz-Datenbank basiert.
+    ru_RU: Кроссплатформенный теггер музыки, работающий на базе данных MusicBrainz.
+    it_IT: Un tagger musicale multipiattaforma basato sul database MusicBrainz.
+    pt_BR: Um editor de tags de música multiplataforma alimentado pelo banco de dados MusicBrainz.
+    tr_TR: MusicBrainz veritabanı tarafından desteklenen, çapraz platform bir müzik etiketleyici.
+    pl_PL: Wieloplatformowy tagger muzyczny wspierany przez bazę danych MusicBrainz.
+    ko_KR: MusicBrainz 데이터베이스로 구동되는 크로스 플랫폼 음악 태그 편집기.
+    ja_JP: MusicBrainzデータベースを利用したクロスプラットフォームの音楽タグエディター。
   description:
-    en_us: |
+    en_US: |
       Picard helps you organize your music collection by renaming your music files and sorting them into a folder structure exactly the way you want it.
       A variety of plugins are available and you can even write your own.
       Picard supports a wide range of audio formats and can also lookup an entire CD for you.
+    zh_CN: |
+      Picard 通过重命名您的音乐文件并将其整理到您想要的文件夹结构中，帮助您整理音乐收藏。
+      提供多种插件，您甚至可以编写自己的插件。
+      Picard 支持多种音频格式，还可以为您查找整个 CD 信息。
+    fr_FR: |
+      Picard vous aide à organiser votre collection musicale en renommant vos fichiers musicaux et en les triant dans une structure de dossiers exactement comme vous le souhaitez.
+      Une variété de plugins sont disponibles et vous pouvez même écrire les vôtres.
+      Picard prend en charge un large éventail de formats audio et peut également rechercher un CD entier pour vous.
+    es_ES: |
+      Picard le ayuda a organizar su colección de música renombrando sus archivos de música y clasificándolos en una estructura de carpetas exactamente como usted lo desea.
+      Hay una variedad de complementos disponibles e incluso puede escribir los suyos propios.
+      Picard es compatible con una amplia gama de formatos de audio y también puede buscar un CD completo para usted.
+    de_DE: |
+      Picard hilft Ihnen, Ihre Musiksammlung zu organisieren, indem es Ihre Musikdateien umbenennt und sie genau so in eine Ordnerstruktur sortiert, wie Sie es möchten.
+      Eine Vielzahl von Plugins ist verfügbar, und Sie können sogar Ihre eigenen schreiben.
+      Picard unterstützt eine breite Palette von Audioformaten und kann auch eine gesamte CD für Sie nachschlagen.
+    ru_RU: |
+      Picard поможет вам организовать вашу музыкальную коллекцию, переименовывая музыкальные файлы и сортируя их в структуру папок именно так, как вы этого хотите.
+      Доступно множество плагинов, и вы даже можете написать свои собственные.
+      Picard поддерживает широкий спектр аудиоформатов, а также может найти информацию о целом компакт-диске для вас.
+    it_IT: |
+      Picard ti aiuta a organizzare la tua collezione musicale rinominando i tuoi file musicali e ordinandoli in una struttura di cartelle esattamente come desideri.
+      È disponibile una varietà di plugin e puoi persino scriverne di tuoi.
+      Picard supporta una vasta gamma di formati audio e può anche cercare un intero CD per te.
+    pt_BR: |
+      Picard ajuda você a organizar sua coleção de músicas renomeando seus arquivos de música e classificando-os em uma estrutura de pastas exatamente como você deseja.
+      Uma variedade de plugins está disponível e você pode até mesmo escrever os seus próprios.
+      Picard suporta uma ampla gama de formatos de áudio e também pode pesquisar um CD inteiro para você.
+    tr_TR: |
+      Picard, müzik dosyalarınızı yeniden adlandırarak ve istediğiniz gibi bir klasör yapısına sıralayarak müzik koleksiyonunuzu düzenlemenize yardımcı olur.
+      Çeşitli eklentiler mevcuttur ve hatta kendi eklentilerinizi bile yazabilirsiniz.
+      Picard, çok çeşitli ses formatlarını destekler ve sizin için tüm bir CD'yi de arayabilir.
+    pl_PL: |
+      Picard pomaga uporządkować kolekcję muzyki, zmieniając nazwy plików muzycznych i sortując je w strukturze folderów dokładnie tak, jak chcesz.
+      Dostępna jest szeroka gama wtyczek, a także możesz napisać własne.
+      Picard obsługuje szeroki zakres formatów audio, a także może wyszukać dla Ciebie całą płytę CD.
+    ko_KR: |
+      Picard는 음악 파일의 이름을 바꾸고 원하는 폴더 구조로 정렬하여 음악 컬렉션을 정리하는 데 도움을 줍니다.
+      다양한 플러그인을 사용할 수 있으며, 직접 작성할 수도 있습니다.
+      Picard는 광범위한 오디오 형식을 지원하며 전체 CD를 조회할 수도 있습니다.
+    ja_JP: |
+      Picardは、音楽ファイルの名前を変更し、目的のフォルダ構造に並べ替えることで、音楽コレクションを整理するのに役立ちます。
+      さまざまなプラグインが利用可能で、独自のプラグインを作成することもできます。
+      Picardは幅広いオーディオ形式をサポートしており、CD全体の情報を検索することもできます。
