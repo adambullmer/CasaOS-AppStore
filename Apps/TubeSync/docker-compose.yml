@@ -37,4 +37,43 @@ x-casaos:
   scheme: http
   store_app_id: tubesync
   title:
-    custom: tubesync
+    en_us: TubeSync
+    zh_cn: TubeSync
+    fr_fr: TubeSync
+    es_es: TubeSync
+    de_de: TubeSync
+    ru_ru: TubeSync
+    it_it: TubeSync
+    pt_br: TubeSync
+    tr_tr: TubeSync
+    pl_pl: TubeSync
+    ko_kr: 튜브싱크
+    ja_jp: チューブシンク
+  tagline:
+    en_us: Synchronize YouTube channels and videos.
+    zh_cn: 同步YouTube频道和视频。
+    fr_fr: Synchronisez les chaînes et les vidéos YouTube.
+    es_es: Sincroniza canales y videos de YouTube.
+    de_de: Synchronisiere YouTube-Kanäle und Videos.
+    ru_ru: Синхронизируйте каналы и видео YouTube.
+    it_it: Sincronizza canali e video di YouTube.
+    pt_br: Sincronize canais e vídeos do YouTube.
+    tr_tr: YouTube kanallarını ve videolarını senkronize edin.
+    pl_pl: Synchronizuj kanały i filmy YouTube.
+    ko_kr: YouTube 채널 및 동영상 동기화.
+    ja_jp: YouTubeチャンネルと動画を同期します。
+  description:
+    en_us: TubeSync is a PVR for YouTube. It allows you to synchronize channels and videos from YouTube, making them available for offline viewing or for archiving.
+    zh_cn: TubeSync是YouTube的PVR。它允许您同步YouTube上的频道和视频，使其可用于离线观看或存档。
+    fr_fr: TubeSync est un enregistreur vidéo personnel (PVR) pour YouTube. Il vous permet de synchroniser les chaînes et les vidéos de YouTube, les rendant disponibles pour une visualisation hors ligne ou pour l'archivage.
+    es_es: TubeSync es un PVR para YouTube. Te permite sincronizar canales y videos de YouTube, haciéndolos disponibles para ver sin conexión o para archivar.
+    de_de: TubeSync ist ein PVR für YouTube. Es ermöglicht Ihnen, Kanäle und Videos von YouTube zu synchronisieren, um sie offline anzusehen oder zu archivieren.
+    ru_ru: TubeSync - это PVR для YouTube. Он позволяет синхронизировать каналы и видео с YouTube, делая их доступными для просмотра в автономном режиме или для архивирования.
+    it_it: TubeSync è un PVR per YouTube. Ti permette di sincronizzare canali e video da YouTube, rendendoli disponibili per la visione offline o per l'archiviazione.
+    pt_br: TubeSync é um PVR para YouTube. Ele permite sincronizar canais e vídeos do YouTube, tornando-os disponíveis para visualização offline ou para arquivamento.
+    tr_tr: TubeSync, YouTube için bir PVR'dır. YouTube kanallarını ve videolarını senkronize etmenize olanak tanır, böylece çevrimdışı izleme veya arşivleme için kullanılabilirler.
+    pl_pl: TubeSync to PVR dla YouTube. Umożliwia synchronizację kanałów i filmów z YouTube, udostępniając je do oglądania offline lub do archiwizacji.
+    ko_kr: TubeSync는 YouTube용 PVR입니다. YouTube 채널 및 동영상을 동기화하여 오프라인 시청 또는 보관용으로 사용할 수 있습니다.
+    ja_jp: TubeSyncはYouTube用のPVRです。YouTubeのチャンネルと動画を同期し、オフラインでの視聴やアーカイブに利用できるようにします。
+
+
