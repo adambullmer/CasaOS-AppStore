@@ -35,13 +35,48 @@ x-casaos:
   developer: Deluge Team
   hostname: ""
   icon: https://cdn.iconscout.com/icon/free/png-256/free-nordvpn-7662268-6297204.png
+  tagline:
+    en_US: Optimized WireGuard VPN client for NordVPN.
+    zh_CN: 适用于 NordVPN 的优化 WireGuard VPN 客户端。
+    fr_FR: Client VPN WireGuard optimisé pour NordVPN.
+    es_ES: Cliente VPN WireGuard optimizado para NordVPN.
+    de_DE: Optimierter WireGuard VPN-Client für NordVPN.
+    ru_RU: Оптимизированный WireGuard VPN-клиент для NordVPN.
+    it_IT: Client VPN WireGuard ottimizzato per NordVPN.
+    pt_BR: Cliente VPN WireGuard otimizado para NordVPN.
+    tr_TR: NordVPN için optimize edilmiş WireGuard VPN istemcisi.
+    pl_PL: Zoptymalizowany klient VPN WireGuard dla NordVPN.
+    ko_KR: NordVPN용 최적화된 WireGuard VPN 클라이언트.
+    ja_JP: NordVPN向けの最適化されたWireGuard VPNクライアント。
   index: /
   description:
-    en_us: Wireguard interface for NordVPN offering improved VPN overhead speeds.
+    en_US: Wireguard interface for NordVPN offering improved VPN overhead speeds.
+    zh_CN: 适用于 NordVPN 的 Wireguard 接口，提供改进的 VPN 开销速度。
+    fr_FR: Interface Wireguard pour NordVPN offrant des vitesses de surdébit VPN améliorées.
+    es_ES: Interfaz Wireguard para NordVPN que ofrece velocidades de sobrecarga de VPN mejoradas.
+    de_DE: Wireguard-Schnittstelle für NordVPN, die verbesserte VPN-Overhead-Geschwindigkeiten bietet.
+    ru_RU: Интерфейс Wireguard для NordVPN, предлагающий улучшенную скорость VPN-трафика.
+    it_IT: Interfaccia Wireguard per NordVPN che offre velocità di overhead VPN migliorate.
+    pt_BR: Interface Wireguard para NordVPN que oferece velocidades de sobrecarga VPN aprimoradas.
+    tr_TR: NordVPN için Wireguard arayüzü, gelişmiş VPN ek yük hızları sunar.
+    pl_PL: Interfejs Wireguard dla NordVPN, oferujący ulepszone prędkości narzutu VPN.
+    ko_KR: NordVPN용 Wireguard 인터페이스로, 향상된 VPN 오버헤드 속도를 제공합니다.
+    ja_JP: NordVPN用のWireguardインターフェースで、VPNオーバーヘッド速度が向上します。
   scheme: http
   store_app_id: nordlynx
   title:
-    custom: NordLynx
+    en_US: NordLynx
+    zh_CN: 诺德林克斯
+    fr_FR: NordLynx
+    es_ES: NordLynx
+    de_DE: NordLynx
+    ru_RU: НордЛинкс
+    it_IT: NordLynx
+    pt_BR: NordLynx
+    tr_TR: NordLynx
+    pl_PL: NordLynx
+    ko_KR: 노드링크스
+    ja_JP: ノードリンクス
   tips:
     before_install:
       en_us: |
