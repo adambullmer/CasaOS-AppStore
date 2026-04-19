@@ -40,8 +40,41 @@ x-casaos:
   architectures: # a list of architectures that the app supports
     - amd64
   title:
-    custom: Barcode Buddy
+    en_us: Barcode Buddy
+    zh_cn: 条码助手
+    fr_fr: Compagnon de code-barres
+    es_es: Compañero de códigos de barras
+    de_de: Barcode-Buddy
+    ru_ru: Помощник по штрих-кодам
+    it_it: Compagno di codici a barre
+    pt_br: Parceiro de código de barras
+    tr_tr: Barkod Arkadaşı
+    pl_pl: Asystent kodów kreskowych
+    ko_kr: 바코드 버디
+    ja_jp: バーコードバディ
   description:
     en_us: Barcode system for Grocy
+    zh_cn: Grocy 条形码系统
+    fr_fr: Système de code-barres pour Grocy
+    es_es: Sistema de códigos de barras para Grocy
+    de_de: Barcode-System für Grocy
+    ru_ru: Система штрих-кодов для Grocy
+    it_it: Sistema di codici a barre per Grocy
+    pt_br: Sistema de código de barras para Grocy
+    tr_tr: Grocy için barkod sistemi
+    pl_pl: System kodów kreskowych dla Grocy
+    ko_kr: Grocy용 바코드 시스템
+    ja_jp: Grocy用バーコードシステム
   tagline:
     en_us: Barcode system for Grocy
+    zh_cn: Grocy 条形码系统
+    fr_fr: Système de code-barres pour Grocy
+    es_es: Sistema de códigos de barras para Grocy
+    de_de: Barcode-System für Grocy
+    ru_ru: Система штрих-кодов для Grocy
+    it_it: Sistema di codici a barre per Grocy
+    pt_br: Sistema de código de barras para Grocy
+    tr_tr: Grocy için barkod sistemi
+    pl_pl: System kodów kreskowych dla Grocy
+    ko_kr: Grocy용 바코드 시스템
+    ja_jp: Grocy用バーコードシステム
