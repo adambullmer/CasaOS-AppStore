@@ -125,8 +125,30 @@ x-casaos:
   store_app_id: firefly-iii
   title:
     custom: Firefly III
+    zh_cn: Firefly III
+    fr_fr: Firefly III
+    es_es: Firefly III
+    de_de: Firefly III
+    ru_ru: Firefly III
+    it_it: Firefly III
+    pt_br: Firefly III
+    tr_tr: Firefly III
+    pl_pl: Firefly III
+    ko_kr: Firefly III
+    ja_jp: Firefly III
   tagline:
     en_us: A free and open source personal finance manager
+    zh_cn: 一个免费且开源的个人财务管理工具
+    fr_fr: Un gestionnaire de finances personnelles gratuit et open source
+    es_es: Un gestor de finanzas personales gratuito y de código abierto
+    de_de: Ein kostenloser und quelloffener persönlicher Finanzmanager
+    ru_ru: Бесплатный менеджер личных финансов с открытым исходным кодом
+    it_it: Un gestore delle finanze personali gratuito e open source
+    pt_br: Um gerenciador de finanças pessoais gratuito e de código aberto
+    tr_tr: Ücretsiz ve açık kaynaklı bir kişisel finans yöneticisi
+    pl_pl: Darmowy i otwartoźródłowy menedżer finansów osobistych
+    ko_kr: 무료 오픈 소스 개인 금융 관리자
+    ja_jp: 無料でオープンソースの個人財務管理ソフト
   description:
     en_us: |
       "Firefly III" is a (self-hosted) manager for your personal finances.
@@ -148,6 +170,44 @@ x-casaos:
       But no more. I want to feel "safe", whatever my balance is.
       And I hope this tool can help you.
       I know it helps me.
+    zh_cn: |
+      “Firefly III”是一款（自托管的）个人财务管理工具。它可以帮助你追踪收支情况，从而让你花得更少，存得更多。Firefly III 支持使用预算、类别和标签。通过一系列外部工具，你可以导入数据。它还提供许多精美的财务报表。Firefly III 旨在让你洞察并掌控自己的财务状况。金钱应该是实用的，而不应让人感到恐惧。你应该能够看到钱的去向，感受你的支出，并且……哇，我是不是说得有点过头了？但你应该明白我的意思：这是你的钱，这是你的支出，别再让它们控制你。我开发这个工具是因为我开始讨厌金钱——拥有金钱、失去金钱、用钱付账，你懂的。但现在不再如此了。无论余额多少，我都想感到“安全”。我希望这个工具也能帮到你，我知道它确实帮到了我。
+    fr_fr: |
+      "Firefly III" est un gestionnaire de finances personnelles (auto-hébergé). Il peut vous aider à suivre vos dépenses et vos revenus, afin que vous puissiez dépenser moins et épargner davantage. Firefly III prend en charge l'utilisation de budgets, de catégories et de balises. Grâce à une série d'outils externes, vous pouvez importer vos données. Il propose également de nombreux rapports financiers très pratiques. Firefly III devrait vous donner une vision claire et le contrôle de vos finances. L'argent devrait être utile, pas effrayant. Vous devriez être en mesure de voir où il va, de ressentir vos dépenses et de... waouh, je m'emporte un peu là, n'est-ce pas ? Mais vous voyez l'idée : c'est votre argent. Ce sont vos dépenses. Empêchez-les de vous contrôler. J'ai créé cet outil parce que j'ai commencé à ne plus aimer l'argent. En avoir, ne pas en avoir, payer des factures avec... vous voyez le genre. Mais c'est fini. Je veux me sentir "en sécurité", quel que soit mon solde. Et j'espère que cet outil pourra vous aider. Je sais qu'il m'aide, moi.
+    es_es: |
+      "Firefly III" es un gestor (auto-alojado) para tus finanzas personales. Puede ayudarte a llevar un seguimiento de tus gastos e ingresos, para que puedas gastar menos y ahorrar más. Firefly III permite el uso de presupuestos, categorías y etiquetas. Mediante el uso de varias herramientas externas, puedes importar datos. También tiene disponibles muchos informes financieros interesantes. Firefly III debería darte una visión detallada y control sobre tus finanzas. El dinero debería ser útil, no aterrador. Deberías ser capaz de ver a dónde va, de sentir tus gastos y de... vaya, me estoy pasando un poco con esto, ¿verdad? Pero ya capta la idea: este es su dinero. Estos son sus gastos. Deje de permitir que le controlen. Construí esta herramienta porque el dinero empezó a desagradarme. Tener dinero, no tener dinero, pagar facturas con dinero, ya sabe a qué me refiero. Pero no más. Quiero sentirme "seguro", sea cual sea mi saldo. Y espero que esta herramienta pueda ayudarle. Sé que a mí me ayuda.
+    de_de: |
+      "Firefly III" ist ein (selbstgehosteter) Manager für Ihre persönlichen Finanzen. Er kann Ihnen dabei helfen, Ihre Ausgaben und Einnahmen im Blick zu behalten, damit Sie weniger ausgeben und mehr sparen können. Firefly III unterstützt die Verwendung von Budgets, Kategorien und Tags. Mithilfe einer Reihe externer Tools können Sie Daten importieren. Zudem stehen viele hilfreiche Finanzberichte zur Verfügung. Firefly III soll Ihnen Einblick in und Kontrolle über Ihre Finanzen geben. Geld sollte nützlich sein, nicht beängstigend. Sie sollten sehen können, wohin es fließt, Ihre Ausgaben spüren und ... wow, ich übertreibe es ein bisschen, oder? Aber Sie verstehen, worum es geht: Das ist Ihr Geld. Das sind Ihre Ausgaben. Hören Sie auf, sich von ihnen kontrollieren zu lassen. Ich habe dieses Tool entwickelt, weil ich angefangen habe, Geld zu hassen. Geld zu haben, kein Geld zu haben, Rechnungen mit Geld zu bezahlen – Sie wissen schon. Aber damit ist jetzt Schluss. Ich möchte mich „sicher“ fühlen, egal wie mein Kontostand ist. Und ich hoffe, dass dieses Tool Ihnen helfen kann. Ich weiß, dass es mir hilft.
+    ru_ru: |
+      «Firefly III» — это менеджер личных финансов (с возможностью самохостинга). Он поможет вам отслеживать расходы и доходы, чтобы вы могли тратить меньше, а откладывать больше. Firefly III поддерживает использование бюджетов, категорий и тегов. С помощью ряда внешних инструментов вы можете импортировать данные. Также в системе доступно множество отличных финансовых отчетов. Firefly III должен дать вам понимание ваших финансов и контроль над ними. Деньги должны быть полезным инструментом, а не поводом для страха. Вы должны видеть, куда они уходят, чувствовать свои расходы и... ого, что-то меня занесло, да? Но суть вы поняли: это ваши деньги. Это ваши расходы. Не позволяйте им управлять вами. Я создал этот инструмент, потому что начал испытывать неприязнь к деньгам. Когда они есть, когда их нет, когда ими нужно оплачивать счета — ну, вы понимаете. Но больше так не будет. Я хочу чувствовать себя «в безопасности» независимо от баланса на счету. И я надеюсь, что этот инструмент поможет и вам. Я знаю, что мне он помогает.
+    it_it: |
+      "Firefly III" è un gestore di finanze personali (self-hosted). Ti aiuta a tenere traccia delle tue uscite e delle tue entrate, permettendoti di spendere meno e risparmiare di più. Firefly III supporta l'uso di budget, categorie e tag. Grazie a diversi strumenti esterni, puoi importare i tuoi dati. Offre inoltre numerosi e utili report finanziari. 
+
+      Firefly III nasce per darti consapevolezza e controllo sulle tue finanze. I soldi dovrebbero essere uno strumento utile, non una fonte di paura. Dovresti poter vedere dove finiscono, "sentire" le tue spese e... wow, mi sto lasciando trascinare, vero? Ma il punto è questo: sono i tuoi soldi. Sono le tue spese. Non lasciare che ti controllino. 
+
+      Ho creato questo strumento perché avevo iniziato a provare avversione per il denaro. Averne, non averne, usarlo per pagare le bollette, insomma, ci siamo capiti. Ma ora basta. Voglio sentirmi "al sicuro", a prescindere dal mio saldo. E spero che questo strumento possa aiutare anche te. So che per me è così.
+    pt_br: |
+      O "Firefly III" é um gerenciador (auto-hospedado) para suas finanças pessoais. Ele pode ajudar você a acompanhar suas despesas e receitas, para que você possa gastar menos e economizar mais. O Firefly III suporta o uso de orçamentos, categorias e etiquetas. Usando uma série de ferramentas externas, você pode importar dados. Ele também possui muitos relatórios financeiros interessantes disponíveis. O Firefly III deve lhe dar visão e controle sobre suas finanças. Dinheiro deve ser útil, não assustador. Você deve ser capaz de ver para onde ele está indo, sentir suas despesas e... uau, estou exagerando um pouco, não estou? Mas você entendeu a ideia: este é o seu dinheiro. Estas são as suas despesas. Impeça que elas controlem você. Eu construí esta ferramenta porque comecei a desgostar de dinheiro. Ter dinheiro, não ter dinheiro, pagar contas com dinheiro, você entendeu. Mas não mais. Eu quero me sentir "seguro", não importa qual seja o meu saldo. E espero que esta ferramenta possa ajudar você. Eu sei que ela me ajuda.
+    tr_tr: |
+      "Firefly III", kişisel finansınız için (kendi sunucunuzda barındırabileceğiniz) bir yöneticidir. Harcamalarınızı ve gelirinizi takip etmenize yardımcı olur, böylece daha az harcayıp daha fazla tasarruf edebilirsiniz. Firefly III; bütçe, kategori ve etiket kullanımını destekler. Bir dizi harici araç kullanarak veri içe aktarabilirsiniz. Ayrıca birçok kullanışlı finansal rapor sunar. Firefly III, finansal durumunuz hakkında size içgörü ve kontrol sağlamalıdır. Para korkutucu değil, kullanışlı olmalıdır. Paranın nereye gittiğini görebilmeli, harcamalarınızı hissedebilmeli ve... vay canına, biraz abartıyorum değil mi? Ama ana fikri anladınız: Bu sizin paranız. Bunlar sizin harcamalarınız. Sizi kontrol etmelerine izin vermeyin. Bu aracı paradan hoşlanmamaya başladığım için geliştirdim. Paraya sahip olmak, olmamak, faturaları parayla ödemek, bilirsiniz işte. Ama artık bitti. Bakiyem ne olursa olsun kendimi "güvende" hissetmek istiyorum. Ve umarım bu araç size de yardımcı olur. Bana yardımcı olduğunu biliyorum.
+    pl_pl: |
+      „Firefly III” to (samohostowany) menedżer Twoich finansów osobistych. Pomoże Ci śledzić wydatki i dochody, dzięki czemu będziesz mógł wydawać mniej i oszczędzać więcej. Firefly III obsługuje budżety, kategorie i tagi. Korzystając z szeregu zewnętrznych narzędzi, możesz importować dane. Dostępnych jest również wiele świetnych raportów finansowych. Firefly III ma na celu zapewnienie Ci wglądu w Twoje finanse i kontroli nad nimi. Pieniądze powinny być użyteczne, a nie straszne. Powinieneś móc widzieć, dokąd płyną, czuć swoje wydatki i... wow, trochę mnie poniosło, prawda? Ale wiesz, o co chodzi: to są Twoje pieniądze. To są Twoje wydatki. Przestań pozwalać im sobą rządzić. Zbudowałem to narzędzie, ponieważ zacząłem nie lubić pieniędzy. Posiadania ich, ich braku, płacenia nimi rachunków – wiesz, o co chodzi. Ale koniec z tym. Chcę czuć się „bezpiecznie”, niezależnie od stanu konta. I mam nadzieję, że to narzędzie pomoże również Tobie. Wiem, że mi pomaga.
+    ko_kr: |
+      "Firefly III"는 개인 자산을 관리할 수 있는 (셀프 호스팅형) 가계부입니다. 수입과 지출을 꼼꼼히 기록하여 지출은 줄이고 저축은 늘릴 수 있도록 도와줍니다. Firefly III는 예산, 카테고리, 태그 기능을 지원하며, 다양한 외부 도구를 활용해 데이터를 불러올 수도 있습니다. 또한 유용한 금융 보고서 기능도 많이 제공합니다.
+
+      Firefly III의 목적은 여러분이 자산 현황을 명확히 파악하고 스스로 통제할 수 있게 돕는 것입니다. 돈은 유용한 도구여야지, 두려움의 대상이 되어서는 안 됩니다. 돈이 어디로 흘러가는지 파악하고, 지출을 체감하며... 와, 제가 너무 몰입했나요? 하지만 핵심은 이겁니다. 이것은 여러분의 돈이고, 여러분의 지출입니다. 돈에 휘둘리지 마세요.
+
+      제가 이 도구를 만든 이유는 돈이라는 존재 자체가 싫어지기 시작했기 때문입니다. 돈이 있든 없든, 돈으로 공과금을 내든 뭐든 말이죠. 하지만 이제는 다릅니다. 잔고가 얼마든 상관없이 저는 "안심"하고 싶었습니다. 이 도구가 저에게 도움이 된 것처럼, 여러분에게도 도움이 되기를 바랍니다.
+    ja_jp: |
+      「Firefly III」は、セルフホスト型の個人財務管理ツールです。支出と収入を記録することで、無駄遣いを減らし、より多くの貯金ができるようサポートします。Firefly IIIは予算、カテゴリー、タグの管理に対応しており、様々な外部ツールを使ってデータをインポートすることも可能です。また、便利な財務レポート機能も充実しています。
+
+      Firefly IIIの目的は、あなたの家計を可視化し、自分自身でコントロールできるようにすることです。お金は便利なものであるべきで、怖いものであるべきではありません。お金がどこへ流れているのかを把握し、支出を実感し、そして……おっと、少し熱が入りすぎてしまいましたね。
+
+      でも、言いたいことは伝わったはずです。これはあなたのお金であり、あなたの支出です。お金に支配されるのはもうやめましょう。
+
+      私がお金に対して苦手意識を持ち始めたことが、このツールを作ったきっかけでした。お金があること、ないこと、お金で請求書を支払うこと……分かりますよね。でも、もうそんな思いはしたくありません。残高がいくらであっても、私は「安心」を感じたいのです。
+
+      このツールがあなたのお役に立てることを願っています。私自身にとっては、間違いなく助けになっていますから。
   tips:
     before_install:
       en_us: |
