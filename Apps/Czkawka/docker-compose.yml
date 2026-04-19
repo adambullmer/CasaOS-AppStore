@@ -49,8 +49,41 @@ x-casaos:
   scheme: http
   store_app_id: czkawka
   title:
-    custom: Czkawka
+    en_US: Czkawka
+    zh_CN: Czkawka
+    fr_FR: Czkawka
+    es_ES: Czkawka
+    de_DE: Czkawka
+    ru_RU: Czkawka
+    it_IT: Czkawka
+    pt_BR: Czkawka
+    tr_TR: Czkawka
+    pl_PL: Czkawka
+    ko_KR: Czkawka
+    ja_JP: Czkawka
   tagline:
-    custom: Simple, fast and free app to remove unnecessary files from your computer
+    en_US: Simple, fast and free app to remove unnecessary files from your computer
+    zh_CN: 一款简单、快速且免费的应用程序，可从您的计算机中删除不必要的文件
+    fr_FR: Application simple, rapide et gratuite pour supprimer les fichiers inutiles de votre ordinateur
+    es_ES: Aplicación simple, rápida y gratuita para eliminar archivos innecesarios de su computadora
+    de_DE: Einfache, schnelle und kostenlose App zum Entfernen unnötiger Dateien von Ihrem Computer
+    ru_RU: Простое, быстрое и бесплатное приложение для удаления ненужных файлов с вашего компьютера
+    it_IT: App semplice, veloce e gratuita per rimuovere i file non necessari dal tuo computer
+    pt_BR: Aplicativo simples, rápido e gratuito para remover arquivos desnecessários do seu computador
+    tr_TR: Bilgisayarınızdan gereksiz dosyaları kaldırmak için basit, hızlı ve ücretsiz bir uygulama
+    pl_PL: Prosta, szybka i darmowa aplikacja do usuwania niepotrzebnych plików z komputera
+    ko_KR: 컴퓨터에서 불필요한 파일을 제거하는 간단하고 빠르고 무료인 앱
+    ja_JP: コンピュータから不要なファイルを削除するための、シンプル、高速、無料のアプリ
   description:
-    custom: Multi functional app to find duplicates, empty folders, similar images etc.
+    en_US: Multi functional app to find duplicates, empty folders, similar images etc.
+    zh_CN: 一个多功能应用程序，可查找重复项、空文件夹、相似图像等。
+    fr_FR: Application multifonctionnelle pour trouver les doublons, les dossiers vides, les images similaires, etc.
+    es_ES: Aplicación multifuncional para encontrar duplicados, carpetas vacías, imágenes similares, etc.
+    de_DE: Multifunktionale App zum Finden von Duplikaten, leeren Ordnern, ähnlichen Bildern usw.
+    ru_RU: Многофункциональное приложение для поиска дубликатов, пустых папок, похожих изображений и т. д.
+    it_IT: App multifunzionale per trovare duplicati, cartelle vuote, immagini simili ecc.
+    pt_BR: Aplicativo multifuncional para encontrar duplicatas, pastas vazias, imagens semelhantes etc.
+    tr_TR: Yinelenenleri, boş klasörleri, benzer görüntüleri vb. bulmak için çok işlevli uygulama.
+    pl_PL: Wielofunkcyjna aplikacja do wyszukiwania duplikatów, pustych folderów, podobnych obrazów itp.
+    ko_KR: 중복 파일, 빈 폴더, 유사한 이미지 등을 찾는 다기능 앱입니다.
+    ja_JP: 重複、空のフォルダー、類似の画像などを見つける多機能アプリ。
