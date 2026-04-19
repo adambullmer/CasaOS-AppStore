@@ -40,3 +40,52 @@ x-casaos:
   store_app_id: mkvtoolnix
   title:
     custom: MKVToolNix
+    zh_CN: MKVToolNix
+    fr_FR: MKVToolNix
+    es_ES: MKVToolNix
+    de_DE: MKVToolNix
+    ru_RU: MKVToolNix
+    it_IT: MKVToolNix
+    pt_BR: MKVToolNix
+    tr_TR: MKVToolNix
+    pl_PL: MKVToolNix
+    ko_KR: MKVToolNix
+    ja_JP: MKVToolNix
+  tagline:
+    en_US: The essential toolkit for creating, modifying, and inspecting Matroska (MKV) files.
+    zh_CN: 创建、修改和检查 Matroska (MKV) 文件的必备工具包。
+    fr_FR: La boîte à outils essentielle pour créer, modifier et inspecter les fichiers Matroska (MKV).
+    es_ES: El conjunto de herramientas esencial para crear, modificar e inspeccionar archivos Matroska (MKV).
+    de_DE: Das unverzichtbare Toolkit zum Erstellen, Ändern und Prüfen von Matroska (MKV)-Dateien.
+    ru_RU: Незаменимый набор инструментов для создания, изменения и проверки файлов Matroska (MKV).
+    it_IT: Il toolkit essenziale per creare, modificare e ispezionare file Matroska (MKV).
+    pt_BR: O kit de ferramentas essencial para criar, modificar e inspecionar arquivos Matroska (MKV).
+    tr_TR: Matroska (MKV) dosyaları oluşturmak, değiştirmek ve incelemek için vazgeçilmez araç seti.
+    pl_PL: Niezbędny zestaw narzędzi do tworzenia, modyfikowania i sprawdzania plików Matroska (MKV).
+    ko_KR: Matroska (MKV) 파일을 생성, 수정 및 검사하는 데 필수적인 도구 키트.
+    ja_JP: Matroska (MKV) ファイルの作成、変更、検査に不可欠なツールキット。
+  description:
+    en_US: |
+      MKVToolNix is a comprehensive collection of tools designed to work with Matroska (MKV) files. It enables users to perform various operations such as creating new MKV files from other media formats, modifying existing MKV files by adding or removing tracks (audio, video, subtitles), splitting large files into smaller segments, and merging multiple files. Additionally, it provides functionalities to inspect the internal structure of MKV files, extract specific tracks, and repair corrupted files. This powerful suite is indispensable for anyone who frequently handles MKV media.
+    zh_CN: |
+      MKVToolNix 是一套全面的工具集，专为处理 Matroska (MKV) 文件而设计。它使用户能够执行各种操作，例如从其他媒体格式创建新的 MKV 文件、通过添加或删除音轨（音频、视频、字幕）修改现有 MKV 文件、将大文件分割成更小的片段以及合并多个文件。此外，它还提供检查 MKV 文件内部结构、提取特定音轨和修复损坏文件的功能。对于经常处理 MKV 媒体的任何人来说，这个功能强大的套件都是不可或缺的。
+    fr_FR: |
+      MKVToolNix est une collection complète d'outils conçus pour travailler avec des fichiers Matroska (MKV). Il permet aux utilisateurs d'effectuer diverses opérations telles que la création de nouveaux fichiers MKV à partir d'autres formats multimédias, la modification de fichiers MKV existants en ajoutant ou en supprimant des pistes (audio, vidéo, sous-titres), la division de fichiers volumineux en segments plus petits et la fusion de plusieurs fichiers. De plus, il offre des fonctionnalités pour inspecter la structure interne des fichiers MKV, extraire des pistes spécifiques et réparer les fichiers corrompus. Cette suite puissante est indispensable pour quiconque manipule fréquemment des médias MKV.
+    es_ES: |
+      MKVToolNix es una colección completa de herramientas diseñadas para trabajar con archivos Matroska (MKV). Permite a los usuarios realizar diversas operaciones como crear nuevos archivos MKV a partir de otros formatos multimedia, modificar archivos MKV existentes añadiendo o eliminando pistas (audio, vídeo, subtítulos), dividir archivos grandes en segmentos más pequeños y fusionar múltiples archivos. Además, proporciona funcionalidades para inspeccionar la estructura interna de los archivos MKV, extraer pistas específicas y reparar archivos corruptos. Esta potente suite es indispensable para cualquiera que maneje con frecuencia medios MKV.
+    de_DE: |
+      MKVToolNix ist eine umfassende Sammlung von Tools, die für die Arbeit mit Matroska (MKV)-Dateien entwickelt wurden. Es ermöglicht Benutzern, verschiedene Operationen durchzuführen, wie das Erstellen neuer MKV-Dateien aus anderen Medienformaten, das Ändern bestehender MKV-Dateien durch Hinzufügen oder Entfernen von Spuren (Audio, Video, Untertitel), das Aufteilen großer Dateien in kleinere Segmente und das Zusammenführen mehrerer Dateien. Darüber hinaus bietet es Funktionen zum Überprüfen der internen Struktur von MKV-Dateien, zum Extrahieren bestimmter Spuren und zum Reparieren beschädigter Dateien. Diese leistungsstarke Suite ist für jeden unverzichtbar, der häufig mit MKV-Medien umgeht.
+    ru_RU: |
+      MKVToolNix — это всеобъемлющая коллекция инструментов, предназначенных для работы с файлами Matroska (MKV). Он позволяет пользователям выполнять различные операции, такие как создание новых файлов MKV из других медиаформатов, изменение существующих файлов MKV путем добавления или удаления дорожек (аудио, видео, субтитры), разбиение больших файлов на более мелкие сегменты и объединение нескольких файлов. Кроме того, он предоставляет функции для проверки внутренней структуры файлов MKV, извлечения определенных дорожек и восстановления поврежденных файлов. Этот мощный набор незаменим для всех, кто часто работает с медиафайлами MKV.
+    it_IT: |
+      MKVToolNix è una raccolta completa di strumenti progettati per lavorare con i file Matroska (MKV). Consente agli utenti di eseguire varie operazioni come la creazione di nuovi file MKV da altri formati multimediali, la modifica di file MKV esistenti aggiungendo o rimuovendo tracce (audio, video, sottotitoli), la suddivisione di file di grandi dimensioni in segmenti più piccoli e l'unione di più file. Inoltre, offre funzionalità per ispezionare la struttura interna dei file MKV, estrarre tracce specifiche e riparare i file danneggiati. Questa potente suite è indispensabile per chiunque gestisca frequentemente media MKV.
+    pt_BR: |
+      MKVToolNix é uma coleção abrangente de ferramentas projetadas para trabalhar com arquivos Matroska (MKV). Ele permite que os usuários realizem várias operações, como criar novos arquivos MKV a partir de outros formatos de mídia, modificar arquivos MKV existentes adicionando ou removendo faixas (áudio, vídeo, legendas), dividir arquivos grandes em segmentos menores e mesclar vários arquivos. Além disso, ele fornece funcionalidades para inspecionar a estrutura interna de arquivos MKV, extrair faixas específicas e reparar arquivos corrompidos. Este poderoso conjunto é indispensável para quem lida frequentemente com mídias MKV.
+    tr_TR: |
+      MKVToolNix, Matroska (MKV) dosyalarıyla çalışmak üzere tasarlanmış kapsamlı bir araç koleksiyonudur. Kullanıcıların diğer medya formatlarından yeni MKV dosyaları oluşturma, mevcut MKV dosyalarını izler (ses, video, altyazı) ekleyerek veya kaldırarak değiştirme, büyük dosyaları daha küçük segmentlere bölme ve birden fazla dosyayı birleştirme gibi çeşitli işlemleri gerçekleştirmesini sağlar. Ayrıca, MKV dosyalarının dahili yapısını inceleme, belirli izleri çıkarma ve bozuk dosyaları onarma işlevleri de sunar. Bu güçlü süit, MKV medyasıyla sık sık ilgilenen herkes için vazgeçilmezdir.
+    pl_PL: |
+      MKVToolNix to obszerna kolekcja narzędzi przeznaczonych do pracy z plikami Matroska (MKV). Umożliwia użytkownikom wykonywanie różnych operacji, takich jak tworzenie nowych plików MKV z innych formatów multimedialnych, modyfikowanie istniejących plików MKV poprzez dodawanie lub usuwanie ścieżek (audio, wideo, napisy), dzielenie dużych plików na mniejsze segmenty oraz łączenie wielu plików. Dodatkowo, oferuje funkcje do inspekcji wewnętrznej struktury plików MKV, ekstrakcji określonych ścieżek i naprawy uszkodzonych plików. Ten potężny zestaw jest niezastąpiony dla każdego, kto często zajmuje się mediami MKV.
+    ko_KR: |
+      MKVToolNix는 Matroska (MKV) 파일 작업을 위해 설계된 포괄적인 도구 모음입니다. 사용자는 다른 미디어 형식에서 새 MKV 파일을 생성하고, 트랙(오디오, 비디오, 자막)을 추가하거나 제거하여 기존 MKV 파일을 수정하고, 큰 파일을 더 작은 세그먼트로 분할하고, 여러 파일을 병합하는 등 다양한 작업을 수행할 수 있습니다. 또한 MKV 파일의 내부 구조를 검사하고, 특정 트랙을 추출하고, 손상된 파일을 복구하는 기능을 제공합니다. 이 강력한 스위트는 MKV 미디어를 자주 다루는 모든 사람에게 필수적입니다.
+    ja_JP: |
+      MKVToolNixは、Matroska (MKV)ファイルを操作するために設計された包括的なツールコレクションです。他のメディア形式から新しいMKVファイルを作成したり、既存のMKVファイルにトラック（オーディオ、ビデオ、字幕）を追加または削除して変更したり、大きなファイルを小さなセグメントに分割したり、複数のファイルを結合したりするなど、さまざまな操作をユーザーが行えるようにします。さらに、MKVファイルの内部構造を検査したり、特定のトラックを抽出したり、破損したファイルを修復したりする機能も提供します。この強力なスイートは、MKVメディアを頻繁に扱うすべての人にとって不可欠です。
