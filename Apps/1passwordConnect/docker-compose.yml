@@ -2,13 +2,14 @@ name: 1password-connect
 
 services:
   op-connect-api:
-    image: 1password/connect-api:latest
+    image: 1password/connect-api:1.9.1
     hostname: 1password-connect-api
     container_name: 1password_connect_api
     restart: unless-stopped
     ports:
       - target: 8080
         published: "${WEBUI_PORT:-8080}"
+        protocol: tcp
     volumes:
       - type: bind
         source: /DATA/AppData/$AppID/config/1password-credentials.json
@@ -16,9 +17,58 @@ services:
       - type: bind
         source: /DATA/AppData/$AppID/data/
         target: /home/opuser/.op/data
+    deploy:
+      resources:
+        reservations:
+          memory: "128M"
+    x-casaos:
+      ports:
+        - container: "8080"
+          description:
+            en_us: 1Password Connect API Port
+            zh_cn: 1Password Connect API 端口
+            fr_fr: Port API 1Password Connect
+            es_es: Puerto API de 1Password Connect
+            de_de: 1Password Connect API-Port
+            ru_ru: Порт API 1Password Connect
+            it_it: Porta API 1Password Connect
+            pt_br: Porta da API 1Password Connect
+            tr_tr: 1Password Connect API Bağlantı Noktası
+            pl_pl: Port API 1Password Connect
+            ko_kr: 1Password Connect API 포트
+            ja_jp: 1Password Connect API ポート
+      volumes:
+        - container: /home/opuser/.op/1password-credentials.json
+          description:
+            en_us: 1Password Connect API credentials file.
+            zh_cn: 1Password Connect API 凭据文件。
+            fr_fr: Fichier de titres d'identité 1Password Connect API.
+            es_es: Archivo de credenciales de la API de 1Password Connect.
+            de_de: 1Password Connect API-Anmeldeinformationsdatei.
+            ru_ru: Файл учетных данных 1Password Connect API.
+            it_it: File delle credenziali API di 1Password Connect.
+            pt_br: Arquivo de credenciais da API do 1Password Connect.
+            tr_tr: 1Password Connect API kimlik bilgileri dosyası.
+            pl_pl: Plik poświadczeń API 1Password Connect.
+            ko_kr: 1Password Connect API 자격 증명 파일.
+            ja_jp: 1Password Connect API 資格情報ファイル。
+        - container: /home/opuser/.op/data
+          description:
+            en_us: 1Password Connect API data directory.
+            zh_cn: 1Password Connect API 数据目录。
+            fr_fr: Répertoire de données de l'API 1Password Connect.
+            es_es: Directorio de datos de la API de 1Password Connect.
+            de_de: 1Password Connect API-Datenverzeichnis.
+            ru_ru: Каталог данных 1Password Connect API.
+            it_it: Directory dei dati API di 1Password Connect.
+            pt_br: Diretório de dados da API 1Password Connect.
+            tr_tr: 1Password Connect API veri dizini.
+            pl_pl: Katalog danych API 1Password Connect.
+            ko_kr: 1Password Connect API 데이터 디렉터리.
+            ja_jp: 1Password Connect API データ ディレクトリ。
 
   op-connect-sync:
-    image: 1password/connect-sync:latest
+    image: ghcr.io/1password/connect-sync:1.8.1
     hostname: 1password-connect-sync
     container_name: 1password_connect_sync
     restart: unless-stopped
@@ -29,10 +79,45 @@ services:
       - type: bind
         source: /DATA/AppData/$AppID/data/
         target: /home/opuser/.op/data
+    deploy:
+      resources:
+        reservations:
+          memory: "128M"
+    x-casaos:
+      volumes:
+        - container: /home/opuser/.op/1password-credentials.json
+          description:
+            en_us: 1Password Connect Sync credentials file.
+            zh_cn: 1Password Connect 同步凭据文件。
+            fr_fr: Fichier de titres d'identité 1Password Connect Sync.
+            es_es: Archivo de credenciales de sincronización de 1Password Connect.
+            de_de: 1Password Connect Sync-Anmeldeinformationsdatei.
+            ru_ru: Файл учетных данных 1Password Connect Sync.
+            it_it: File delle credenziali di sincronizzazione di 1Password Connect.
+            pt_br: Arquivo de credenciais de sincronização do 1Password Connect.
+            tr_tr: 1Password Connect Sync kimlik bilgileri dosyası.
+            pl_pl: Plik poświadczeń synchronizacji 1Password Connect.
+            ko_kr: 1Password Connect 동기화 자격 증명 파일.
+            ja_jp: 1Password Connect 同期資格情報ファイル。
+        - container: /home/opuser/.op/data
+          description:
+            en_us: 1Password Connect Sync data directory.
+            zh_cn: 1Password Connect 同步数据目录。
+            fr_fr: Répertoire de données de synchronisation 1Password Connect.
+            es_es: Directorio de datos de sincronización de 1Password Connect.
+            de_de: 1Password Connect Sync-Datenverzeichnis.
+            ru_ru: Каталог данных 1Password Connect Sync.
+            it_it: Directory dei dati di sincronizzazione di 1Password Connect.
+            pt_br: Diretório de dados de sincronização do 1Password Connect.
+            tr_tr: 1Password Connect Sync veri dizini.
+            pl_pl: Katalog danych synchronizacji 1Password Connect.
+            ko_kr: 1Password Connect 동기화 데이터 디렉터리.
+            ja_jp: 1Password Connect 同期データ ディレクトリ。
 
 x-casaos:
   architectures:
     - amd64
+  main: op-connect-api
   author: self
   category: Utilities
   developer: 1Password Team
@@ -43,9 +128,53 @@ x-casaos:
   port_map: ${WEBUI_PORT:-8080}
   store_app_id: 1password-connect
   title:
-    custom: 1Password Connect
+    en_US: 1Password Connect
+    zh_CN: 1Password Connect
+    fr_FR: 1Password Connect
+    es_ES: 1Password Connect
+    de_DE: 1Password Connect
+    ru_RU: 1Password Connect
+    it_IT: 1Password Connect
+    pt_BR: 1Password Connect
+    tr_TR: 1Password Connect
+    pl_PL: 1Password Connect
+    ko_KR: 1Password Connect
+    ja_JP: 1Password Connect
   tagline:
-    en_us: Access your 1Password secrets using 1Password Connect
+    en_US: Access your 1Password secrets using 1Password Connect
+    zh_CN: 使用 1Password Connect 访问您的 1Password 秘密
+    fr_FR: Accédez à vos secrets 1Password avec 1Password Connect
+    es_ES: Acceda a sus secretos de 1Password usando 1Password Connect
+    de_DE: Greifen Sie mit 1Password Connect auf Ihre 1Password-Geheimnisse zu
+    ru_RU: Доступ к вашим секретам 1Password с помощью 1Password Connect
+    it_IT: Accedi ai tuoi segreti 1Password usando 1Password Connect
+    pt_BR: Acesse seus segredos do 1Password usando o 1Password Connect
+    tr_TR: 1Password Connect kullanarak 1Password sırlarınıza erişin
+    pl_PL: Uzyskaj dostęp do swoich sekretów 1Password za pomocą 1Password Connect
+    ko_KR: 1Password Connect를 사용하여 1Password 비밀번호에 액세스
+    ja_JP: 1Password Connect を使用して 1Password シークレットにアクセスする
   description:
-    en_us: |
+    en_US: |
       With 1Password Connect, you can securely access your 1Password items and vaults in your company's apps and cloud infrastructure using a private REST API or the 1Password CLI.
+    zh_CN: |
+      借助 1Password Connect，您可以使用私有 REST API 或 1Password CLI 在公司的应用程序和云基础架构中安全地访问 1Password 项目和保管库。
+    fr_FR: |
+      Avec 1Password Connect, vous pouvez accéder en toute sécurité à vos éléments et coffres 1Password dans les applications et l'infrastructure cloud de votre entreprise à l'aide d'une API REST privée ou de l'interface de ligne de commande 1Password.
+    es_ES: |
+      Con 1Password Connect, puede acceder de forma segura a sus elementos y bóvedas de 1Password en las aplicaciones y la infraestructura en la nube de su empresa utilizando una API REST privada o la CLI de 1Password.
+    de_DE: |
+      Mit 1Password Connect können Sie sicher auf Ihre 1Password-Elemente und -Tresore in den Apps und der Cloud-Infrastruktur Ihres Unternehmens zugreifen, indem Sie eine private REST-API oder die 1Password CLI verwenden.
+    ru_RU: |
+      С помощью 1Password Connect вы можете безопасно получать доступ к своим элементам и хранилищам 1Password в приложениях вашей компании и облачной инфраструктуре, используя частный REST API или 1Password CLI.
+    it_IT: |
+      Con 1Password Connect, puoi accedere in modo sicuro ai tuoi elementi e alle tue cassette di sicurezza 1Password nelle app e nell'infrastruttura cloud della tua azienda utilizzando un'API REST privata o la CLI di 1Password.
+    pt_BR: |
+      Com o 1Password Connect, você pode acessar com segurança seus itens e cofres do 1Password nos aplicativos e na infraestrutura de nuvem da sua empresa usando uma API REST privada ou a CLI do 1Password.
+    tr_TR: |
+      1Password Connect ile şirketinizin uygulamalarındaki ve bulut altyapısındaki 1Password öğelerinize ve kasalarınıza özel bir REST API veya 1Password CLI kullanarak güvenli bir şekilde erişebilirsiniz.
+    pl_PL: |
+      Dzięki 1Password Connect możesz bezpiecznie uzyskiwać dostęp do swoich elementów i sejfów 1Password w aplikacjach i infrastrukturze chmurowej Twojej firmy, używając prywatnego API REST lub CLI 1Password.
+    ko_KR: |
+      1Password Connect를 사용하면 비공개 REST API 또는 1Password CLI를 사용하여 회사 앱 및 클라우드 인프라에서 1Password 항목 및 볼트에 안전하게 액세스할 수 있습니다.
+    ja_JP: |
+      1Password Connect を使用すると、プライベート REST API または 1Password CLI を使用して、企業アプリやクラウドインフラストラクチャ内の 1Password アイテムとボールトに安全にアクセスできます。
