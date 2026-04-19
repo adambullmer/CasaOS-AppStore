@@ -38,5 +38,211 @@ x-casaos:
   port_map: ${WEBUI_PORT:-9000}
   scheme: https
   store_app_id: smallstep-step-ca
+  tagline:
+    en_US: Your private PKI for secure services.
+    zh_CN: 您的私有 PKI，为安全服务保驾护航。
+    fr_FR: Votre PKI privée pour des services sécurisés.
+    es_ES: Su PKI privada para servicios seguros.
+    de_DE: Ihre private PKI für sichere Dienste.
+    ru_RU: Ваш частный PKI для безопасных сервисов.
+    it_IT: La tua PKI privata per servizi sicuri.
+    pt_BR: Sua PKI privada para serviços seguros.
+    tr_TR: Güvenli hizmetleriniz için özel PKI'niz.
+    pl_PL: Twoje prywatne PKI dla bezpiecznych usług.
+    ko_KR: 안전한 서비스를 위한 개인 PKI.
+    ja_JP: 安全なサービスのためのプライベート PKI。
+  description:
+    en_US: |
+      # Step CA - Private Certificate Authority
+
+      Step CA is a powerful and flexible open-source Certificate Authority (CA) that simplifies the management and issuance of X.509 certificates. It enables you to create and manage your own public key infrastructure (PKI) for securing internal services, devices, and applications on your home network.
+
+      ## Key Features:
+
+      - Automated Certificate Management: Easily issue, revoke, and renew certificates.
+      - ACME Protocol Support: Integrates with tools like Certbot for automated certificate issuance.
+      - Internal PKI: Secure internal communications without relying on public CAs.
+      - Flexible Configuration: Highly customizable to fit your specific security needs.
+
+      ## Why use Step CA on CasaOS?
+
+      Running Step CA on CasaOS allows you to establish a robust and secure internal PKI directly on your home server. This is ideal for securing services like your local web servers, VPNs, and other networked devices with trusted certificates, enhancing the overall security posture of your CasaOS environment.
+    zh_CN: |
+      # Step CA - 私有证书颁发机构
+
+      Step CA 是一个功能强大且灵活的开源证书颁发机构 (CA)，它简化了 X.509 证书的管理和颁发。它使您能够创建和管理自己的公钥基础设施 (PKI)，以保护家庭网络上的内部服务、设备和应用程序。
+
+      ## 主要特点：
+
+      - 自动化证书管理：轻松颁发、撤销和续订证书。
+      - ACME 协议支持：与 Certbot 等工具集成，实现自动化证书颁发。
+      - 内部 PKI：无需依赖公共 CA 即可保护内部通信。
+      - 灵活配置：高度可定制，以满足您的特定安全需求。
+
+      ## 为什么在 CasaOS 上使用 Step CA？
+
+      在 CasaOS 上运行 Step CA，您可以在家庭服务器上直接建立强大而安全的内部 PKI。这非常适合使用受信任证书保护本地 Web 服务器、VPN 和其他网络设备等服务，从而增强 CasaOS 环境的整体安全态势。
+    fr_FR: |
+      # Step CA - Autorité de Certification Privée
+
+      Step CA est une Autorité de Certification (CA) open-source puissante et flexible qui simplifie la gestion et l'émission des certificats X.509. Elle vous permet de créer et de gérer votre propre infrastructure à clés publiques (PKI) pour sécuriser les services internes, les appareils et les applications sur votre réseau domestique.
+
+      ## Fonctionnalités Clés :
+
+      - Gestion automatisée des certificats : Émettez, révoquez et renouvelez facilement des certificats.
+      - Prise en charge du protocole ACME : S'intègre avec des outils comme Certbot pour l'émission automatisée de certificats.
+      - PKI interne : Sécurisez les communications internes sans dépendre des CA publiques.
+      - Configuration flexible : Hautement personnalisable pour répondre à vos besoins de sécurité spécifiques.
+
+      ## Pourquoi utiliser Step CA sur CasaOS ?
+
+      L'exécution de Step CA sur CasaOS vous permet d'établir une PKI interne robuste et sécurisée directement sur votre serveur domestique. C'est idéal pour sécuriser des services tels que vos serveurs web locaux, vos VPN et d'autres périphériques réseau avec des certificats de confiance, améliorant ainsi la posture de sécurité globale de votre environnement CasaOS.
+    es_ES: |
+      # Step CA - Autoridad de Certificación Privada
+
+      Step CA es una Autoridad de Certificación (CA) de código abierto potente y flexible que simplifica la gestión y emisión de certificados X.509. Le permite crear y administrar su propia infraestructura de clave pública (PKI) para proteger servicios internos, dispositivos y aplicaciones en su red doméstica.
+
+      ## Características clave:
+
+      - Gestión automatizada de certificados: Emita, revoque y renueve certificados fácilmente.
+      - Soporte de protocolo ACME: Se integra con herramientas como Certbot para la emisión automatizada de certificados.
+      - PKI interna: Proteja las comunicaciones internas sin depender de CA públicas.
+      - Configuración flexible: Altamente personalizable para adaptarse a sus necesidades de seguridad específicas.
+
+      ## ¿Por qué usar Step CA en CasaOS?
+
+      Ejecutar Step CA en CasaOS le permite establecer una PKI interna robusta y segura directamente en su servidor doméstico. Esto es ideal para proteger servicios como sus servidores web locales, VPN y otros dispositivos en red con certificados de confianza, mejorando la postura de seguridad general de su entorno CasaOS.
+    de_DE: |
+      # Step CA - Private Zertifizierungsstelle
+
+      Step CA ist eine leistungsstarke und flexible Open-Source-Zertifizierungsstelle (CA), die die Verwaltung und Ausstellung von X.509-Zertifikaten vereinfacht. Sie ermöglicht es Ihnen, Ihre eigene Public Key Infrastructure (PKI) zu erstellen und zu verwalten, um interne Dienste, Geräte und Anwendungen in Ihrem Heimnetzwerk zu sichern.
+
+      ## Hauptmerkmale:
+
+      - Automatisierte Zertifikatsverwaltung: Einfaches Ausstellen, Widerrufen und Erneuern von Zertifikaten.
+      - ACME-Protokollunterstützung: Integration mit Tools wie Certbot für die automatisierte Zertifikatsausstellung.
+      - Interne PKI: Sichern Sie die interne Kommunikation, ohne auf öffentliche CAs angewiesen zu sein.
+      - Flexible Konfiguration: Hochgradig anpassbar an Ihre spezifischen Sicherheitsanforderungen.
+
+      ## Warum Step CA auf CasaOS verwenden?
+
+      Der Betrieb von Step CA auf CasaOS ermöglicht Ihnen den Aufbau einer robusten und sicheren internen PKI direkt auf Ihrem Heimserver. Dies ist ideal, um Dienste wie Ihre lokalen Webserver, VPNs und andere vernetzte Geräte mit vertrauenswürdigen Zertifikaten zu sichern und so die allgemeine Sicherheit Ihres CasaOS-Systems zu verbessern.
+    ru_RU: |
+      # Step CA - Частный Центр Сертификации
+
+      Step CA — это мощный и гибкий Центр Сертификации (CA) с открытым исходным кодом, который упрощает управление и выдачу сертификатов X.509. Он позволяет создавать и управлять собственной инфраструктурой открытых ключей (PKI) для защиты внутренних служб, устройств и приложений в вашей домашней сети.
+
+      ## Ключевые особенности:
+
+      - Автоматическое управление сертификатами: Легко выпускайте, отзывайте и продлевайте сертификаты.
+      - Поддержка протокола ACME: Интегрируется с такими инструментами, как Certbot, для автоматической выдачи сертификатов.
+      - Внутренняя PKI: Защитите внутренние коммуникации, не полагаясь на публичные CA.
+      - Гибкая конфигурация: Высокая степень настраиваемости для удовлетворения ваших конкретных потребностей безопасности.
+
+      ## Зачем использовать Step CA на CasaOS?
+
+      Запуск Step CA на CasaOS позволяет вам создать надежную и безопасную внутреннюю PKI непосредственно на вашем домашнем сервере. Это идеально подходит для защиты таких служб, как ваши локальные веб-серверы, VPN и другие сетевые устройства, с помощью доверенных сертификатов, повышая общую безопасность вашей среды CasaOS.
+    it_IT: |
+      # Step CA - Autorità di Certificazione Privata
+
+      Step CA è un'Autorità di Certificazione (CA) open source potente e flessibile che semplifica la gestione e il rilascio dei certificati X.509. Ti consente di creare e gestire la tua infrastruttura a chiave pubblica (PKI) per proteggere servizi interni, dispositivi e applicazioni sulla tua rete domestica.
+
+      ## Caratteristiche principali:
+
+      - Gestione automatizzata dei certificati: Rilascia, revoca e rinnova facilmente i certificati.
+      - Supporto del protocollo ACME: Si integra con strumenti come Certbot per il rilascio automatizzato dei certificati.
+      - PKI interna: Proteggi le comunicazioni interne senza fare affidamento su CA pubbliche.
+      - Configurazione flessibile: Altamente personalizzabile per soddisfare le tue specifiche esigenze di sicurezza.
+
+      ## Perché usare Step CA su CasaOS?
+
+      L'esecuzione di Step CA su CasaOS ti consente di stabilire una PKI interna robusta e sicura direttamente sul tuo server domestico. Questo è l'ideale per proteggere servizi come i tuoi server web locali, VPN e altri dispositivi di rete con certificati attendibili, migliorando la postura di sicurezza complessiva del tuo ambiente CasaOS.
+    pt_BR: |
+      # Step CA - Autoridade Certificadora Privada
+
+      Step CA é uma Autoridade Certificadora (CA) de código aberto poderosa e flexível que simplifica o gerenciamento e a emissão de certificados X.509. Ele permite que você crie e gerencie sua própria infraestrutura de chave pública (PKI) para proteger serviços internos, dispositivos e aplicativos em sua rede doméstica.
+
+      ## Principais Recursos:
+
+      - Gerenciamento Automatizado de Certificados: Emita, revogue e renove certificados facilmente.
+      - Suporte ao Protocolo ACME: Integra-se com ferramentas como Certbot para emissão automatizada de certificados.
+      - PKI Interna: Proteja as comunicações internas sem depender de CAs públicas.
+      - Configuração Flexível: Altamente personalizável para atender às suas necessidades de segurança específicas.
+
+      ## Por que usar o Step CA no CasaOS?
+
+      Executar o Step CA no CasaOS permite que você estabeleça uma PKI interna robusta e segura diretamente em seu servidor doméstico. Isso é ideal para proteger serviços como seus servidores web locais, VPNs e outros dispositivos em rede com certificados confiáveis, melhorando a postura geral de segurança do seu ambiente CasaOS.
+    tr_TR: |
+      # Step CA - Özel Sertifika Yetkilisi
+
+      Step CA, X.509 sertifikalarının yönetimini ve verilmesini basitleştiren güçlü ve esnek bir açık kaynak Sertifika Yetkilisi (CA)'dir. Ev ağınızdaki dahili hizmetleri, cihazları ve uygulamaları güvence altına almak için kendi genel anahtar altyapınızı (PKI) oluşturmanıza ve yönetmenize olanak tanır.
+
+      ## Temel Özellikler:
+
+      - Otomatik Sertifika Yönetimi: Sertifikaları kolayca verin, iptal edin ve yenileyin.
+      - ACME Protokol Desteği: Otomatik sertifika verme için Certbot gibi araçlarla entegre olur.
+      - Dahili PKI: Genel CA'lara güvenmeden dahili iletişimi güvence altına alın.
+      - Esnek Yapılandırma: Belirli güvenlik ihtiyaçlarınıza uyacak şekilde yüksek düzeyde özelleştirilebilir.
+
+      ## Step CA'yı neden CasaOS'ta kullanmalısınız?
+
+      Step CA'yı CasaOS'ta çalıştırmak, doğrudan ev sunucunuzda sağlam ve güvenli bir dahili PKI oluşturmanıza olanak tanır. Bu, yerel web sunucularınız, VPN'leriniz ve diğer ağ cihazlarınız gibi hizmetleri güvenilir sertifikalarla güvence altına almak için idealdir ve CasaOS ortamınızın genel güvenlik duruşunu iyileştirir.
+    pl_PL: |
+      # Step CA - Prywatny Urząd Certyfikacji
+
+      Step CA to potężny i elastyczny, otwarty Urząd Certyfikacji (CA), który upraszcza zarządzanie i wydawanie certyfikatów X.509. Umożliwia tworzenie i zarządzanie własną infrastrukturą klucza publicznego (PKI) w celu zabezpieczania wewnętrznych usług, urządzeń i aplikacji w sieci domowej.
+
+      ## Kluczowe cechy:
+
+      - Zautomatyzowane zarządzanie certyfikatami: Łatwe wydawanie, unieważnianie i odnawianie certyfikatów.
+      - Obsługa protokołu ACME: Integracja z narzędziami takimi jak Certbot w celu zautomatyzowanego wydawania certyfikatów.
+      - Wewnętrzne PKI: Zabezpiecz komunikację wewnętrzną bez polegania na publicznych CA.
+      - Elastyczna konfiguracja: Wysoce konfigurowalny, aby spełnić Twoje specyficzne potrzeby bezpieczeństwa.
+
+      ## Dlaczego warto używać Step CA na CasaOS?
+
+      Uruchomienie Step CA na CasaOS pozwala na ustanowienie solidnego i bezpiecznego wewnętrznego PKI bezpośrednio na Twoim serwerze domowym. Jest to idealne rozwiązanie do zabezpieczania usług, takich jak lokalne serwery WWW, sieci VPN i inne urządzenia sieciowe, za pomocą zaufanych certyfikatów, co zwiększa ogólne bezpieczeństwo Twojego środowiska CasaOS.
+    ko_KR: |
+      # Step CA - 개인 인증 기관
+
+      Step CA는 X.509 인증서 관리 및 발급을 간소화하는 강력하고 유연한 오픈 소스 인증 기관(CA)입니다. 이를 통해 홈 네트워크의 내부 서비스, 장치 및 애플리케이션을 보호하기 위한 자체 공개 키 인프라(PKI)를 생성하고 관리할 수 있습니다.
+
+      ## 주요 기능:
+
+      - 자동화된 인증서 관리: 인증서 발급, 해지 및 갱신을 쉽게 처리합니다.
+      - ACME 프로토콜 지원: Certbot과 같은 도구와 통합하여 자동화된 인증서 발급을 지원합니다.
+      - 내부 PKI: 공용 CA에 의존하지 않고 내부 통신을 보호합니다.
+      - 유연한 구성: 특정 보안 요구 사항에 맞게 고도로 사용자 정의할 수 있습니다.
+
+      ## CasaOS에서 Step CA를 사용하는 이유는 무엇입니까?
+
+      CasaOS에서 Step CA를 실행하면 홈 서버에서 직접 강력하고 안전한 내부 PKI를 구축할 수 있습니다. 이는 로컬 웹 서버, VPN 및 기타 네트워크 장치와 같은 서비스를 신뢰할 수 있는 인증서로 보호하여 CasaOS 환경의 전반적인 보안 태세를 강화하는 데 이상적입니다.
+    ja_JP: |
+      # Step CA - プライベート認証局
+
+      Step CA は、X.509 証明書の管理と発行を簡素化する、強力で柔軟なオープンソースの認証局 (CA) です。これにより、ホームネットワーク上の内部サービス、デバイス、アプリケーションを保護するための独自の公開鍵インフラストラクチャ (PKI) を作成および管理できます。
+
+      ## 主な機能:
+
+      - 自動化された証明書管理: 証明書の発行、失効、更新を簡単に行えます。
+      - ACME プロトコルのサポート: Certbot などのツールと統合し、証明書の自動発行を可能にします。
+      - 内部 PKI: 公開 CA に依存することなく、内部通信を保護します。
+      - 柔軟な構成: 特定のセキュリティニーズに合わせて高度にカスタマイズできます。
+
+      ## CasaOS で Step CA を使用する理由
+
+      CasaOS で Step CA を実行すると、ホームサーバー上で堅牢で安全な内部 PKI を直接確立できます。これは、ローカル Web サーバー、VPN、その他のネットワークデバイスなどのサービスを信頼できる証明書で保護するのに理想的であり、CasaOS 環境全体のセキュリティ体制を強化します。
   title:
     custom: Step CA
+    en_US: Step CA
+    zh_CN: 步骤 CA
+    fr_FR: Étape CA
+    es_ES: Paso CA
+    de_DE: Schritt CA
+    ru_RU: Шаг CA
+    it_IT: Passaggio CA
+    pt_BR: Passo CA
+    tr_TR: Adım CA
+    pl_PL: Krok CA
+    ko_KR: 단계 CA
+    ja_JP: ステップ CA
