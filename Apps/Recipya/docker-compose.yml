@@ -40,8 +40,30 @@ x-casaos:
   store_app_id: recipya
   title:
     custom: Recipya
+    zh_cn: Recipya
+    fr_fr: Recipya
+    es_es: Recipya
+    de_de: Recipya
+    ru_ru: Recipya
+    it_it: Recipya
+    pt_br: Recipya
+    tr_tr: Recipya
+    pl_pl: Recipya
+    ko_kr: Recipya
+    ja_jp: Recipya
   tagline:
     en_us: A clean, simple and powerful recipe manager your whole family can enjoy.
+    zh_cn: 一款干净、简洁、功能强大的食谱管理器，全家人都可以享受。
+    fr_fr: Un gestionnaire de recettes propre, simple et puissant que toute votre famille peut apprécier.
+    es_es: Un gestor de recetas limpio, sencillo y potente que toda tu familia puede disfrutar.
+    de_de: Ein sauberer, einfacher und leistungsstarker Rezeptmanager, den Ihre ganze Familie genießen kann.
+    ru_ru: Чистый, простой и мощный менеджер рецептов, которым может пользоваться вся ваша семья.
+    it_it: Un gestore di ricette pulito, semplice e potente che tutta la famiglia può apprezzare.
+    pt_br: Um gerenciador de receitas limpo, simples e poderoso para toda a sua família desfrutar.
+    tr_tr: Tüm ailenizin keyifle kullanabileceği temiz, basit ve güçlü bir yemek tarifi yöneticisi.
+    pl_pl: Czysty, prosty i potężny menedżer przepisów, z którego może korzystać cała rodzina.
+    ko_kr: 온 가족이 즐길 수 있는 깔끔하고 간단하며 강력한 레시피 관리자입니다.
+    ja_jp: 家族全員で楽しめる、清潔でシンプル、そして強力なレシピマネージャー。
   description:
     en_us: |-
       Recipya is a clean recipe manager web application for unforgettable family recipes, empowering you to curate and share your favorite recipes. It is focused on simplicity for the whole family to enjoy.
@@ -58,3 +80,168 @@ x-casaos:
       - Prevent your device from going to sleep while viewing a recipe
       - Follows your system's theme (light/dark) or choose among 32 themes
       - Cross-compiled for Windows, Linux, and macOS
+    zh_cn: |-
+      Recipya 是一款干净的食谱管理 Web 应用程序，适用于令人难忘的家庭食谱，使您能够整理和分享您最喜欢的食谱。它专注于简单性，让全家人都能享受。
+
+      特点：
+      - 管理您最喜欢的食谱
+      - 从网络上导入食谱
+      - 将纸质食谱数字化
+      - 将您的食谱整理成食谱书
+      - 轻松地从 Mealie、Tandoor 和 Nextcloud Cookbook 迁移您的食谱
+      - 自动转换为您首选的测量系统（英制/公制）
+      - 自动计算营养信息
+      - 打印您的收藏中的任何食谱
+      - 浏览食谱时防止设备进入睡眠状态
+      - 遵循您的系统主题（浅色/深色）或从 32 个主题中选择
+      - 适用于 Windows、Linux 和 macOS 的交叉编译版本
+    fr_fr: |-
+      Recipya est une application web de gestion de recettes propre pour des recettes familiales inoubliables, vous permettant de organiser et de partager vos recettes préférées. Elle est axée sur la simplicité pour que toute la famille puisse en profiter.
+
+      Fonctionnalités :
+      - Gérez vos recettes préférées
+      - Importez des recettes du web
+      - Numérisez des recettes papier
+      - Organisez vos recettes en livres de cuisine
+      - Migrez facilement vos recettes depuis Mealie, Tandoor et Nextcloud Cookbook
+      - Conversion automatique vers votre système de mesure préféré (impérial/métrique)
+      - Calculez automatiquement les informations nutritionnelles
+      - Imprimez n'importe quelle recette de votre collection
+      - Empêchez votre appareil de se mettre en veille pendant la visualisation d'une recette
+      - Suit le thème de votre système (clair/sombre) ou choisissez parmi 32 thèmes
+      - Compilé pour Windows, Linux et macOS
+    es_es: |-
+      Recipya es una aplicación web limpia para la gestión de recetas familiares inolvidables, que le permite organizar y compartir sus recetas favoritas. Se centra en la simplicidad para que toda la familia pueda disfrutarla.
+
+      Características:
+      - Gestione sus recetas favoritas
+      - Importe recetas de toda la web
+      - Digitalice recetas en papel
+      - Organice sus recetas en libros de cocina
+      - Migre fácilmente sus recetas de Mealie, Tandoor y Nextcloud Cookbook
+      - Conversión automática a su sistema de medición preferido (imperial/métrico)
+      - Calcule la información nutricional automáticamente
+      - Imprima cualquier receta de su colección
+      - Evite que su dispositivo entre en suspensión mientras ve una receta
+      - Sigue el tema de su sistema (claro/oscuro) o elija entre 32 temas
+      - Compilado para Windows, Linux y macOS
+    de_de: |-
+      Recipya ist eine saubere Webanwendung zur Rezeptverwaltung für unvergessliche Familienrezepte, die es Ihnen ermöglicht, Ihre Lieblingsrezepte zu kuratieren und zu teilen. Der Fokus liegt auf Einfachheit, damit die ganze Familie sie genießen kann.
+
+      Funktionen:
+      - Verwalten Sie Ihre Lieblingsrezepte
+      - Importieren Sie Rezepte aus dem Internet
+      - Digitalisieren Sie Papierrezepturen
+      - Organisieren Sie Ihre Rezepte in Kochbüchern
+      - Migrieren Sie Ihre Rezepte einfach von Mealie, Tandoor und Nextcloud Cookbook
+      - Automatische Umrechnung in Ihr bevorzugtes Maßsystem (imperial/metrisch)
+      - Nährwertinformationen automatisch berechnen
+      - Drucken Sie jedes Rezept in Ihrer Sammlung
+      - Verhindern Sie, dass Ihr Gerät während der Anzeige eines Rezepts in den Ruhezustand wechselt
+      - Folgt dem Systemthema (hell/dunkel) oder wählen Sie aus 32 Themen
+      - Cross-kompiliert für Windows, Linux und macOS
+    ru_ru: |-
+      Recipya — это чистое веб-приложение для управления рецептами для незабываемых семейных рецептов, позволяющее вам курировать и делиться своими любимыми рецептами. Оно ориентировано на простоту, чтобы вся семья могла наслаждаться им.
+
+      Особенности:
+      - Управляйте своими любимыми рецептами
+      - Импортируйте рецепты со всего интернета
+      - Оцифровывайте бумажные рецепты
+      - Организуйте свои рецепты в кулинарные книги
+      - Легко мигрируйте свои рецепты из Mealie, Tandoor и Nextcloud Cookbook
+      - Автоматическое преобразование в предпочтительную систему измерения (имперская/метрическая)
+      - Автоматически рассчитывать информацию о питании
+      - Распечатывайте любой рецепт из вашей коллекции
+      - Предотвращает переход вашего устройства в спящий режим при просмотре рецепта
+      - Следует системной теме (светлая/темная) или выбирайте из 32 тем
+      - Кросс-компиляция для Windows, Linux и macOS
+    it_it: |-
+      Recipya è un'applicazione web pulita per la gestione delle ricette per ricette di famiglia indimenticabili, che ti consente di curare e condividere le tue ricette preferite. È focalizzata sulla semplicità affinché tutta la famiglia possa goderne.
+
+      Caratteristiche:
+      - Gestisci le tue ricette preferite
+      - Importa ricette dal web
+      - Digitalizza ricette cartacee
+      - Organizza le tue ricette in libri di cucina
+      - Migra facilmente le tue ricette da Mealie, Tandoor e Nextcloud Cookbook
+      - Conversione automatica nel tuo sistema di misurazione preferito (imperiale/metrico)
+      - Calcola automaticamente le informazioni nutrizionali
+      - Stampa qualsiasi ricetta nella tua collezione
+      - Impedisci al tuo dispositivo di andare in sospensione durante la visualizzazione di una ricetta
+      - Segue il tema del tuo sistema (chiaro/scuro) o scegli tra 32 temi
+      - Compilato per Windows, Linux e macOS
+    pt_br: |-
+      Recipya é um aplicativo web de gerenciamento de receitas limpo para receitas familiares inesquecíveis, que permite que você organize e compartilhe suas receitas favoritas. Ele é focado na simplicidade para que toda a família possa desfrutar.
+
+      Recursos:
+      - Gerencie suas receitas favoritas
+      - Importe receitas da web
+      - Digitalize receitas em papel
+      - Organize suas receitas em livros de receitas
+      - Migre facilmente suas receitas de Mealie, Tandoor e Nextcloud Cookbook
+      - Conversão automática para o seu sistema de medição preferido (imperial/métrico)
+      - Calcule as informações nutricionais automaticamente
+      - Imprima qualquer receita da sua coleção
+      - Evite que seu dispositivo entre em suspensão ao visualizar uma receita
+      - Segue o tema do seu sistema (claro/escuro) ou escolha entre 32 temas
+      - Compilado para Windows, Linux e macOS
+    tr_tr: |-
+      Recipya, unutulmaz aile tarifleri için temiz bir yemek tarifi yöneticisi web uygulamasıdır ve en sevdiğiniz tarifleri düzenlemenize ve paylaşmanıza olanak tanır. Tüm ailenin keyfini çıkarabileceği basitliğe odaklanmıştır.
+
+      Özellikler:
+      - Favori tariflerinizi yönetin
+      - Web'den tarifleri içe aktarın
+      - Kağıt tarifleri dijitalleştirin
+      - Tariflerinizi yemek kitaplarında düzenleyin
+      - Tariflerinizi Mealie, Tandoor ve Nextcloud Cookbook'tan kolayca taşıyın
+      - Tercih ettiğiniz ölçü sistemine (emperyal/metrik) otomatik dönüştürme
+      - Besin bilgilerini otomatik olarak hesaplayın
+      - Koleksiyonunuzdaki herhangi bir tarifi yazdırın
+      - Bir tarif görüntülerken cihazınızın uyku moduna geçmesini önleyin
+      - Sisteminizin temasına (açık/koyu) uyar veya 32 tema arasından seçim yapın
+      - Windows, Linux ve macOS için çapraz derlenmiştir
+    pl_pl: |-
+      Recipya to czysta aplikacja internetowa do zarządzania przepisami na niezapomniane rodzinne posiłki, umożliwiająca tworzenie i udostępnianie ulubionych przepisów. Koncentruje się na prostocie, aby cała rodzina mogła z niej korzystać.
+
+      Funkcje:
+      - Zarządzaj swoimi ulubionymi przepisami
+      - Importuj przepisy z internetu
+      - Digitalizuj przepisy papierowe
+      - Organizuj swoje przepisy w książki kucharskie
+      - Łatwo migruj swoje przepisy z Mealie, Tandoor i Nextcloud Cookbook
+      - Automatyczna konwersja do preferowanego systemu miar (imperialny/metryczny)
+      - Automatycznie obliczaj informacje o wartościach odżywczych
+      - Drukuj dowolny przepis ze swojej kolekcji
+      - Zapobiegaj przechodzeniu urządzenia w stan uśpienia podczas przeglądania przepisu
+      - Zgodne z motywem systemu (jasny/ciemny) lub wybierz spośród 32 motywów
+      - Kompilowane dla systemów Windows, Linux i macOS
+    ko_kr: |-
+      Recipya는 잊을 수 없는 가족 요리법을 위한 깔끔한 레시피 관리 웹 애플리케이션으로, 좋아하는 레시피를 정리하고 공유할 수 있도록 지원합니다. 온 가족이 즐길 수 있는 단순성에 중점을 둡니다.
+
+      기능:
+      - 좋아하는 레시피 관리
+      - 웹에서 레시피 가져오기
+      - 종이 레시피 디지털화
+      - 레시피를 요리책으로 정리
+      - Mealie, Tandoor 및 Nextcloud Cookbook에서 레시피를 쉽게 마이그레이션
+      - 선호하는 측정 시스템(영국식/미터법)으로 자동 변환
+      - 영양 정보 자동 계산
+      - 컬렉션에 있는 모든 레시피 인쇄
+      - 레시피를 보는 동안 장치가 잠자기 상태가 되는 것을 방지
+      - 시스템 테마(밝음/어둡게)를 따르거나 32가지 테마 중에서 선택
+      - Windows, Linux 및 macOS용 크로스 컴파일
+    ja_jp: |-
+      Recipya は、忘れられない家族のレシピを管理するためのクリーンなレシピ管理Webアプリケーションです。お気に入りのレシピを整理して共有することができます。家族全員が楽しめるシンプルさに焦点を当てています。
+
+      機能：
+      - お気に入りのレシピを管理
+      - Webからレシピをインポート
+      - 紙のレシピをデジタル化
+      - レシピを料理本に整理
+      - Mealie、Tandoor、Nextcloud Cookbookからレシピを簡単に移行
+      - 好みの測定システム（帝国単位/メートル法）に自動変換
+      - 栄養情報を自動計算
+      - コレクション内の任意のレシピを印刷
+      - レシピ表示中にデバイスがスリープ状態になるのを防止
+      - システムのテーマ（ライト/ダーク）に従うか、32のテーマから選択
+      - Windows、Linux、macOS 用にクロスコンパイル済み
