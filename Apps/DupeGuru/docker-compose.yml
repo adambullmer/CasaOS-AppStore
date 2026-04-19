@@ -34,6 +34,7 @@ services:
 x-casaos:
   architectures:
     - amd64
+  main: dupeguru
   author: self
   developer: arsenetar
   category: Utilities
@@ -44,5 +45,42 @@ x-casaos:
   port_map: ${WEBUI_PORT:-5800}
   scheme: http
   store_app_id: dupeguru
+  tagline:
+    en_US: A powerful tool to find and remove duplicate files.
+    zh_CN: 一个功能强大的查找和删除重复文件的工具。
+    fr_FR: Un outil puissant pour trouver et supprimer les fichiers en double.
+    es_ES: Una potente herramienta para buscar y eliminar archivos duplicados.
+    de_DE: Ein leistungsstarkes Werkzeug zum Finden und Entfernen doppelter Dateien.
+    ru_RU: Мощный инструмент для поиска и удаления дубликатов файлов.
+    it_IT: Un potente strumento per trovare e rimuovere file duplicati.
+    pt_BR: Uma ferramenta poderosa para encontrar e remover arquivos duplicados.
+    tr_TR: Yinelenen dosyaları bulmak ve kaldırmak için güçlü bir araç.
+    pl_PL: Potężne narzędzie do wyszukiwania i usuwania zduplikowanych plików.
+    ko_KR: 중복 파일을 찾아 제거하는 강력한 도구입니다.
+    ja_JP: 重複するファイルを見つけて削除するための強力なツール。
+  description:
+    en_US: dupeGuru is a cross-platform (Linux, OS X, Windows) GUI tool to find duplicate files in a system. It's written in Python 3 and has the peculiarity that it uses multiple GUI toolkits, all using the same core Python code. On OS X, the UI layer is written in Objective-C and uses Cocoa. On Linux and Windows, it's written in Python and uses Qt5. dupeGuru is a tool that has been designed to make it very easy for users to find and remove duplicate files in their computers, regardless of the operating system they use. It also comes with a special Music mode that can scan tags and show music-specific information in the duplicate results window. There is also a Picture mode that can find duplicates among pictures that are not exactly the same.
+    zh_CN: dupeGuru 是一款跨平台（Linux、OS X、Windows）的 GUI 工具，用于在系统中查找重复文件。它采用 Python 3 编写，其独特之处在于它使用多个 GUI 工具包，但都使用相同的核心 Python 代码。在 OS X 上，UI 层采用 Objective-C 编写，并使用 Cocoa。在 Linux 和 Windows 上，它采用 Python 编写，并使用 Qt5。dupeGuru 工具的设计初衷是让用户能够非常轻松地在自己的电脑中查找和删除重复文件，无论他们使用何种操作系统。它还带有一个特殊的音乐模式，可以扫描标签并在重复结果窗口中显示特定于音乐的信息。此外，还有一个图片模式，可以查找不完全相同的图片中的重复项。
+    fr_FR: dupeGuru est un outil graphique multiplateforme (Linux, OS X, Windows) pour trouver les fichiers en double dans un système. Il est écrit en Python 3 et a la particularité d'utiliser plusieurs boîtes à outils graphiques, toutes utilisant le même code Python de base. Sur OS X, la couche UI est écrite en Objective-C et utilise Cocoa. Sur Linux et Windows, elle est écrite en Python et utilise Qt5. dupeGuru est un outil conçu pour permettre aux utilisateurs de trouver et de supprimer très facilement les fichiers en double sur leur ordinateur, quel que soit le système d'exploitation qu'ils utilisent. Il dispose également d'un mode Musique spécial qui peut analyser les balises et afficher des informations spécifiques à la musique dans la fenêtre des résultats en double. Il existe également un mode Image qui peut trouver des doublons parmi des images qui ne sont pas exactement identiques.
+    es_ES: dupeGuru es una herramienta GUI multiplataforma (Linux, OS X, Windows) para buscar archivos duplicados en un sistema. Está escrita en Python 3 y tiene la particularidad de que utiliza múltiples kits de herramientas GUI, todos utilizando el mismo código Python principal. En OS X, la capa de interfaz de usuario está escrita en Objective-C y utiliza Cocoa. En Linux y Windows, está escrita en Python и utiliza Qt5. dupeGuru es una herramienta que ha sido diseñada para que a los usuarios les resulte muy fácil buscar y eliminar archivos duplicados en sus ordenadores, independientemente del sistema operativo que utilicen. También viene con un modo especial de música que puede escanear etiquetas y mostrar información específica de la música en la ventana de resultados duplicados. También hay un modo de imagen que puede encontrar duplicados entre imágenes que no son exactamente iguales.
+    de_DE: dupeGuru ist ein plattformübergreifendes (Linux, OS X, Windows) GUI-Tool zum Auffinden doppelter Dateien in einem System. Es ist in Python 3 geschrieben und hat die Besonderheit, dass es mehrere GUI-Toolkits verwendet, die alle denselben Kern-Python-Code verwenden. Unter OS X ist die UI-Schicht in Objective-C geschrieben und verwendet Cocoa. Unter Linux und Windows ist sie in Python geschrieben und verwendet Qt5. dupeGuru ist ein Tool, das entwickelt wurde, um es Benutzern sehr einfach zu machen, doppelte Dateien auf ihren Computern zu finden und zu entfernen, unabhängig vom verwendeten Betriebssystem. Es verfügt außerdem über einen speziellen Musikmodus, der Tags scannen und musikspezifische Informationen im Fenster für doppelte Ergebnisse anzeigen kann. Es gibt auch einen Bildmodus, der Duplikate unter Bildern finden kann, die nicht genau gleich sind.
+    ru_RU: dupeGuru — это кроссплатформенный (Linux, OS X, Windows) инструмент с графическим интерфейсом для поиска дубликатов файлов в системе. Он написан на Python 3 и имеет ту особенность, что использует несколько наборов инструментов графического интерфейса, все из которых используют один и тот же основной код Python. В OS X уровень пользовательского интерфейса написан на Objective-C и использует Cocoa. В Linux и Windows он написан на Python и использует Qt5. dupeGuru — это инструмент, разработанный для того, чтобы пользователям было очень легко находить и удалять дубликаты файлов на своих компьютерах, независимо от используемой операционной системы. Он также поставляется со специальным музыкальным режимом, который может сканировать теги и отображать информацию о музыке в окне с результатами дублирования. Существует также режим «Изображение», который может находить дубликаты среди изображений, которые не совсем одинаковы.
+    it_IT: dupeGuru è uno strumento GUI multipiattaforma (Linux, OS X, Windows) per trovare file duplicati in un sistema. È scritto in Python 3 e ha la particolarità di utilizzare più toolkit GUI, tutti utilizzando lo stesso codice Python di base. Su OS X, il livello dell'interfaccia utente è scritto in Objective-C e utilizza Cocoa. Su Linux e Windows, è scritto in Python e utilizza Qt5. dupeGuru è uno strumento progettato per rendere molto facile per gli utenti trovare e rimuovere file duplicati nei loro computer, indipendentemente dal sistema operativo che utilizzano. Viene inoltre fornito con una speciale modalità Musica che può scansionare i tag e mostrare informazioni specifiche sulla musica nella finestra dei risultati duplicati. Esiste anche una modalità Immagine che può trovare duplicati tra immagini che non sono esattamente uguali.
+    pt_BR: dupeGuru é uma ferramenta GUI multiplataforma (Linux, OS X, Windows) para encontrar arquivos duplicados em um sistema. É escrito em Python 3 e tem a particularidade de usar vários kits de ferramentas GUI, todos usando o mesmo código Python principal. No OS X, a camada de interface do usuário é escrita em Objective-C e usa Cocoa. No Linux e no Windows, é escrito em Python e usa Qt5. dupeGuru é uma ferramenta que foi projetada para tornar muito fácil para os usuários encontrarem e removerem arquivos duplicados em seus computadores, independentemente do sistema operacional que usam. Ele também vem com um modo de música especial que pode escanear tags e mostrar informações específicas da música na janela de resultados duplicados. Há também um modo de imagem que pode encontrar duplicatas entre imagens que não são exatamente iguais.
+    tr_TR: dupeGuru, bir sistemdeki yinelenen dosyaları bulmak için platformlar arası (Linux, OS X, Windows) bir GUI aracıdır. Python 3 ile yazılmıştır ve hepsi aynı çekirdek Python kodunu kullanan çoklu GUI araç setlerini kullanma özelliğine sahiptir. OS X'te, kullanıcı arayüzü katmanı Objective-C ile yazılmıştır ve Cocoa kullanır. Linux ve Windows'ta Python ile yazılmıştır ve Qt5 kullanır. dupeGuru, kullanıcıların kullandıkları işletim sisteminden bağımsız olarak bilgisayarlarındaki yinelenen dosyaları bulmalarını ve kaldırmalarını çok kolaylaştırmak için tasarlanmış bir araçtır. Ayrıca, etiketleri tarayabilen ve yinelenen sonuçlar penceresinde müziğe özgü bilgileri gösterebilen özel bir Müzik moduyla birlikte gelir. Tam olarak aynı olmayan resimler arasında kopyaları bulabilen bir Resim modu da vardır.
+    pl_PL: dupeGuru to wieloplatformowe (Linux, OS X, Windows) narzędzie GUI do wyszukiwania zduplikowanych plików w systemie. Jest napisany w Pythonie 3 i ma tę osobliwość, że używa wielu zestawów narzędzi GUI, wszystkie używając tego samego podstawowego kodu Pythona. W systemie OS X warstwa interfejsu użytkownika jest napisana w Objective-C i używa Cocoa. W systemach Linux i Windows jest napisany w Pythonie i używa Qt5. dupeGuru to narzędzie, które zostało zaprojektowane tak, aby użytkownicy mogli bardzo łatwo znaleźć i usunąć zduplikowane pliki na swoich komputerach, niezależnie od używanego systemu operacyjnego. Posiada również specjalny tryb muzyczny, który może skanować tagi i wyświetlać informacje specyficzne dla muzyki w oknie zduplikowanych wyników. Dostępny jest również tryb obrazu, który może znajdować duplikaty wśród obrazów, które nie są dokładnie takie same.
+    ko_KR: dupeGuru는 시스템에서 중복 파일을 찾는 크로스 플랫폼(Linux, OS X, Windows) GUI 도구입니다. Python 3로 작성되었으며 모두 동일한 핵심 Python 코드를 사용하는 여러 GUI 툴킷을 사용하는 특징이 있습니다. OS X에서 UI 레이어는 Objective-C로 작성되었으며 Cocoa를 사용합니다. Linux 및 Windows에서는 Python으로 작성되었으며 Qt5를 사용합니다. dupeGuru는 사용하는 운영 체제에 관계없이 사용자가 컴퓨터에서 중복 파일을 매우 쉽게 찾아 제거할 수 있도록 설계된 도구입니다. 또한 태그를 스캔하고 중복 결과 창에 음악 관련 정보를 표시할 수 있는 특수 음악 모드도 함께 제공됩니다. 정확히 동일하지 않은 사진 중에서 중복을 찾을 수 있는 사진 모드도 있습니다.
+    ja_JP: dupeGuruは、システム内の重複ファイルを検索するためのクロスプラットフォーム（Linux、OS X、Windows）GUIツールです。Python 3で記述されており、すべて同じコアPythonコードを使用して、複数のGUIツールキットを使用するという特徴があります。OS Xでは、UIレイヤーはObjective-Cで記述され、Cocoaを使用します。LinuxおよびWindowsでは、Pythonで記述され、Qt5を使用します。dupeGuruは、使用しているオペレーティングシステムに関係なく、ユーザーがコンピューター内の重複ファイルを非常に簡単に見つけて削除できるように設計されたツールです。また、タグをスキャンして、重複結果ウィンドウに音楽固有の情報を表示できる特別な音楽モードも付属しています。また、まったく同じではない写真の中から重複を見つけることができる画像モードもあります。
   title:
-    custom: DupeGuru
+    en_US: DupeGuru
+    zh_CN: DupeGuru
+    fr_FR: DupeGuru
+    es_ES: DupeGuru
+    de_DE: DupeGuru
+    ru_RU: DupeGuru
+    it_IT: DupeGuru
+    pt_BR: DupeGuru
+    tr_TR: DupeGuru
+    pl_PL: DupeGuru
+    ko_KR: DupeGuru
+    ja_JP: DupeGuru
