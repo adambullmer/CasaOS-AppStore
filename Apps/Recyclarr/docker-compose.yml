@@ -30,5 +30,40 @@ x-casaos:
   store_app_id: recyclarr
   title:
     custom: Recyclarr
+    zh_cn: 瑞赛克拉
+    fr_fr: Recyclarr
+    es_es: Recyclarr
+    de_de: Recyclarr
+    ru_ru: Ресайклар
+    it_it: Recyclarr
+    pt_br: Recyclarr
+    tr_tr: Recyclarr
+    pl_pl: Recyclarr
+    ko_kr: 리사이클러
+    ja_jp: リサイクラー
   description:
     en_us: Synchronization of Trash Guides configs with sonarr/radarr
+    zh_cn: 将 Trash Guides 配置与 Sonarr/Radarr 同步
+    fr_fr: Synchronisation des configurations Trash Guides avec Sonarr/Radarr
+    es_es: Sincronización de las configuraciones de Trash Guides con Sonarr/Radarr
+    de_de: Synchronisierung der Trash Guides-Konfigurationen mit Sonarr/Radarr
+    ru_ru: Синхронизация конфигураций Trash Guides с Sonarr/Radarr
+    it_it: Sincronizzazione delle configurazioni di Trash Guides con Sonarr/Radarr
+    pt_br: Sincronização das configurações do Trash Guides com o Sonarr/Radarr
+    tr_tr: Trash Guides yapılandırmalarının Sonarr/Radarr ile senkronizasyonu
+    pl_pl: Synchronizacja konfiguracji Trash Guides z Sonarr/Radarr
+    ko_kr: Trash Guides 설정을 Sonarr/Radarr와 동기화
+    ja_jp: Trash Guides の設定を Sonarr/Radarr と同期する
+  tagline:
+    en_us: Keep your Sonarr/Radarr configs in sync with TRaSH Guides.
+    zh_cn: 使您的 Sonarr/Radarr 配置与 TRaSH Guides 保持同步。
+    fr_fr: Gardez vos configurations Sonarr/Radarr synchronisées avec les guides TRaSH.
+    es_es: Mantenga sus configuraciones de Sonarr/Radarr sincronizadas con las guías TRaSH.
+    de_de: Halten Sie Ihre Sonarr/Radarr-Konfigurationen mit den TRaSH Guides synchron.
+    ru_ru: Синхронизируйте свои конфигурации Sonarr/Radarr с руководствами TRaSH.
+    it_it: Mantieni le tue configurazioni Sonarr/Radarr sincronizzate con le guide TRaSH.
+    pt_br: Mantenha suas configurações Sonarr/Radarr sincronizadas com os Guias TRaSH.
+    tr_tr: Sonarr/Radarr yapılandırmalarınızı TRaSH Kılavuzları ile senkronize tutun.
+    pl_pl: Synchronizuj konfiguracje Sonarr/Radarr z przewodnikami TRaSH.
+    ko_kr: TRaSH 가이드와 Sonarr/Radarr 설정을 동기화하세요.
+    ja_jp: Sonarr/Radarr の設定を TRaSH ガイドと同期させます。
