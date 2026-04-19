@@ -34,11 +34,55 @@ x-casaos:
   port_map: ${WEBUI_PORT:-5800}
   store_app_id: file-bot
   title:
-    custom: FileBot
+    en_us: FileBot
+    zh_cn: FileBot
+    fr_fr: FileBot
+    es_es: FileBot
+    de_de: FileBot
+    ru_ru: FileBot
+    it_it: FileBot
+    pt_br: FileBot
+    tr_tr: FileBot
+    pl_pl: FileBot
+    ko_kr: FileBot
+    ja_jp: FileBot
   tagline:
     en_us: The ultimate TV and Movie Renamer
+    zh_cn: 终极影视重命名工具
+    fr_fr: L'ultime renommeur de séries TV et de films
+    es_es: El renombrador definitivo de series y películas
+    de_de: Der ultimative TV-Serien- und Film-Umbenenner
+    ru_ru: Ультимативный инструмент для переименования сериалов и фильмов
+    it_it: Il rinominatore definitivo di serie TV e film
+    pt_br: O renomeador definitivo de séries e filmes
+    tr_tr: Nihai TV ve Film Yeniden Adlandırıcı
+    pl_pl: Najlepsze narzędzie do zmiany nazw seriali i filmów
+    ko_kr: 궁극의 TV 및 영화 이름 변경 도구
+    ja_jp: 究極のテレビ番組・映画リネームツール
   description:
     en_us: |
       FileBot is the ultimate tool for renaming and organizing your movies, TV shows and Anime.
       Match and rename media files against online databases, download artwork and cover images, fetch subtitles, write metadata, and more, all at once in matter of seconds.
       It's smart and just works.
+    zh_cn: |
+      FileBot 是重命名和整理电影、电视节目及动漫的终极工具。它可以根据在线数据库匹配并重命名媒体文件，下载艺术图和封面，获取字幕，写入元数据等，所有操作均可在几秒钟内一次性完成。它非常智能，且简单易用。
+    fr_fr: |
+      FileBot est l'outil ultime pour renommer et organiser vos films, séries TV et animes. Faites correspondre et renommez vos fichiers multimédias par rapport aux bases de données en ligne, téléchargez des illustrations et des pochettes, récupérez des sous-titres, écrivez des métadonnées et bien plus encore, le tout en quelques secondes. C'est intelligent et ça fonctionne tout simplement.
+    es_es: |
+      FileBot es la herramienta definitiva para renombrar y organizar tus películas, series de televisión y anime. Empareja y renombra archivos multimedia con bases de datos en línea, descarga artes y portadas, obtén subtítulos, escribe metadatos y mucho más, todo a la vez en cuestión de segundos. Es inteligente y simplemente funciona.
+    de_de: |
+      FileBot ist das ultimative Werkzeug zum Umbenennen und Organisieren Ihrer Filme, Serien und Animes. Gleichen Sie Mediendateien mit Online-Datenbanken ab und benennen Sie diese um, laden Sie Artworks und Cover herunter, rufen Sie Untertitel ab, schreiben Sie Metadaten und vieles mehr – alles auf einmal in Sekundenschnelle. Es ist intelligent und funktioniert einfach.
+    ru_ru: |
+      FileBot — это идеальный инструмент для переименования и организации ваших фильмов, сериалов и аниме. Сопоставляйте и переименовывайте медиафайлы по онлайн-базам данных, загружайте обложки и постеры, скачивайте субтитры, записывайте метаданные и многое другое — и всё это за считанные секунды. Он умный и просто работает.
+    it_it: |
+      FileBot è lo strumento definitivo per rinominare e organizzare i tuoi film, serie TV e anime. Confronta e rinomina i file multimediali con i database online, scarica artwork e copertine, recupera sottotitoli, scrivi metadati e molto altro, tutto in una volta e in pochi secondi. È intelligente e funziona e basta.
+    pt_br: |
+      O FileBot é a ferramenta definitiva para renomear e organizar seus filmes, séries de TV e animes. Combine e renomeie arquivos de mídia com bancos de dados on-line, baixe artes e capas, obtenha legendas, escreva metadatos e muito mais, tudo de uma vez em questão de segundos. É inteligente e simplesmente funciona.
+    tr_tr: |
+      FileBot; filmlerinizi, TV dizilerinizi ve animelerinizi yeniden adlandırmak ve düzenlemek için mükemmel bir araçtır. Medya dosyalarını çevrimiçi veritabanlarıyla eşleştirip yeniden adlandırın, görselleri ve kapak resimlerini indirin, altyazıları getirin, meta verileri yazın ve daha fazlasını saniyeler içinde tek seferde yapın. Akıllıdır ve tıkır tıkır çalışır.
+    pl_pl: |
+      FileBot to najlepsze narzędzie do zmiany nazw i organizowania filmów, seriali oraz anime. Dopasowuj i zmieniaj nazwy plików multimedialnych w oparciu o internetowe bazy danych, pobieraj grafiki i okładki, ściągaj napisy, zapisuj metadane i wiele więcej — wszystko naraz w kilka sekund. Jest inteligentny i po prostu działa.
+    ko_kr: |
+      FileBot은 영화, TV 프로그램 및 애니메이션의 이름을 변경하고 정리하는 데 가장 적합한 도구입니다. 온라인 데이터베이스와 대조하여 미디어 파일을 매칭하고 이름을 변경하며, 아트워크와 커버 이미지를 다운로드하고, 자막을 가져오고, 메타데이터를 작성하는 등의 작업을 단 몇 초 만에 한 번에 처리할 수 있습니다. 스마트하며 아주 잘 작동합니다.
+    ja_jp: |
+      FileBotは、映画、テレビ番組、アニメのリネームと整理に最適な究極のツールです。オンラインデータベースと照合してメディアファイルをリネームし、アートワークやカバー画像のダウンロード、字幕の取得、メタデータの書き込みなどを、わずか数秒で一度に行うことができます。スマートで、ただそれだけで完璧に機能します。
