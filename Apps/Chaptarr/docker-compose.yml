@@ -71,68 +71,6 @@ x-casaos:
   author: adambullmer
   category: Books
   description:
-    en_US: |
-      # Chaptarr — Unified Audiobook & Ebook Manager
-
-      Chaptarr is an actively developed fork of the now-retired Readarr, purpose-built to
-      manage both your audiobook and ebook collections in a single instance. It brings the
-      familiar, polished *arr-suite workflow to book lovers — automatic monitoring, quality
-      management, and integration with popular download clients and indexers.
-
-      ## Key Features
-
-      - Manage ebooks **and** audiobooks from one unified interface, no more separate apps
-      - *arr-style automation: add authors/books, set quality profiles, let Chaptarr do the rest
-      - Integrates with download clients (qBittorrent, SABnzbd, NZBGet, etc.) and indexers (Prowlarr)
-      - Designed to fix the metadata mapping issues that plagued the original Readarr
-      - Works alongside Audiobookshelf, Calibre-Web, and other library front-ends
-
-      ## Why Run on CasaOS?
-
-      Deploying Chaptarr on your CasaOS device keeps your entire book automation pipeline
-      local — no cloud subscriptions, no data leaving your home network. Pair it with
-      Audiobookshelf or Calibre-Web on the same device for a fully self-contained, private
-      reading and listening experience running 24/7 on low-power hardware.
-    zh_CN: |
-      # Chaptarr — 统一有声书与电子书管理器
-
-      Chaptarr 是已停止维护的 Readarr 的活跃分支，专为同时管理有声书和电子书收藏而设计，
-      无需两个独立应用。它将成熟的 *arr 套件工作流带到书籍爱好者的世界——自动监控、质量管理，
-      以及与主流下载客户端和索引器的深度集成。
-
-      ## 主要特性
-
-      - 通过统一界面同时管理电子书和有声书
-      - *arr 风格自动化：添加作者/书目，设置质量配置文件，剩下的交给 Chaptarr
-      - 支持与 qBittorrent、SABnzbd、NZBGet 等下载客户端及 Prowlarr 等索引器集成
-      - 专门修复了原 Readarr 中存在的元数据映射问题
-      - 可与 Audiobookshelf、Calibre-Web 等书库前端协同使用
-
-      ## 为什么在 CasaOS 上运行？
-
-      在 CasaOS 设备上部署 Chaptarr，让整个书籍自动化流程保持本地化——无需云订阅，
-      数据不离家。与同设备上的 Audiobookshelf 或 Calibre-Web 搭配使用，在低功耗硬件上
-      构建全自托管、私密的阅读与收听体验。
-    zh_TW: |
-      # Chaptarr — 統一有聲書與電子書管理器
-
-      Chaptarr 是已停止維護的 Readarr 的活躍分支，專為同時管理有聲書和電子書收藏而設計，
-      無需兩個獨立應用程式。它將成熟的 *arr 套件工作流程帶到書籍愛好者的世界——自動監控、
-      品質管理，以及與主流下載客戶端和索引器的深度整合。
-
-      ## 主要功能
-
-      - 透過統一介面同時管理電子書和有聲書
-      - *arr 風格自動化：新增作者/書目，設定品質設定檔，其餘交由 Chaptarr 處理
-      - 支援與 qBittorrent、SABnzbd、NZBGet 等下載客戶端及 Prowlarr 等索引器整合
-      - 專門修復了原 Readarr 中存在的元數據對應問題
-      - 可與 Audiobookshelf、Calibre-Web 等書庫前端協同使用
-
-      ## 為何在 CasaOS 上執行？
-
-      在 CasaOS 裝置上部署 Chaptarr，讓整個書籍自動化流程保持本地化——無需雲端訂閱，
-      資料不離家。與同裝置上的 Audiobookshelf 或 Calibre-Web 搭配使用，在低功耗硬體上
-      建構全自託管、私密的閱讀與聆聽體驗。
     de_DE: |
       # Chaptarr — Einheitlicher Hörbuch- & E-Book-Manager
 
@@ -155,28 +93,28 @@ x-casaos:
       Buchautomatisierung lokal — keine Cloud-Abonnements, keine Daten verlassen dein
       Heimnetzwerk. Kombiniere es auf demselben Gerät mit Audiobookshelf oder Calibre-Web
       für ein vollständig selbst gehostetes, privates Lese- und Hörerlebnis.
-    es_ES: |
-      # Chaptarr — Gestor Unificado de Audiolibros y Libros Electrónicos
+    en_US: |
+      # Chaptarr — Unified Audiobook & Ebook Manager
 
-      Chaptarr es un fork en desarrollo activo del ya retirado Readarr, diseñado específicamente
-      para gestionar colecciones de audiolibros y libros electrónicos en una única instancia.
-      Trae el flujo de trabajo pulido del conjunto *arr a los amantes de los libros — monitorización
-      automática, gestión de calidad e integración con clientes de descarga e indexadores populares.
+      Chaptarr is an actively developed fork of the now-retired Readarr, purpose-built to
+      manage both your audiobook and ebook collections in a single instance. It brings the
+      familiar, polished *arr-suite workflow to book lovers — automatic monitoring, quality
+      management, and integration with popular download clients and indexers.
 
-      ## Características Principales
+      ## Key Features
 
-      - Gestiona libros electrónicos **y** audiolibros desde una interfaz unificada
-      - Automatización estilo *arr: añade autores/libros, establece perfiles de calidad y deja el resto a Chaptarr
-      - Integración con qBittorrent, SABnzbd, NZBGet y otros, así como indexadores como Prowlarr
-      - Diseñado para solucionar los problemas de mapeo de metadatos del Readarr original
-      - Compatible con Audiobookshelf, Calibre-Web y otros frontends de biblioteca
+      - Manage ebooks **and** audiobooks from one unified interface, no more separate apps
+      - *arr-style automation: add authors/books, set quality profiles, let Chaptarr do the rest
+      - Integrates with download clients (qBittorrent, SABnzbd, NZBGet, etc.) and indexers (Prowlarr)
+      - Designed to fix the metadata mapping issues that plagued the original Readarr
+      - Works alongside Audiobookshelf, Calibre-Web, and other library front-ends
 
-      ## ¿Por Qué Ejecutarlo en CasaOS?
+      ## Why Run on CasaOS?
 
-      Desplegar Chaptarr en tu dispositivo CasaOS mantiene todo el proceso de automatización
-      de libros local — sin suscripciones en la nube, sin datos saliendo de tu red doméstica.
-      Combínalo con Audiobookshelf o Calibre-Web en el mismo dispositivo para una experiencia
-      de lectura y escucha completamente privada y autoalojada.
+      Deploying Chaptarr on your CasaOS device keeps your entire book automation pipeline
+      local — no cloud subscriptions, no data leaving your home network. Pair it with
+      Audiobookshelf or Calibre-Web on the same device for a fully self-contained, private
+      reading and listening experience running 24/7 on low-power hardware.
     es_419: |
       # Chaptarr — Gestor Unificado de Audiolibros y Libros Electrónicos
 
@@ -199,6 +137,28 @@ x-casaos:
       de libros de forma local — sin suscripciones en la nube, sin que tus datos salgan de tu
       red hogareña. Combinalo con Audiobookshelf o Calibre-Web en el mismo dispositivo para
       disfrutar de una experiencia de lectura y escucha completamente privada y autoalojada.
+    es_ES: |
+      # Chaptarr — Gestor Unificado de Audiolibros y Libros Electrónicos
+
+      Chaptarr es un fork en desarrollo activo del ya retirado Readarr, diseñado específicamente
+      para gestionar colecciones de audiolibros y libros electrónicos en una única instancia.
+      Trae el flujo de trabajo pulido del conjunto *arr a los amantes de los libros — monitorización
+      automática, gestión de calidad e integración con clientes de descarga e indexadores populares.
+
+      ## Características Principales
+
+      - Gestiona libros electrónicos **y** audiolibros desde una interfaz unificada
+      - Automatización estilo *arr: añade autores/libros, establece perfiles de calidad y deja el resto a Chaptarr
+      - Integración con qBittorrent, SABnzbd, NZBGet y otros, así como indexadores como Prowlarr
+      - Diseñado para solucionar los problemas de mapeo de metadatos del Readarr original
+      - Compatible con Audiobookshelf, Calibre-Web y otros frontends de biblioteca
+
+      ## ¿Por Qué Ejecutarlo en CasaOS?
+
+      Desplegar Chaptarr en tu dispositivo CasaOS mantiene todo el proceso de automatización
+      de libros local — sin suscripciones en la nube, sin datos saliendo de tu red doméstica.
+      Combínalo con Audiobookshelf o Calibre-Web en el mismo dispositivo para una experiencia
+      de lectura y escucha completamente privada y autoalojada.
     fr_FR: |
       # Chaptarr — Gestionnaire Unifié d'Audiolivres et d'Ebooks
 
@@ -222,6 +182,22 @@ x-casaos:
       de vos livres en local — pas d'abonnement cloud, aucune donnée ne quitte votre réseau
       domestique. Associez-le à Audiobookshelf ou Calibre-Web sur le même appareil pour une
       expérience de lecture et d'écoute entièrement privée et auto-hébergée.
+    it_IT: |
+      # Chaptarr — Gestore Unificato di Audiolibri ed Ebook
+
+      Chaptarr è un fork attivamente sviluppato del non più mantenuto Readarr, creato appositamente per gestire le tue collezioni di audiolibri ed ebook in un'unica istanza. Porta il familiare e rifinito flusso di lavoro della suite *arr agli amanti dei libri — monitoraggio automatico, gestione della qualità e integrazione con i client di download e gli indicizzatori più popolari.
+
+      ## Caratteristiche Principali
+
+      - Gestisci ebook **e** audiolibri da un'unica interfaccia unificata, senza più app separate
+      - Automazione in stile *arr: aggiungi autori/libri, imposta profili di qualità e lascia che Chaptarr faccia il resto
+      - Si integra con client di download (qBittorrent, SABnzbd, NZBGet, ecc.) e indicizzatori (Prowlarr)
+      - Progettato per risolvere i problemi di mappatura dei metadati che affliggevano l'originale Readarr
+      - Funziona a fianco di Audiobookshelf, Calibre-Web e altri front-end di librerie
+
+      ## Perché Eseguirlo su CasaOS?
+
+      L'installazione di Chaptarr sul tuo dispositivo CasaOS mantiene l'intera pipeline di automazione dei libri a livello locale — nessun abbonamento cloud, nessun dato che lascia la tua rete domestica. Abbinalo a Audiobookshelf o Calibre-Web sullo stesso dispositivo per un'esperienza di lettura e ascolto completamente autonoma e privata, in esecuzione 24/7 su hardware a basso consumo.
     ja_JP: |
       # Chaptarr — 統合オーディオブック・電子書籍マネージャー
 
@@ -265,7 +241,61 @@ x-casaos:
       CasaOS 기기에 Chaptarr를 배포하면 책 자동화 파이프라인 전체를 로컬로 유지할 수 있습니다
       — 클라우드 구독 불필요, 데이터가 홈 네트워크를 벗어나지 않습니다. 같은 기기에
       Audiobookshelf나 Calibre-Web을 함께 설치해 저전력 하드웨어에서 완전한 프라이빗
-      독서 및 청취 환경을 구축하세요.
+      독서 및 청취 환경을 구축하세요。
+    pl_PL: |
+      # Chaptarr — Zunifikowany Menedżer Audiobooków i Ebooków
+
+      Chaptarr to aktywnie rozwijany fork wycofanego już Readarr, stworzony w celu zarządzania kolekcjami audiobooków i ebooków w jednej instancji. Wprowadza znajomy, dopracowany przepływ pracy z pakietu *arr dla miłośników książek — automatyczne monitorowanie, zarządzanie jakością oraz integrację z popularnymi klientami pobierania i indeksatorami.
+
+      ## Kluczowe Cechy
+
+      - Zarządzaj ebookami **i** audiobookami z jednego zunifikowanego interfejsu, bez potrzeby korzystania z oddzielnych aplikacji
+      - Automatyzacja w stylu *arr: dodawaj autorów/książki, ustawiaj profile jakości, a Chaptarr zajmie się resztą
+      - Integruje się z klientami pobierania (qBittorrent, SABnzbd, NZBGet, itp.) i indeksatorami (Prowlarr)
+      - Zaprojektowany, aby naprawić problemy z mapowaniem metadanych, które nękały oryginalny Readarr
+      - Współpracuje z Audiobookshelf, Calibre-Web i innymi interfejsami bibliotek
+
+      ## Dlaczego Warto Uruchamiać na CasaOS?
+
+      Wdrożenie Chaptarr na urządzeniu CasaOS utrzymuje cały potok automatyzacji książek lokalnie — bez subskrypcji w chmurze, bez danych opuszczających sieć domową. Połącz go z Audiobookshelf lub Calibre-Web na tym samym urządzeniu, aby uzyskać w pełni samowystarczalne, prywatne doświadczenie czytania i słuchania, działające 24/7 na sprzęcie o niskim poborze mocy.
+    pt_BR: |
+      # Chaptarr — Gerenciador Unificado de Audiolivros e Ebooks
+
+      Chaptarr é um fork ativamente desenvolvido do agora aposentado Readarr, construído com o propósito de gerenciar suas coleções de audiolivros e ebooks em uma única instância. Ele traz o fluxo de trabalho familiar e polido da suíte *arr para os amantes de livros — monitoramento automático, gerenciamento de qualidade e integração com clientes de download e indexadores populares.
+
+      ## Principais Características
+
+      - Gerencie ebooks **e** audiolivros a partir de uma interface unificada, sem mais aplicativos separados
+      - Automação no estilo *arr: adicione autores/livros, defina perfis de qualidade e deixe Chaptarr fazer o resto
+      - Integra-se com clientes de download (qBittorrent, SABnzbd, NZBGet, etc.) e indexadores (Prowlarr)
+      - Projetado para corrigir os problemas de mapeamento de metadados que assolavam o Readarr original
+      - Funciona ao lado do Audiobookshelf, Calibre-Web e outras interfaces de biblioteca
+
+      ## Por Que Executar no CasaOS?
+
+      A implantação do Chaptarr em seu dispositivo CasaOS mantém todo o seu pipeline de automação de livros local — sem assinaturas na nuvem, sem dados saindo da sua rede doméstica. Combine-o com o Audiobookshelf ou Calibre-Web no mesmo dispositivo para uma experiência de leitura e audição totalmente auto-hospedada e privada, funcionando 24/7 em hardware de baixo consumo de energia.
+    pt_PT: |
+      # Chaptarr — Gestor Unificado de Audiolivros e Ebooks
+
+      O Chaptarr é um fork em desenvolvimento ativo do Readarr, agora descontinuado, criado
+      especificamente para gerir coleções de audiolivros e ebooks numa única instância. Traz
+      o fluxo de trabalho polido da suite *arr para os amantes de livros — monitorização
+      automática, gestão de qualidade e integração com clientes de download e indexadores populares.
+
+      ## Funcionalidades Principais
+
+      - Gira ebooks **e** audiolivros a partir de uma interface unificada
+      - Automatização ao estilo *arr: adicione autores/livros, defina perfis de qualidade e deixe o Chaptarr fazer o resto
+      - Integração com qBittorrent, SABnzbd, NZBGet, etc. e indexadores como o Prowlarr
+      - Concebido para corrigir os problemas de mapeamento de metadados do Readarr original
+      - Funciona em conjunto com Audiobookshelf, Calibre-Web e outros frontends de biblioteca
+
+      ## Porquê Executar no CasaOS?
+
+      Implementar o Chaptarr no seu dispositivo CasaOS mantém todo o pipeline de automação
+      de livros local — sem subscrições na nuvem, sem dados a sair da sua rede doméstica.
+      Combine-o com o Audiobookshelf ou o Calibre-Web no mesmo dispositivo para uma
+      experiência de leitura e escuta completamente privada e auto-hospedada.
     ru_RU: |
       # Chaptarr — Единый менеджер аудиокниг и электронных книг
 
@@ -311,56 +341,98 @@ x-casaos:
       lokal — inga molnprenumerationer, inga data lämnar ditt hemnätverk. Para ihop det med
       Audiobookshelf eller Calibre-Web på samma enhet för en fullt self-hosted, privat
       läs- och lyssnarupplevelse som körs 24/7 på energisnål hårdvara.
-    pt_PT: |
-      # Chaptarr — Gestor Unificado de Audiolivros e Ebooks
+    tr_TR: |
+      # Chaptarr — Birleşik Sesli Kitap ve E-kitap Yöneticisi
 
-      O Chaptarr é um fork em desenvolvimento ativo do Readarr, agora descontinuado, criado
-      especificamente para gerir coleções de audiolivros e ebooks numa única instância. Traz
-      o fluxo de trabalho polido da suite *arr para os amantes de livros — monitorização
-      automática, gestão de qualidade e integração com clientes de download e indexadores populares.
+      Chaptarr, artık emekliye ayrılmış olan Readarr'ın aktif olarak geliştirilen bir fork'udur ve hem sesli kitap hem de e-kitap koleksiyonlarınızı tek bir örnekte yönetmek amacıyla oluşturulmuştur. Kitap severler için tanıdık, parlak *arr-suite iş akışını getirir — otomatik izleme, kalite yönetimi ve popüler indirme istemcileri ve dizinleyicilerle entegrasyon.
 
-      ## Funcionalidades Principais
+      ## Ana Özellikler
 
-      - Gira ebooks **e** audiolivros a partir de uma interface unificada
-      - Automatização ao estilo *arr: adicione autores/livros, defina perfis de qualidade e deixe o Chaptarr fazer o resto
-      - Integração com qBittorrent, SABnzbd, NZBGet, etc. e indexadores como o Prowlarr
-      - Concebido para corrigir os problemas de mapeamento de metadados do Readarr original
-      - Funciona em conjunto com Audiobookshelf, Calibre-Web e outros frontends de biblioteca
+      - E-kitapları **ve** sesli kitapları tek bir birleşik arayüzden yönetin, artık ayrı uygulamalara gerek yok
+      - *arr tarzı otomasyon: yazarları/kitapları ekleyin, kalite profillerini ayarlayın, gerisini Chaptarr'a bırakın
+      - İndirme istemcileri (qBittorrent, SABnzbd, NZBGet, vb.) ve dizinleyiciler (Prowlarr) ile entegre olur
+      - Orijinal Readarr'ı rahatsız eden meta veri eşleme sorunlarını gidermek için tasarlandı
+      - Audiobookshelf, Calibre-Web ve diğer kütüphane ön uçlarıyla birlikte çalışır
 
-      ## Porquê Executar no CasaOS?
+      ## Neden CasaOS'ta Çalıştırmalısınız?
 
-      Implementar o Chaptarr no seu dispositivo CasaOS mantém todo o pipeline de automação
-      de livros local — sem subscrições na nuvem, sem dados a sair da sua rede doméstica.
-      Combine-o com o Audiobookshelf ou o Calibre-Web no mesmo dispositivo para uma
-      experiência de leitura e escuta completamente privada e auto-hospedada.
+      Chaptarr'ı CasaOS cihazınıza dağıtmak, tüm kitap otomasyon işlem hattınızı yerel tutar — bulut aboneliği yok, ev ağınızdan ayrılan veri yok. Tamamen kendi kendine barındırılan, özel bir okuma ve dinleme deneyimi için aynı cihazda Audiobookshelf veya Calibre-Web ile eşleştirin ve düşük güçlü donanımda 7/24 çalışsın.
+    zh_CN: |
+      # Chaptarr — 统一有声书与电子书管理器
+
+      Chaptarr 是已停止维护的 Readarr 的活跃分支，专为同时管理有声书和电子书收藏而设计，
+      无需两个独立应用。它将成熟的 *arr 套件工作流带到书籍爱好者的世界——自动监控、质量管理，
+      以及与主流下载客户端和索引器的深度集成。
+
+      ## 主要特性
+
+      - 通过统一界面同时管理电子书和有声书
+      - *arr 风格自动化：添加作者/书目，设置质量配置文件，剩下的交给 Chaptarr
+      - 支持与 qBittorrent、SABnzbd、NZBGet 等下载客户端及 Prowlarr 等索引器集成
+      - 专门修复了原 Readarr 中存在的元数据映射问题
+      - 可与 Audiobookshelf、Calibre-Web 等书库前端协同使用
+
+      ## 为什么在 CasaOS 上运行？
+
+      在 CasaOS 设备上部署 Chaptarr，让整个书籍自动化流程保持本地化——无需云订阅，
+      数据不离家。与同设备上的 Audiobookshelf 或 Calibre-Web 搭配使用，在低功耗硬件上
+      构建全自托管、私密的阅读与收听体验。
+    zh_TW: |
+      # Chaptarr — 統一有聲書與電子書管理器
+
+      Chaptarr 是已停止維護的 Readarr 的活躍分支，專為同時管理有聲書和電子書收藏而設計，
+      無需兩個獨立應用程式。它將成熟的 *arr 套件工作流程帶到書籍愛好者的世界——自動監控、
+      品質管理，以及與主流下載客戶端和索引器的深度整合。
+
+      ## 主要功能
+
+      - 透過統一介面同時管理電子書和有聲書
+      - *arr 風格自動化：新增作者/書目，設定品質設定檔，其餘交由 Chaptarr 處理
+      - 支援與 qBittorrent、SABnzbd、NZBGet 等下載客戶端及 Prowlarr 等索引器整合
+      - 專門修復了原 Readarr 中存在的元數據對應問題
+      - 可與 Audiobookshelf、Calibre-Web 等書庫前端協同使用
+
+      ## 為何在 CasaOS 上執行？
+
+      在 CasaOS 裝置上部署 Chaptarr，讓整個書籍自動化流程保持本地化——無需雲端訂閱，
+      資料不離家。與同裝置上的 Audiobookshelf 或 Calibre-Web 搭配使用，在低功耗硬體上
+      建構全自託管、私密的閱讀與聆聽體驗。
   developer: RobertLordhood
   icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/chaptarr.svg
   tagline:
-    en_US: The all-in-one audiobook and ebook manager — a modern Readarr successor.
-    zh_CN: 一体化有声书与电子书管理器——现代 Readarr 继任者。
-    zh_TW: 一站式有聲書與電子書管理器——現代 Readarr 的繼任者。
     de_DE: Der All-in-One-Manager für Hörbücher und E-Books — ein moderner Readarr-Nachfolger.
-    es_ES: El gestor todo en uno de audiolibros y libros electrónicos — el sucesor moderno de Readarr.
+    en_US: The all-in-one audiobook and ebook manager — a modern Readarr successor.
     es_419: El gestor todo en uno de audiolibros y libros electrónicos — el sucesor moderno de Readarr.
+    es_ES: El gestor todo en uno de audiolibros y libros electrónicos — el sucesor moderno de Readarr.
     fr_FR: Le gestionnaire tout-en-un d'audiolivres et d'ebooks — le successeur moderne de Readarr.
+    it_IT: Il gestore all-in-one di audiolibri ed ebook — un moderno successore di Readarr.
     ja_JP: オーディオブックと電子書籍のオールインワンマネージャー — Readarr の現代的な後継。
     ko_KR: 오디오북과 전자책을 위한 올인원 매니저 — Readarr의 현대적인 후계자.
+    pl_PL: Kompleksowy menedżer audiobooków i ebooków — nowoczesny następca Readarr.
+    pt_BR: O gerenciador completo de audiolivros e ebooks — um sucessor moderno do Readarr.
+    pt_PT: O gestor tudo-em-um de audiolivros e ebooks — o sucessor moderno do Readarr.
     ru_RU: Универсальный менеджер аудиокниг и электронных книг — современный преемник Readarr.
     sv_SE: Den allt-i-ett-hanteraren för ljudböcker och e-böcker — en modern Readarr-efterföljare.
-    pt_PT: O gestor tudo-em-um de audiolivros e ebooks — o sucessor moderno do Readarr.
+    tr_TR: Hepsi bir arada sesli kitap ve e-kitap yöneticisi — modern bir Readarr halefi.
+    zh_CN: 一体化有声书与电子书管理器——现代 Readarr 继任者。
+    zh_TW: 一站式有聲書與電子書管理器——現代 Readarr 的繼任者。
   title:
-    en_US: Chaptarr
-    zh_CN: Chaptarr
-    zh_TW: Chaptarr
     de_DE: Chaptarr
-    es_ES: Chaptarr
+    en_US: Chaptarr
     es_419: Chaptarr
+    es_ES: Chaptarr
     fr_FR: Chaptarr
+    it_IT: Chaptarr
     ja_JP: Chaptarr
     ko_KR: Chaptarr
+    pl_PL: Chaptarr
+    pt_BR: Chaptarr
+    pt_PT: Chaptarr
     ru_RU: Chaptarr
     sv_SE: Chaptarr
-    pt_PT: Chaptarr
+    tr_TR: Chaptarr
+    zh_CN: Chaptarr
+    zh_TW: Chaptarr
   tips:
     before_install:
       en_US: |
