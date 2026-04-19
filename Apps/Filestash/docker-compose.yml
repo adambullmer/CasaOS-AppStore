@@ -34,4 +34,41 @@ x-casaos:
   scheme: http
   store_app_id: filestash
   title:
-    custom: Filestash
+    en_us: Filestash
+    zh_cn: Filestash
+    fr_fr: Filestash
+    es_es: Filestash
+    de_de: Filestash
+    ru_ru: Filestash
+    it_it: Filestash
+    pt_br: Filestash
+    tr_tr: Filestash
+    pl_pl: Filestash
+    ko_kr: Filestash
+    ja_jp: Filestash
+  tagline:
+    en_us: A modern web client for SFTP, S3, FTP, WebDAV, Git, and more.
+    zh_cn: 一个支持 SFTP、S3、FTP、WebDAV、Git 等协议的现代 Web 客户端。
+    fr_fr: Un client web moderne pour SFTP, S3, FTP, WebDAV, Git et bien plus encore.
+    es_es: Un cliente web moderno para SFTP, S3, FTP, WebDAV, Git y más.
+    de_de: Ein moderner Web-Client für SFTP, S3, FTP, WebDAV, Git und mehr.
+    ru_ru: Современный веб-клиент для SFTP, S3, FTP, WebDAV, Git и многого другого.
+    it_it: Un client web moderno per SFTP, S3, FTP, WebDAV, Git e altro ancora.
+    pt_br: Um cliente web moderno para SFTP, S3, FTP, WebDAV, Git e muito mais.
+    tr_tr: SFTP, S3, FTP, WebDAV, Git ve daha fazlası için modern bir web istemcisi.
+    pl_pl: Nowoczesny klient webowy dla SFTP, S3, FTP, WebDAV, Git i nie tylko.
+    ko_kr: SFTP, S3, FTP, WebDAV, Git 등을 지원하는 현대적인 웹 클라이언트.
+    ja_jp: SFTP、S3、FTP、WebDAV、Gitなどに対応した、モダンなウェブクライアント。
+  description:
+    en_us: Filestash is a versatile and user-friendly file manager that connects to a wide range of storage backends including SFTP, S3, FTP, WebDAV, and Git. It allows you to manage your files from any device with a web browser, providing a unified interface for all your data. Whether you're a developer, a system administrator, or just someone with a lot of files, Filestash makes it easy to access and organize your data.
+    zh_cn: Filestash 是一款功能强大且用户友好的文件管理器，支持连接多种存储后端，包括 SFTP、S3、FTP、WebDAV 和 Git。它允许您通过任何带有浏览器的设备管理文件，为您所有的内容提供统一的操作界面。无论您是开发者、系统管理员，还是拥有海量文件的普通用户，Filestash 都能让您轻松访问并组织您的数据。
+    fr_fr: Filestash est un gestionnaire de fichiers polyvalent et convivial qui se connecte à une large gamme de backends de stockage, notamment SFTP, S3, FTP, WebDAV et Git. Il vous permet de gérer vos fichiers depuis n'importe quel appareil doté d'un navigateur Web, offrant ainsi une interface unifiée pour toutes vos données. Que vous soyez développeur, administrateur système ou simplement quelqu'un ayant beaucoup de fichiers, Filestash facilite l'accès et l'organisation de vos données。
+    es_es: Filestash es un gestor de archivos versátil y fácil de usar que se conecta a una amplia gama de backends de almacenamiento, incluyendo SFTP, S3, FTP, WebDAV y Git. Te permite gestionar tus archivos desde cualquier dispositivo con un navegador web, proporcionando una interfaz unificada para todos tus datos. Ya seas desarrollador, administrador de sistemas o simplemente alguien con muchos archivos, Filestash facilita el acceso y la organización de tus datos.
+    de_de: Filestash ist ein vielseitiger und benutzerfreundlicher Dateimanager, der eine Verbindung zu einer Vielzahl von Speicher-Backends herstellt, darunter SFTP, S3, FTP, WebDAV und Git. Er ermöglicht es Ihnen, Ihre Dateien von jedem Gerät mit einem Webbrowser aus zu verwalten, und bietet eine einheitliche Benutzeroberfläche für all Ihre Daten. Egal, ob Sie Entwickler, Systemadministrator oder einfach jemand mit vielen Dateien sind – Filestash macht es Ihnen leicht, auf Ihre Daten zuzugreifen und diese zu organisieren.
+    ru_ru: Filestash — это универсальный и удобный файловый менеджер, который подключается к широкому спектру хранилищ, включая SFTP, S3, FTP, WebDAV и Git. Он позволяет управлять файлами с любого устройства через веб-браузер, предоставляя единый интерфейс для всех ваших данных. Независимо от того, являетесь ли вы разработчиком, системным администратором или просто пользователем с большим объемом данных, Filestash упрощает доступ к вашим файлам и их организацию.
+    it_it: Filestash è un gestore di file versatile e intuitivo che si connette a un'ampia gamma di backend di archiviazione, tra cui SFTP, S3, FTP, WebDAV e Git. Ti consente di gestire i tuoi file da qualsiasi dispositivo dotato di un browser web, fornendo un'interfaccia unificata per tutti i tuoi dati. Che tu sia uno sviluppatore, un amministratore di sistema o semplicemente qualcuno con molti file, Filestash rende facile l'accesso e l'organizzazione dei tuoi dati.
+    pt_br: Filestash é um gerenciador de arquivos versátil e amigável que se conecta a uma ampla gama de backends de armazenamento, incluindo SFTP, S3, FTP, WebDAV e Git. Ele permite que você gerencie seus arquivos de qualquer dispositivo com um navegador web, fornecendo uma interface unificada para todos os seus dados. Seja você um desenvolvedor, um administrador de sistemas ou apenas alguém com muitos arquivos, o Filestash facilita o acesso e a organização dos seus dados.
+    tr_tr: Filestash; SFTP, S3, FTP, WebDAV ve Git dahil olmak üzere çok çeşitli depolama arka uçlarına bağlanan, çok yönlü ve kullanıcı dostu bir dosya yöneticisidir. Tüm verileriniz için birleşik bir arayüz sağlayarak, dosyalarınızı web tarayıcısı olan herhangi bir cihazdan yönetmenize olanak tanır. İster bir geliştirici, ister bir sistem yöneticisi, ister sadece çok sayıda dosyası olan biri olun; Filestash, verilerinize erişmeyi ve onları düzenlemeyi kolaylaştırır.
+    pl_pl: Filestash to wszechstronny i przyjazny dla użytkownika menedżer plików, który łączy się z szeroką gamą zapleczy przechowywania danych, w tym SFTP, S3, FTP, WebDAV oraz Git. Pozwala on zarządzać plikami z dowolnego urządzenia z przeglądarką internetową, zapewniając jednolity interfejs dla wszystkich Twoich danych. Niezależnie od tego, czy jesteś programistą, administratorem systemu, czy po prostu osobą posiadającą dużo plików, Filestash ułatwia dostęp do danych i ich organizację.
+    ko_kr: Filestash는 SFTP, S3, FTP, WebDAV, Git 등 다양한 스토리지 백엔드에 연결할 수 있는 다재다능하고 사용자 친화적인 파일 관리자입니다. 웹 브라우저가 있는 모든 기기에서 파일을 관리할 수 있으며, 모든 데이터에 대해 통합된 인터페이스를 제공합니다. 개발자, 시스템 관리자 또는 단순히 많은 파일을 보유한 사용자 모두 Filestash를 통해 데이터를 쉽게 액세스하고 정리할 수 있습니다.
+    ja_jp: Filestashは、SFTP、S3、FTP、WebDAV、Gitなど、幅広いストレージバックエンドに対応した、多機能で使いやすいファイルマネージャーです。ウェブブラウザを搭載したあらゆるデバイスからファイルを管理でき、すべてのデータに対して統一されたインターフェースを提供します。開発者やシステム管理者の方はもちろん、大量のファイルを扱う一般ユーザーの方にとっても、Filestashを使えばデータのアクセスや整理が簡単になります。
