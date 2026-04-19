@@ -49,11 +49,44 @@ x-casaos:
   architectures: # a list of architectures that the app supports
     - amd64
   title:
-    custom: Recipe Buddy
+    en_US: Recipe Buddy
+    zh_CN: 食谱助手
+    fr_FR: Copain Recette
+    es_ES: Compañero de Recetas
+    de_DE: Rezept Kumpel
+    ru_RU: Друг Рецептов
+    it_IT: Amico Ricetta
+    pt_BR: Companheiro de Receitas
+    tr_TR: Yemek Tarifi Arkadaşı
+    pl_PL: Przyjaciel Przepisów
+    ko_KR: 레시피 버디
+    ja_JP: レシピバディ
   description:
-    en_us: Recipe import system for Grocy
+    en_US: Recipe import system for Grocy
+    zh_CN: Grocy 的食谱导入系统，帮助您轻松管理和导入食谱。
+    fr_FR: Un système d'importation de recettes pour Grocy, vous aidant à gérer et importer facilement des recettes.
+    es_ES: Un sistema de importación de recetas para Grocy, que le ayuda a gestionar e importar recetas fácilmente.
+    de_DE: Ein Rezept-Importsystem für Grocy, das Ihnen hilft, Rezepte einfach zu verwalten und zu importieren.
+    ru_RU: Система импорта рецептов для Grocy, помогающая легко управлять и импортировать рецепты.
+    it_IT: Un sistema di importazione ricette per Grocy, che ti aiuta a gestire e importare facilmente le ricette.
+    pt_BR: Um sistema de importação de receitas para Grocy, ajudando você a gerenciar e importar receitas facilmente.
+    tr_TR: Grocy için bir yemek tarifi içe aktarma sistemi, tarifleri kolayca yönetmenize ve içe aktarmanıza yardımcı olur.
+    pl_PL: System importu przepisów dla Grocy, pomagający w łatwym zarządzaniu i importowaniu przepisów.
+    ko_KR: Grocy를 위한 레시피 가져오기 시스템으로, 레시피를 쉽게 관리하고 가져올 수 있도록 돕습니다.
+    ja_JP: Grocy用のレシピインポートシステムで、レシピを簡単に管理・インポートできます。
   tagline:
-    en_us: Recipe import system for Grocy
+    en_US: Recipe import system for Grocy
+    zh_CN: Grocy 的食谱导入系统
+    fr_FR: Système d'importation de recettes pour Grocy
+    es_ES: Sistema de importación de recetas para Grocy
+    de_DE: Rezept-Importsystem für Grocy
+    ru_RU: Система импорта рецептов для Grocy
+    it_IT: Sistema di importazione ricette per Grocy
+    pt_BR: Sistema de importação de receitas para Grocy
+    tr_TR: Grocy için yemek tarifi içe aktarma sistemi
+    pl_PL: System importu przepisów dla Grocy
+    ko_KR: Grocy용 레시피 가져오기 시스템
+    ja_JP: Grocy向けレシピインポートシステム
   tips:
     before_install:
       en_us: |
