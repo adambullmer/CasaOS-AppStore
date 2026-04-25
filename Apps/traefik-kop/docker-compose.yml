@@ -1,0 +1,329 @@
+name: traefik-kop
+services:
+  traefik-proxy:
+    image: tecnativa/docker-socket-proxy:latest
+    container_name: traefik-proxy
+    restart: unless-stopped
+    environment:
+      CONTAINERS: 1
+      NETWORKS: 1
+      EVENTS: 1
+      VERSION: 1
+      POST: 0
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    networks:
+      - traefik-kop-net
+    x-casaos:
+      envs:
+        - container: CONTAINERS
+          description:
+            en_us: Allow read-only access to containers
+            en_gb: Allow read-only access to containers
+            zh_cn: 允许只读访问容器
+            zh_tw: 允許唯讀存取容器
+            fr_fr: Autoriser l'accès en lecture seule aux conteneurs
+            de_de: Schreibgeschützten Zugriff auf Container zulassen
+            it_it: Consenti accesso in sola lettura ai container
+            ja_jp: コンテナへの読み取り専用アクセスを許可する
+            ko_kr: 컨테이너에 대한 읽기 전용 액세스 허용
+            ru_ru: Разрешить доступ только для чтения к контейнерам
+            es_es: Permitir acceso de solo lectura a los contenedores
+            pt_br: Permitir acesso apenas de leitura aos contentores
+            nb_no: Tillat skrivebeskyttet tilgang til beholdere
+            sv_se: Tillåt skrivskyddad åtkomst till behållare
+        - container: NETWORKS
+          description:
+            en_us: Allow read-only access to networks
+            en_gb: Allow read-only access to networks
+            zh_cn: 允许只读访问网络
+            zh_tw: 允許唯讀存取網路
+            fr_fr: Autoriser l'accès en lecture seule aux réseaux
+            de_de: Schreibgeschützten Zugriff auf Netzwerke zulassen
+            it_it: Consenti accesso in sola lettura alle reti
+            ja_jp: ネットワークへの読み取り専用アクセスを許可する
+            ko_kr: 네트워크에 대한 읽기 전용 액세스 허용
+            ru_ru: Разрешить доступ только для чтения к сетям
+            es_es: Permitir acceso de solo lectura a las redes
+            pt_br: Permitir acesso apenas de leitura às redes
+            nb_no: Tillat skrivebeskyttet tilgang til nettverk
+            sv_se: Tillåt skrivskyddad åtkomst till nätverk
+        - container: EVENTS
+          description:
+            en_us: Allow access to Docker events
+            zh_cn: 允许访问 Docker 事件
+        - container: VERSION
+          description:
+            en_us: Allow access to Docker version info
+            zh_cn: 允许访问 Docker 版本信息
+        - container: POST
+          description:
+            en_us: Disable write access (Read-Only mode when 0)
+            zh_cn: 禁用写入访问（设为 0 时为只读模式）
+
+  traefik-kop:
+    image: ghcr.io/jittering/traefik-kop:0.19.4
+    container_name: traefik-kop
+    restart: unless-stopped
+    depends_on:
+      - traefik-proxy
+    environment:
+      DOCKER_ADDR: tcp://traefik-proxy:2375
+      REDIS_ADDR: ${REDIS_ADDR:-192.168.1.100:6379}
+      BIND_IP: ${BIND_IP:-192.168.1.10}
+      KOP_HOSTNAME: ${KOP_HOSTNAME:-casaos-node}
+      SKIP_REPLACE: 0
+    networks:
+      - traefik-kop-net
+    healthcheck:
+      test: [ "CMD", "pgrep", "-f", "traefik-kop" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    x-casaos:
+      envs:
+        - container: REDIS_ADDR
+          description:
+            en_us: Address of the central Redis instance (e.g., 192.168.1.50:6379)
+            en_gb: Address of the central Redis instance (e.g., 192.168.1.50:6379)
+            zh_cn: 中央 Redis 实例地址 (例如 192.168.1.50:6379)
+            zh_tw: 中央 Redis 實例地址 (例如 192.168.1.50:6379)
+            fr_fr: Adresse de l'instance Redis centrale
+            de_de: Adresse der zentralen Redis-Instanz
+            it_it: Indirizzo dell'istanza Redis centrale
+            ja_jp: 中央 Redis インスタンスのアドレス
+            ko_kr: 중앙 Redis 인스턴스 주소
+            ru_ru: Адрес центрального экземпляра Redis
+            es_es: Dirección de la instancia central de Redis
+            pt_br: Endereço da instância central do Redis
+            nb_no: Adresse til den sentrale Redis-instansen
+            sv_se: Adress till den centrala Redis-instansen
+        - container: BIND_IP
+          description:
+            en_us: Local IP address to publish to Traefik for routing
+            en_gb: Local IP address to publish to Traefik for routing
+            zh_cn: 发布给 Traefik 用于路由的本地 IP 地址
+            zh_tw: 發佈給 Traefik 用於路由的本地 IP 地址
+            fr_fr: Adresse IP locale à publier à Traefik pour le routage
+            de_de: Lokale IP-Adresse zur Veröffentlichung an Traefik für das Routing
+            it_it: Indirizzo IP locale da pubblicare su Traefik per il routing
+            ja_jp: ルーティングのために Traefik に公開するローカル IP アドレス
+            ko_kr: 라우팅을 위해 Traefik에 게시할 로컬 IP 주소
+            ru_ru: Локальный IP-адрес для публикации в Traefik для маршрутизации
+            es_es: Dirección IP local para publicar en Traefik para el enrutamiento
+            pt_br: Endereço IP local a publicar no Traefik para o roteamento
+            nb_no: Lokal IP-adresse som skal publiseres til Traefik for ruting
+            sv_se: Lokal IP-adress att publicera till Traefik för dirigering
+        - container: KOP_HOSTNAME
+          description:
+            en_us: Unique hostname/ID for this node in the Traefik dashboard
+            en_gb: Unique hostname/ID for this node in the Traefik dashboard
+            zh_cn: 此节点在 Traefik 控制面板中的唯一主机名/ID
+            zh_tw: 此節點在 Traefik 控制面板中的唯一主機名/ID
+            fr_fr: Nom d'hôte/ID unique pour ce nœud dans le tableau de bord Traefik
+            de_de: Eindeutiger Hostname/ID für diesen Knoten im Traefik-Dashboard
+            it_it: Hostname/ID univoco per questo nodo nella dashboard di Traefik
+            ja_jp: Traefik ダッシュボードにおけるこのノードの一意のホスト名/ID
+            ko_kr: Traefik 대시보드에서 이 노드의 고유한 호스트 이름/ID
+            ru_ru: Уникальное имя хоста/ID для этого узла в панели управления Traefik
+            es_es: Nombre de host/ID único para este nodo en el panel de Traefik
+            pt_br: Nome de anfitrião/ID exclusivo para este nó no painel do Traefik
+            nb_no: Unikt vertsnavn/ID for denne noden i Traefik-oversikten
+            sv_se: Unikt värdnamn/ID för denna nod i Traefik-panelen
+        - container: SKIP_REPLACE
+          description:
+            en_us: Set to 1 to disable custom IP/port auto-detection
+            zh_cn: 设为 1 以禁用自定义 IP/端口自动检测
+
+networks:
+  traefik-kop-net:
+    driver: bridge
+
+x-casaos:
+  architectures:
+    - amd64
+    - arm64
+    - arm
+  main: traefik-kop
+  author: adambullmer
+  developer: jittering
+  category: Network
+  description:
+    en_US: |
+      # Traefik Kop — Dynamic Multi-Host Discovery
+
+      Traefik Kop (Keep Only Port) is a specialized discovery agent that allows Traefik to discover containers across multiple, isolated Docker hosts without the overhead of Docker Swarm or Kubernetes.
+
+      ## Key Features
+      - **Multi-Host Harmony**: Bridge services from different physical servers to a single entry point.
+      - **Redis Integration**: Uses a high-performance Redis backend to sync routing configuration instantly.
+      - **Standard Labels**: Continue using familiar Traefik Docker labels on all your standalone nodes.
+      - **Security First**: Bundled with a Docker Socket Proxy to ensure the agent only has read-only access to container metadata.
+
+      ## Why Run on CasaOS?
+      If you have a growing home lab with multiple CasaOS nodes or other Docker servers, Traefik Kop is the perfect "glue." It allows you to maintain a central reverse proxy for SSL and domain management while deploying your apps wherever they fit best.
+    zh_CN: |
+      # Traefik Kop — 动态多主机服务发现
+
+      Traefik Kop (Keep Only Port) 是一个专门的服务发现代理，它允许 Traefik 在无需 Docker Swarm 或 Kubernetes 的情况下，跨多个隔离的 Docker 主机发现容器。
+
+      ## 主要特性
+      - **多主机协同**：将不同物理服务器上的服务桥接到单个入口点。
+      - **Redis 集成**：使用高性能 Redis 后端即时同步路由配置。
+      - **标准标签**：在所有独立节点上继续使用熟悉的 Traefik Docker 标签。
+      - **安全第一**：捆绑了 Docker Socket Proxy，确保代理仅具有对容器元数据的只读访问权限。
+
+      ## 为什么在 CasaOS 上运行？
+      如果您拥有多个 CasaOS 节点或其他 Docker 服务器，Traefik Kop 是完美的“粘合剂”。它让您能够维持一个中央反向代理进行 SSL 和域名管理，同时将应用部署在最合适的位置。
+    fr_FR: |
+      # Traefik Kop — Découverte Dynamique Multi-Hôtes
+
+      Traefik Kop (Keep Only Port) est un agent de découverte spécialisé qui permet à Traefik de découvrir des conteneurs sur plusieurs hôtes Docker isolés sans la complexité de Docker Swarm ou Kubernetes.
+
+      ## Fonctionnalités Clés
+      - **Harmonie Multi-Hôtes** : Reliez les services de différents serveurs physiques à un point d'entrée unique.
+      - **Intégration Redis** : Utilise un backend Redis haute performance pour synchroniser instantanément la configuration de routage.
+      - **Labels Standards** : Continuez à utiliser les labels Traefik Docker familiers sur tous vos nœuds autonomes.
+      - **Sécurité Maximale** : Inclus avec un proxy de socket Docker pour garantir que l'agent n'a qu'un accès en lecture seule aux métadonnées des conteneurs.
+    de_DE: |
+      # Traefik Kop — Dynamische Multi-Host-Erkennung
+
+      Traefik Kop (Keep Only Port) ist ein spezialisierter Discovery-Agent, der es Traefik ermöglicht, Container über mehrere, isolierte Docker-Hosts hinweg zu erkennen, ohne den Overhead von Docker Swarm oder Kubernetes.
+
+      ## Hauptmerkmale
+      - **Multi-Host-Harmonie**: Verbinden Sie Dienste von verschiedenen physischen Servern mit einem einzigen Einstiegspunkt.
+      - **Redis-Integration**: Verwendet ein leistungsstarkes Redis-Backend, um die Routing-Konfiguration sofort zu synchronisieren.
+      - **Standard-Labels**: Verwenden Sie weiterhin die vertrauten Traefik-Docker-Labels auf all Ihren Standalone-Knoten.
+      - **Sicherheit geht vor**: Ausgestattet mit einem Docker-Socket-Proxy, um sicherzustellen, dass der Agent nur Lesezugriff auf Container-Metadaten hat.
+    es_ES: |
+      # Traefik Kop — Descubrimiento Dinámico Multi-Host
+
+      Traefik Kop (Keep Only Port) es un agente de descubrimiento especializado que permite a Traefik descubrir contenedores en múltiples hosts Docker aislados sin la sobrecarga de Docker Swarm o Kubernetes.
+
+      ## Características Clave
+      - **Armonía Multi-Host**: Conecte servicios de diferentes servidores físicos a un único punto de entrada.
+      - **Integración con Redis**: Utiliza un backend de Redis de alto rendimiento para sincronizar la configuración de enrutamiento al instante.
+      - **Etiquetas Estándar**: Continúe usando las etiquetas familiares de Traefik Docker en todos sus nodos independientes.
+      - **Seguridad Primero**: Incluye un Proxy de Socket Docker para asegurar que el agente solo tenga acceso de lectura a los metadatos de los contenedores.
+    it_IT: |
+      # Traefik Kop — Scoperta Dinamica Multi-Host
+
+      Traefik Kop (Keep Only Port) è un agente di scoperta specializzato che consente a Traefik di scoprire container su più host Docker isolati senza il carico di Docker Swarm o Kubernetes.
+
+      ## Caratteristiche Principali
+      - **Armonia Multi-Host**: Collega i servizi di diversi server fisici a un unico punto di ingresso.
+      - **Integrazione Redis**: Utilizza un backend Redis ad alte prestazioni per sincronizzare istantaneamente la configurazione del routing.
+      - **Etichette Standard**: Continua a utilizzare le familiari etichette Traefik Docker su tutti i tuoi nodi indipendenti.
+      - **La Sicurezza Prima di Tutto**: Fornito con un Docker Socket Proxy per garantire che l'agente abbia solo accesso in sola lettura ai metadati dei container.
+    ja_JP: |
+      # Traefik Kop — 多彩なマルチホスト・サービス検出
+
+      Traefik Kop (Keep Only Port) は、Docker Swarm や Kubernetes のオーバーヘッドなしに、複数の独立した Docker ホスト間でコンテナを検出できるようにする特殊な検出エージェントです。
+
+      ## 主な機能
+      - **マルチホストの調和**: 異なる物理サーバーからのサービスを単一のエントリポイントにブリッジします。
+      - **Redis 連携**: 高性能な Redis バックエンドを使用して、ルーティング構成を即座に同期します。
+      - **標準ラベル**: すべてのスタンドアロンノードで、おなじみの Traefik Docker ラベルをそのまま使用できます。
+      - **セキュリティ重視**: Docker Socket Proxy が同梱されており、エージェントがコンテナのメタデータに対して読み取り専用アクセスのみを持つようにします。
+    ko_KR: |
+      # Traefik Kop — 동적 멀티 호스트 서비스 검색
+
+      Traefik Kop (Keep Only Port)은 Docker Swarm이나 Kubernetes의 오버헤드 없이 여러 개의 격리된 Docker 호스트에서 컨테이너를 검색할 수 있게 해주는 전문 검색 에이전트입니다.
+
+      ## 주요 기능
+      - **멀티 호스트 조화**: 서로 다른 물리적 서버의 서비스를 단일 진입점으로 연결합니다.
+      - **Redis 통합**: 고성능 Redis 백엔드를 사용하여 라우팅 구성을 즉시 동기화합니다.
+      - **표준 레이블**: 모든 독립형 노드에서 익숙한 Traefik Docker 레이블을 계속 사용할 수 있습니다.
+      - **보안 우선**: Docker 소켓 프록시와 함께 제공되어 에이전트가 컨테이너 메타데이터에 대해 읽기 전용 액세스 권한만 갖도록 보장합니다.
+    ru_RU: |
+      # Traefik Kop — Динамическое обнаружение на нескольких хостах
+
+      Traefik Kop (Keep Only Port) — это специализированный агент обнаружения, который позволяет Traefik обнаруживать контейнеры на нескольких изолированных хостах Docker без использования Docker Swarm или Kubernetes.
+
+      ## Ключевые особенности
+      - **Гармония нескольких хостов**: Свяжите службы с разных физических серверов в единую точку входа.
+      - **Интеграция с Redis**: Использует высокопроизводительный Redis для мгновенной синхронизации конфигурации маршрутизации.
+      - **Стандартные метки**: Продолжайте использовать привычные метки Traefik Docker на всех ваших автономных узлах.
+      - **Безопасность прежде всего**: Поставляется с прокси-сервером Docker Socket, гарантирующим, что агент имеет доступ только для чтения к метаданным контейнера.
+    pt_BR: |
+      # Traefik Kop — Descoberta Dinâmica Multi-Hospedeiro
+
+      O Traefik Kop (Keep Only Port) é um agente de descoberta especializado que permite ao Traefik descobrir contentores em múltiplos hospedeiros Docker isolados sem a complexidade do Docker Swarm ou Kubernetes.
+
+      ## Principais Características
+      - **Harmonia Multi-Hospedeiro**: Interligue serviços de diferentes servidores físicos a um único ponto de entrada.
+      - **Integração com Redis**: Utiliza um backend Redis de alto desempenho para sincronizar a configuração de roteamento instantaneamente.
+      - **Rótulos Padrão**: Continue a usar os rótulos familiares do Traefik Docker em todos os seus nós independentes.
+      - **Segurança em Primeiro Lugar**: Inclui um Proxy de Socket Docker para garantir que o agente tenha apenas acesso de leitura aos metadados dos contentores.
+    pl_PL: |
+      # Traefik Kop — Dynamiczne Wykrywanie Wielohostowe
+
+      Traefik Kop (Keep Only Port) to wyspecjalizowany agent wykrywania, który pozwala Traefikowi wykrywać kontenery na wielu odizolowanych hostach Docker bez konieczności stosowania Docker Swarm lub Kubernetes.
+
+      ## Kluczowe Cechy
+      - **Harmonia Wielohostowa**: Połącz usługi z różnych serwerów fizycznych w jeden punkt wejścia.
+      - **Integracja z Redis**: Wykorzystuje wydajny backend Redis do błyskawicznej synchronizacji konfiguracji routingu.
+      - **Standardowe Etykiety**: Kontynuuj korzystanie ze znajomych etykiet Traefik Docker na wszystkich swoich samodzielnych węzłach.
+      - **Bezpieczeństwo Przede Wszystkim**: W zestawie z Docker Socket Proxy, aby zapewnić agentowi wyłącznie dostęp do odczytu metadanych kontenerów.
+    tr_TR: |
+      # Traefik Kop — Dinamik Çoklu Ana Bilgisayar Keşfi
+
+      Traefik Kop (Keep Only Port), Traefik'in Docker Swarm veya Kubernetes yükü olmadan birden fazla izole Docker ana bilgisayarı üzerindeki konteynerleri keşfetmesini sağlayan özel bir keşif ajanıdır.
+
+      ## Ana Özellikler
+      - **Çoklu Ana Bilgisayar Uyumu**: Farklı fiziksel sunuculardaki hizmetleri tek bir giriş noktasına bağlayın.
+      - **Redis Entegrasyonu**: Yönlendirme yapılandırmasını anında senkronize etmek için yüksek performanslı bir Redis arka ucu kullanır.
+      - **Standart Etiketler**: Tüm bağımsız düğümlerinizde tanıdık Traefik Docker etiketlerini kullanmaya devam edin.
+      - **Önce Güvenlik**: Aracının konteyner meta verilerine yalnızca salt okunur erişimi olduğundan emin olmak için bir Docker Soket Proxy ile birlikte gelir.
+  tagline:
+    en_US: Multi-host Traefik discovery via Redis.
+    zh_CN: 通过 Redis 实现的多主机 Traefik 服务发现。
+    zh_TW: 透過 Redis 實現的多主機 Traefik 服務發現。
+    fr_FR: Découverte Traefik multi-hôtes via Redis.
+    de_DE: Multi-Host-Traefik-Discovery über Redis.
+    it_IT: Scoperta Traefik multi-host tramite Redis.
+    ja_JP: Redis を介したマルチホスト Traefik サービス検出。
+    ko_KR: Redis를 통한 멀티 호스트 Traefik 서비스 검색.
+    ru_RU: Обнаружение Traefik на нескольких хостах через Redis.
+    es_ES: Descubrimiento de Traefik multi-host a través de Redis.
+    pt_BR: Descoberta do Traefik multi-host via Redis.
+    nb_NO: Multi-host Traefik-oppdaging via Redis.
+    sv_SE: Multi-host Traefik-upptäckt via Redis.
+    pl_PL: Wielohostowe wykrywanie Traefik przez Redis.
+    nl_NL: Multi-host Traefik-ontdekking via Redis.
+    tr_TR: Redis aracılığıyla çoklu ana bilgisayar Traefik keşfi.
+  icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/traefik.png
+  hostname: ""
+  index: ""
+  port_map: ""
+  scheme: http
+  store_app_id: traefik-kop
+  title:
+    en_US: Traefik Kop
+    zh_CN: Traefik Kop
+    zh_TW: Traefik Kop
+    fr_FR: Traefik Kop
+    de_DE: Traefik Kop
+    it_IT: Traefik Kop
+    ja_JP: Traefik Kop
+    ko_KR: Traefik Kop
+    ru_RU: Traefik Kop
+    es_ES: Traefik Kop
+    pt_BR: Traefik Kop
+    nb_NO: Traefik Kop
+    sv_SE: Traefik Kop
+    pl_PL: Traefik Kop
+    nl_NL: Traefik Kop
+    tr_TR: Traefik Kop
+  tips:
+    before_install:
+      en_US: |
+        Traefik Kop requires a central Redis instance to store routing data. Please ensure:
+        1. You have a Redis server running and accessible from this host.
+        2. You know the IP and port of that Redis server (default is usually 6379).
+        3. You configure the `REDIS_ADDR` environment variable during installation.
+      zh_CN: |
+        Traefik Kop 需要一个中央 Redis 实例来存储路由数据。请确保：
+        1. 您已经运行了一个从此主机可访问的 Redis 服务器。
+        2. 您知道该 Redis 服务器的 IP 和端口（默认通常为 6379）。
+        3. 在安装过程中配置 `REDIS_ADDR` 环境变量。
